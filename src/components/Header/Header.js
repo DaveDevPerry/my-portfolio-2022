@@ -26,7 +26,7 @@ const Header = () => (
 						marginBottom: '20px',
 					}}
 				>
-					<DiCssdeck size='3rem' />{' '}
+					{/* <DiCssdeck size='3rem' />{' '} */}
 					<Brand>
 						dave<span>perry</span>
 						<span>.</span>tech

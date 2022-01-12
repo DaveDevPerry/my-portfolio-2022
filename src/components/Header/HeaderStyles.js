@@ -7,7 +7,7 @@ export const Container = styled.div`
 	grid-template-rows: 1fr;
 	grid-column-gap: 2rem;
 	padding: 1rem;
-	padding-top: 2rem;
+	/* padding-top: 2rem; */
 	border-bottom: 1px solid red;
 
 	@media ${(props) => props.theme.breakpoints.sm} {
@@ -21,13 +21,16 @@ export const Container = styled.div`
 
 export const Brand = styled.div`
 	font-family: 'Oswald', serif;
-	font-size: 2rem;
+	font-size: 2.8rem;
+	font-weight: lighter;
 	span {
 		font-weight: bolder;
 	}
 	span:last-child {
 		color: #c40303;
-		font-size: 2.5rem;
+		font-size: 5rem;
+		line-height: 1.15;
+		font-weight: bolder;
 	}
 `;
 export const Span = styled.span`
@@ -44,13 +47,29 @@ export const Div1 = styled.div`
 	}
 `;
 export const Div2 = styled.div`
-	grid-area: 1 / 2 / 2 / 4;
+	grid-area: 1 / 3/ 2 / 6;
 	display: flex;
-	justify-content: space-around;
+	justify-content: flex-end;
+	column-gap: 2rem;
+	align-items: center;
+	font-weight: bold;
 	@media ${(props) => props.theme.breakpoints.sm} {
-		grid-area: 2 / 2 / 3 / 5;
+		justify-content: space-around;
+		column-gap: 0;
+		align-items: center;
+		grid-area: 2 / 1 / 3 / 6;
 	}
 `;
+// export const Div2 = styled.div`
+// 	grid-area: 1 / 2 / 2 / 4;
+// 	display: flex;
+// 	justify-content: space-around;
+// 	align-items: center;
+// 	@media ${(props) => props.theme.breakpoints.sm} {
+// 		align-items: center;
+// 		grid-area: 2 / 2 / 3 / 5;
+// 	}
+// `;
 export const Div3 = styled.div`
 	grid-area: 1 / 5 / 2 / 6;
 	display: flex;

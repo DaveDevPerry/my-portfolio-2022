@@ -23,6 +23,7 @@ export const GridContainer = styled.section`
 `;
 export const BlogCard = styled.div`
 	border-radius: 10px;
+	padding: 10px;
 	box-shadow: 3px 3px 20px rgba(80, 78, 78, 0.5);
 	text-align: center;
 	width: 400px;
@@ -34,18 +35,20 @@ export const TitleContent = styled.div`
 	text-align: center;
 	z-index: 20;
 	width: 100%;
+	padding-bottom: 10px;
 `;
 
 export const HeaderThree = styled.h3`
 	font-weight: 500;
 	letter-spacing: 2px;
-	color: #9cc9e3;
+	/* color: #9cc9e3; */
+	/* color: #c40303; */
 	padding: 0.5rem 0;
 	font-size: ${(props) => (props.title ? '3rem' : '2rem')};
 `;
 
 export const Hr = styled.hr`
-	width: 50px;
+	width: 100px;
 	height: 3px;
 	margin: 20px auto;
 	border: 0;
@@ -64,7 +67,7 @@ export const Intro = styled.div`
 
 export const CardInfo = styled.p`
 	width: 100%;
-	padding: 0 50px;
+	padding: 0 30px;
 	color: #e4e6e7;
 	font-style: 2rem;
 	line-height: 24px;
@@ -78,23 +81,38 @@ export const UtilityList = styled.ul`
 	list-style-type: none;
 	padding: 0;
 	display: flex;
-	justify-content: space-around;
-	margin: 2.5rem 0;
+	justify-content: center;
+	margin: 1rem 0;
+	column-gap: 2rem;
 `;
 
 export const ExternalLinks = styled.a`
 	color: #ffffff;
-	font-size: 1.6rem;
-	padding: 1rem 1.5rem;
+	font-size: 1.8rem;
+	padding: 0 0.5rem;
 	/* background: #6b3030; */
-	border: 1px solid #c40303;
-	border-radius: 15px;
+	/* border: 1px solid #c40303; */
+	/* border-radius: 15px; */
 	transition: 0.5s;
+	text-transform: uppercase;
 	/* flex: 1; */
 	&:hover {
-		background: #801414;
+		color: #c40303;
 	}
 `;
+// export const ExternalLinks = styled.a`
+// 	color: #ffffff;
+// 	font-size: 1.6rem;
+// 	padding: 1rem 1.5rem;
+// 	/* background: #6b3030; */
+// 	border: 1px solid #c40303;
+// 	border-radius: 15px;
+// 	transition: 0.5s;
+// 	/* flex: 1; */
+// 	&:hover {
+// 		background: #801414;
+// 	}
+// `;
 
 export const TagList = styled.ul`
 	display: flex;
@@ -105,4 +123,12 @@ export const Tag = styled.li`
 	color: #c40303;
 	font-size: 1.5rem;
 	font-weight: bold;
+`;
+
+export const LinkWrapper = styled.div`
+	/* border: 1px solid white; */
+	padding: 0.5rem 0;
+	display: flex;
+	align-items: center;
+	width: 135px;
 `;
