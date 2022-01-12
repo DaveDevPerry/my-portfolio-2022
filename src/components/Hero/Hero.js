@@ -25,11 +25,14 @@ const Hero = (props) => (
 				fully functional, enjoyable experiences.
 			</SectionText>
 			<BtnWrapper>
-				<Link href='#contact'>
+				{/* <Link href='#contact'>
 					<Button>Contact Me</Button>
+				</Link> */}
+				<Link href='#'>
+					<Button>Resume</Button>
 				</Link>
 				<Link href='#projects'>
-					<Button>My Projects</Button>
+					<Button>Projects</Button>
 				</Link>
 			</BtnWrapper>
 

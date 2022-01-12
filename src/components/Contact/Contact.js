@@ -17,7 +17,7 @@ import {
 const Contact = () => (
 	<Section id='contact'>
 		<SectionDivider />
-		<br />
+		{/* <br /> */}
 		<SectionTitle>Contact</SectionTitle>
 		<SectionText>
 			I've worked with a range of Contact in the web development world. From

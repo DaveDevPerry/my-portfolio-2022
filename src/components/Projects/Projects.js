@@ -77,7 +77,7 @@ const Projects = () => (
 							<ExternalLinks href={visit}>View Code</ExternalLinks>
 						</UtilityList> */}
 						<div>
-							<TitleContent>Stack</TitleContent>
+							{/* <TitleContent>Stack</TitleContent> */}
 							<TagList>
 								{tags.map((tag, i) => (
 									<Tag key={i}>{tag}</Tag>

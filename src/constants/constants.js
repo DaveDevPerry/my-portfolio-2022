@@ -3,9 +3,9 @@ export const projects = [
 		title: 'Loopy Lotto',
 		subtitle: 'A lottery game with a twist!',
 		description:
-			'My first app, designed and developed using vanilla Javascript. The App is called Memories and it is a simple social media app that allows users to post interesting events that happened in their lives.',
+			'A paid to play app, designed and developed using vanilla Javascript. A site to allow participants to check game progress based on the real life lottery draws. ',
 		image: '/images/ll.png',
-		tags: ['HTML', 'SASS', 'Javascript'],
+		tags: ['HTML', 'SASS', 'Vanilla JS'],
 
 		source: 'https://relaxed-dijkstra-f29d44.netlify.app/',
 		visit: 'https://github.com/DaveDevPerry/LoopyLottoMVP',
@@ -16,9 +16,9 @@ export const projects = [
 		title: 'guitARCHIVE',
 		subtitle: 'An easy to access storage solution for my sheet music',
 		description:
-			"Using React, Node.js, Express & MongoDB you'll learn how to build a Full Stack MERN Application - from start to finish. The App is called Memories and it is a simple social media app that allows users to post interesting events that happened in their lives.",
+			'An app for me to keep all my sheet music in one place that I can access from any device when needed. It also keeps track of my progress and songs to prioritize practicing to upload to my YouTube channel.  ',
 		image: '/images/ga.png',
-		tags: ['Mongo', 'Express', 'React', 'Node'],
+		tags: ['3rd Party API', 'React', 'Node'],
 		source: 'https://heuristic-newton-ad6a42.netlify.app/',
 		visit: 'https://github.com/DaveDevPerry/guitARCHIVE',
 		id: 1,
@@ -27,9 +27,9 @@ export const projects = [
 		title: 'TERROR-Fi',
 		subtitle: 'Streaming un-released demo tracks by Terrorvision',
 		description:
-			'An app built solely for fans to collaborate missing lyrics to songs.  Based on a voting system to produce the lyrics that are most likely to be correct.',
+			'A single page app built for Terrorvision fans to easily stream rare demo songs from the bands early days.  Containing custom animations and an audio visualizer to provide a great user experience',
 		image: '/images/tf.png',
-		tags: ['Express', 'MongoDB'],
+		tags: ['Vanilla JS', 'ES6 Syntax', 'Animations'],
 		source: 'https://terror-fi.netlify.app/',
 		visit: 'https://github.com/DaveDevPerry/Terror-Fi_v1',
 		id: 2,
@@ -56,6 +56,18 @@ export const projects = [
 		source: 'https://goofy-swartz-1ec98c.netlify.app/',
 		visit: 'https://github.com/DaveDevPerry/tic-tac-toe',
 		id: 4,
+	},
+	,
+	{
+		title: 'TV Times',
+		subtitle: 'Terrorvision tour and gig listings site',
+		description:
+			'A CRUD based, fully responsive band gig history site enabling the users to add dates and set lists for missing gigs.',
+		image: '/images/tvtimes.png',
+		tags: ['GraphCMS', 'Next.js', 'Firebase'],
+		source: 'https://goofy-swartz-1ec98c.netlify.app/',
+		visit: 'https://github.com/DaveDevPerry/tic-tac-toe',
+		id: 5,
 	},
 ];
 
