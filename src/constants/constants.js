@@ -1,6 +1,7 @@
 export const projects = [
 	{
 		title: 'Loopy Lotto',
+		subtitle: 'A lottery game with a twist!',
 		description:
 			'My first app, designed and developed using vanilla Javascript. The App is called Memories and it is a simple social media app that allows users to post interesting events that happened in their lives.',
 		image: '/images/ll.png',
@@ -13,6 +14,7 @@ export const projects = [
 	},
 	{
 		title: 'guitARCHIVE',
+		subtitle: 'An easy to access storage solution for my sheet music',
 		description:
 			"Using React, Node.js, Express & MongoDB you'll learn how to build a Full Stack MERN Application - from start to finish. The App is called Memories and it is a simple social media app that allows users to post interesting events that happened in their lives.",
 		image: '/images/ga.png',
@@ -23,6 +25,7 @@ export const projects = [
 	},
 	{
 		title: 'TERROR-Fi',
+		subtitle: 'Streaming un-released demo tracks by Terrorvision',
 		description:
 			'An app built solely for fans to collaborate missing lyrics to songs.  Based on a voting system to produce the lyrics that are most likely to be correct.',
 		image: '/images/tf.png',
@@ -33,6 +36,7 @@ export const projects = [
 	},
 	{
 		title: 'Some People Say',
+		subtitle: 'Fan based lyric collaboration',
 		description:
 			'An app built solely for fans to collaborate missing lyrics to songs.  Based on a voting system to produce the lyrics that are most likely to be correct.',
 		image: '/images/sps.png',
@@ -44,6 +48,7 @@ export const projects = [
 
 	{
 		title: "Pinks N' Purples",
+		subtitle: 'a custom two-player game of naughts & crosses',
 		description:
 			'A game specifically built for my nieces which is a re-imagining of Tic-Tac-Toe',
 		image: '/images/pp.png',

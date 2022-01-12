@@ -17,7 +17,7 @@ export const GridContainer = styled.section`
 	@media ${(props) => props.theme.breakpoints.sm} {
 		display: flex;
 		flex-direction: column;
-		padding: 2rem;
+		padding: 1rem;
 		padding-bottom: 0;
 	}
 `;
@@ -26,7 +26,8 @@ export const BlogCard = styled.div`
 	padding: 10px;
 	box-shadow: 3px 3px 20px rgba(80, 78, 78, 0.5);
 	text-align: center;
-	width: 400px;
+	/* width: 400px; */
+	width: 450px;
 	@media ${(props) => props.theme.breakpoints.sm} {
 		width: 100%;
 	}
@@ -45,6 +46,17 @@ export const HeaderThree = styled.h3`
 	/* color: #c40303; */
 	padding: 0.5rem 0;
 	font-size: ${(props) => (props.title ? '3rem' : '2rem')};
+`;
+
+export const SubtitleContent = styled.div`
+	text-align: center;
+	z-index: 20;
+	width: 100%;
+	padding-bottom: 10px;
+	font-style: italic;
+	/* border: 1px solid white; */
+	color: rgba(255, 255, 255, 0.5);
+	margin-bottom: 1rem;
 `;
 
 export const Hr = styled.hr`

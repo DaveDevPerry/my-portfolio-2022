@@ -12,6 +12,7 @@ import {
 	Tag,
 	TagList,
 	TitleContent,
+	SubtitleContent,
 	UtilityList,
 	Img,
 	LinkWrapper,
@@ -40,13 +41,14 @@ const Projects = () => (
 				</BlogCard>
 			))} */}
 			{projects.map(
-				({ id, image, title, description, tags, source, visit }) => (
+				({ id, image, title, subtitle, description, tags, source, visit }) => (
 					<BlogCard key={id}>
 						{/* <Img src={image} /> */}
 						<TitleContent>
 							<HeaderThree title>{title}</HeaderThree>
 							{/* <Hr /> */}
 						</TitleContent>
+						<SubtitleContent>{subtitle}</SubtitleContent>
 						<Img src={image} />
 						<UtilityList>
 							<LinkWrapper>

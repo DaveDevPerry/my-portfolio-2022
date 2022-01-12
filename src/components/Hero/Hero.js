@@ -1,9 +1,11 @@
 import React from 'react';
+import Link from 'next/link';
 
 import {
 	Section,
 	SectionText,
 	SectionTitle,
+	BtnWrapper,
 } from '../../styles/GlobalComponents';
 import Button from '../../styles/GlobalComponents/Button';
 import { LeftSection } from './HeroStyles';
@@ -22,9 +24,18 @@ const Hero = (props) => (
 				I help companies design and develop digital products to turn ideas into
 				fully functional, enjoyable experiences.
 			</SectionText>
-			<Button onClick={() => (window.location = 'https://google.com')}>
+			<BtnWrapper>
+				<Link href='#contact'>
+					<Button>Contact Me</Button>
+				</Link>
+				<Link href='#projects'>
+					<Button>My Projects</Button>
+				</Link>
+			</BtnWrapper>
+
+			{/* <Button onClick={() => (window.location = 'https://google.com')}>
 				Learn More
-			</Button>
+			</Button> */}
 		</LeftSection>
 	</Section>
 );

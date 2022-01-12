@@ -17,7 +17,7 @@ export const Section = styled.section`
 	}
 
 	@media ${(props) => props.theme.breakpoints.sm} {
-		padding: ${(props) => (props.nopadding ? '0' : '16px 16px 0')};
+		padding: ${(props) => (props.nopadding ? '150px 0 0 0' : '16px 16px 0')};
 
 		width: calc(100vw - 32px);
 		flex-direction: column;
@@ -211,7 +211,8 @@ export const ButtonBack = styled.div`
 export const ButtonFront = styled.button`
 	border: none;
 	border-radius: 10px;
-	color: #fff;
+	/* color: #fff; */
+	color: transparent;
 	display: flex;
 	position: absolute;
 	top: 0;
@@ -237,7 +238,8 @@ export const ButtonFront = styled.button`
 			: 'none'};
 
 	&:hover {
-		opacity: 0;
+		/* opacity: 0; */
+		color: transparent;
 	}
 	&:focus {
 		outline: none;
@@ -296,4 +298,12 @@ export const LinkIconImg = styled.div`
 	@media ${(props) => props.theme.breakpoints.sm} {
 		height: ${({ large }) => (large ? '32px' : '16px')};
 	}
+`;
+
+export const BtnWrapper = styled.div`
+	/* border: 1px solid white; */
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	column-gap: 2rem;
 `;

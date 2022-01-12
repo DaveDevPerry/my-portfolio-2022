@@ -2,13 +2,20 @@ import { IoIosArrowDropdown } from 'react-icons/io';
 import styled from 'styled-components';
 
 export const Container = styled.div`
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	background: #242121;
+	z-index: 2;
 	display: grid;
 	grid-template-columns: repeat(5, 1fr);
-	grid-template-rows: 1fr;
+	/* grid-template-rows: 1fr; */
+	grid-template-rows: 50px;
 	grid-column-gap: 2rem;
 	padding: 1rem;
 	/* padding-top: 2rem; */
-	border-bottom: 1px solid red;
+	/* border-bottom: 1px solid red; */
 
 	@media ${(props) => props.theme.breakpoints.sm} {
 		display: grid;
@@ -38,6 +45,7 @@ export const Span = styled.span`
 `;
 
 export const Div1 = styled.div`
+	position: relative;
 	grid-area: 1 / 1 / 2 / 2;
 	display: flex;
 	flex-direction: row;
@@ -46,7 +54,32 @@ export const Div1 = styled.div`
 		grid-area: 1 / 1 / 2 / 3;
 	}
 `;
+
+export const BGBrand = styled.div`
+	position: absolute;
+	font-size: 80px;
+	top: 50%;
+	left: -1rem;
+	transform: translateY(-50%);
+	font-family: 'Gemunu Libre', sans-serif;
+	color: rgba(255, 255, 255, 0.013);
+	-webkit-text-stroke: 1px rgba(229, 229, 229, 0.08);
+	-webkit-text-fill-color: rgba(255, 255, 255, 0.013);
+	color: white;
+	pointer-events: none;
+`;
+// export const Div1 = styled.div`
+// 	grid-area: 1 / 1 / 2 / 2;
+// 	display: flex;
+// 	flex-direction: row;
+// 	align-content: center;
+// 	@media ${(props) => props.theme.breakpoints.sm} {
+// 		grid-area: 1 / 1 / 2 / 3;
+// 	}
+// `;
+
 export const Div2 = styled.div`
+	position: relative;
 	grid-area: 1 / 3/ 2 / 6;
 	display: flex;
 	justify-content: flex-end;
@@ -60,6 +93,26 @@ export const Div2 = styled.div`
 		grid-area: 2 / 1 / 3 / 6;
 	}
 `;
+
+export const BGNav = styled.div`
+	position: absolute;
+	font-size: 80px;
+	top: 50%;
+	right: -1rem;
+	transform: translateY(-50%);
+	font-family: 'Gemunu Libre', sans-serif;
+	color: rgba(255, 255, 255, 0.013);
+	-webkit-text-stroke: 1px rgba(229, 229, 229, 0.08);
+	-webkit-text-fill-color: rgba(255, 255, 255, 0.013);
+	color: white;
+	pointer-events: none;
+	@media ${(props) => props.theme.breakpoints.sm} {
+		right: 50%;
+		/* top: 50%; */
+		transform: translate(50%, -50%);
+	}
+`;
+
 // export const Div2 = styled.div`
 // 	grid-area: 1 / 2 / 2 / 4;
 // 	display: flex;
@@ -88,6 +141,7 @@ export const NavLink = styled.a`
 	line-height: 32px;
 	color: rgba(255, 255, 255, 0.75);
 	transition: 0.4s ease;
+	z-index: 5;
 	&:hover {
 		color: #c40303;
 		opacity: 1;

@@ -12,11 +12,14 @@ import {
 	SocialIcons,
 	Span,
 	Brand,
+	BGBrand,
+	BGNav,
 } from './HeaderStyles';
 
 const Header = () => (
 	<Container>
 		<Div1>
+			<BGBrand>BRAND</BGBrand>
 			<Link href='/'>
 				<a
 					style={{
@@ -35,6 +38,7 @@ const Header = () => (
 			</Link>
 		</Div1>
 		<Div2>
+			<BGNav>NAVIGATION</BGNav>
 			<li>
 				<Link href='#about'>
 					<NavLink>About</NavLink>
