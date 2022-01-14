@@ -16,7 +16,7 @@ import {
 
 const Technologies = () => (
 	<Section id='tech'>
-		<SectionDivider />
+		{/* <SectionDivider /> */}
 		{/* <br /> */}
 		<SectionTitle>Technologies</SectionTitle>
 		<SectionText>
@@ -61,6 +61,7 @@ const Technologies = () => (
 				</ListContainer>
 			</ListItem>
 		</List>
+		<SectionDivider />
 	</Section>
 );
 

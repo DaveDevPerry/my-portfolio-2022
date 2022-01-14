@@ -1,4 +1,5 @@
 import React from 'react';
+import { GrDocumentPdf } from 'react-icons/gr';
 import Link from 'next/link';
 
 import {
@@ -29,10 +30,13 @@ const Hero = (props) => (
 					<Button>Contact Me</Button>
 				</Link> */}
 				<Link href='#'>
-					<Button>Resume</Button>
+					<Button>
+						{/* <GrDocumentPdf size='3rem' /> */}
+						View C.V.
+					</Button>
 				</Link>
 				<Link href='#projects'>
-					<Button>Projects</Button>
+					<Button>My Projects</Button>
 				</Link>
 			</BtnWrapper>
 
