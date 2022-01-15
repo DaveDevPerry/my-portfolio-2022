@@ -29,6 +29,7 @@ export const ContactContainer = styled.div`
 	column-gap: 2rem;
 	box-shadow: 3px 3px 20px rgba(80, 78, 78, 0.5);
 	border-radius: 10px;
+	margin-bottom: 2rem;
 	.contact-content-container {
 		grid-area: content;
 		display: grid;
@@ -117,7 +118,7 @@ export const ContactContainer = styled.div`
 		justify-content: center;
 		align-items: center;
 		padding: 2rem 0 0 2rem;
-		&::before {
+		/* &::before {
 			position: absolute;
 			content: '';
 			top: 0;
@@ -134,7 +135,7 @@ export const ContactContainer = styled.div`
 			height: 50px;
 			width: 3px;
 			background-color: white;
-		}
+		} */
 
 		.form-wrapper {
 			// background-color: blue;
