@@ -51,6 +51,29 @@ const GlobalStyles = createGlobalStyle`
     list-style: none;
   }
 
+  #dp-logo-svg {
+	/* position: absolute; */
+	/* top: 50%; */
+	/* left: 50%; */
+	/* transform: translate(-50%, -50%); */
+	animation: fill 0.5s ease forwards 4s;
+  
+}
+#dp-logo-svg path:nth-child(1) {
+	/* stroke-dasharray: 280px; */
+	stroke-dasharray: 1569;
+	stroke-dashoffset: 1569;
+	/* stroke-dashoffset: ; */
+	animation: line-anim 2s ease-in-out forwards;
+  animation-delay: 2s;
+}
+
+@keyframes line-anim {
+	to {
+		stroke-dashoffset: 0;
+	}
+}
+
 `;
 
 export default GlobalStyles;

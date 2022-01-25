@@ -5,7 +5,7 @@ import {
 	SectionDivider,
 	SectionTitle,
 } from '../../styles/GlobalComponents';
-import { Box, Boxes, BoxNum, BoxText } from './AcomplishmentsStyles';
+import { Box, Boxes, BoxNum, BoxText } from './AccomplishmentsStyles';
 
 const data = [
 	{ number: 20, text: 'Open Source Projects' },
@@ -14,7 +14,7 @@ const data = [
 	{ number: 5000, text: 'Github Stars' },
 ];
 
-const Acomplishments = () => (
+const Accomplishments = () => (
 	<Section>
 		<SectionTitle>Personal Accomplishments</SectionTitle>
 		<Boxes>
@@ -29,4 +29,4 @@ const Acomplishments = () => (
 	</Section>
 );
 
-export default Acomplishments;
+export default Accomplishments;
