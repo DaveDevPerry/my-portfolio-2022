@@ -103,24 +103,28 @@ const Contact = () => (
 					>
 						<div className='form-input'>
 							<input type='text' name='name' id='name' required />
-							<label for='name' className='label-name'>
+							<label htmlFor='name' className='label-name'>
 								<span className='content-name'>Name</span>
 							</label>
 						</div>
 						<div className='form-input'>
 							<input type='email' name='email' id='email' required />
-							<label for='email' className='label-name'>
+							<label htmlFor='email' className='label-name'>
 								<span className='content-name'>Email</span>
 							</label>
 						</div>
 						<div className='form-input'>
 							<input type='text' name='subject' id='subject' required />
-							<label for='subject' className='label-name'>
+							<label htmlFor='subject' className='label-name'>
 								<span className='content-name'>Subject</span>
 							</label>
 						</div>
 						<div className='form-input1'>
-							<label for='message' className='label-name' id='message-label'>
+							<label
+								htmlFor='message'
+								className='label-name'
+								id='message-label'
+							>
 								<span id='contact-message'>message</span>
 							</label>
 							<textarea name='message' id='message' required></textarea>

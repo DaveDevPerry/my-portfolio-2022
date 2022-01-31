@@ -7,6 +7,7 @@ import {
 	SectionTitle,
 } from '../../styles/GlobalComponents';
 import {
+	Img,
 	List,
 	ListContainer,
 	ListItem,
@@ -14,7 +15,9 @@ import {
 	ListTitle,
 } from './LoadersStyles';
 
-const Loaders = () => (
+import { loaders } from '../../constants/constants';
+
+const PageLoaders = () => (
 	<Section id='loaders'>
 		{/* <SectionDivider /> */}
 		{/* <br /> */}
@@ -23,46 +26,13 @@ const Loaders = () => (
 			Some custom loaders I have built for various projects.
 		</SectionText>
 		<List>
-			<ListItem>
-				{/* <DiReact size='3rem' /> */}
-				<ListContainer>
-					<ListTitle>Keyframes</ListTitle>
-
-					<ListParagraph>
-						Experience with <br />
-						HTML5 / CSS <br />
-						SASS <br />
-						Javascript <br />
-						React.js
-					</ListParagraph>
-				</ListContainer>
-			</ListItem>
-			<ListItem>
-				{/* <DiFirebase size='3rem' /> */}
-				<ListContainer>
-					<ListTitle>GSAP</ListTitle>
-					<ListParagraph>
-						Experience with <br />
-						Node.js <br />
-						Express <br />
-						MongoDB
-					</ListParagraph>
-				</ListContainer>
-			</ListItem>
-			<ListItem>
-				{/* <DiZend size='3rem' /> */}
-				<ListContainer>
-					<ListTitle>UI / UX</ListTitle>
-					<ListParagraph>
-						Experience with <br />
-						Figma <br />
-						Photoshop
-					</ListParagraph>
-				</ListContainer>
-			</ListItem>
+			{loaders.map(({ id, title, image }) => (
+				<Img src={image} key={id} />
+				// <ListTitle>{title}</ListTitle>
+			))}
 		</List>
 		<SectionDivider />
 	</Section>
 );
 
-export default Loaders;
+export default PageLoaders;

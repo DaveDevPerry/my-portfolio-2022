@@ -68,6 +68,10 @@ const GlobalStyles = createGlobalStyle`
   animation-delay: 2s;
 }
 
+#about-anim{
+  height: 500px;
+}
+
 
 
 @keyframes line-anim {

@@ -10,7 +10,8 @@ import Contact from '../components/Contact/Contact';
 import { Layout } from '../layout/Layout';
 import { Section } from '../styles/GlobalComponents';
 import ProfilePicAnimation from '../components/BackgroundAnimation/ProfilePicAnimation';
-import Loaders from '../components/Loaders/Loaders';
+// import Loaders from '../components/Loaders/Loaders';
+import PageLoaders from '../components/Loaders/Loaders';
 
 const Home = () => {
 	return (
@@ -20,12 +21,13 @@ const Home = () => {
 				{/* <BgAnimation /> */}
 				<LogoAnimation />
 			</Section>
-			<Loaders />
-			<Section>
+			{/* <PageLoaders /> */}
+			<Section grid>
 				<About />
 				<ProfilePicAnimation />
+				{/* <BgAnimation /> */}
 			</Section>
-			<About />
+			{/* <About /> */}
 			<Projects />
 			<Technologies />
 			<Timeline />

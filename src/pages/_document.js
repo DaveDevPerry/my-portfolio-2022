@@ -62,17 +62,17 @@ export default class MyDocument extends Document {
 					<script
 						src='https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js'
 						integrity='sha512-dLxUelApnYxpLt6K2iomGngnHO83iUvZytA3YjDUCjT0HDOHKXnVYdf3hU4JjM8uEhxf9nD1/ey98U3t2vZ0qQ=='
-						crossorigin='anonymous'
+						crossOrigin='anonymous'
 						referrerpolicy='no-referrer'
 					></script>
 					<script
 						src='https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js'
 						integrity='sha512-eP6ippJojIKXKO8EPLtsUMS+/sAGHGo1UN/38swqZa1ypfcD4I0V/ac5G3VzaHfDaklFmQLEs51lhkkVaqg60Q=='
-						crossorigin='anonymous'
+						crossOrigin='anonymous'
 						referrerpolicy='no-referrer'
 					></script>
-					<script src='./hover-effect.js'></script>
-					<script src='../../../pages/app.js'></script>
+					{/* <script src='./hover-effect.js'></script> */}
+					{/* <script src='../../../pages/app.js'></script> */}
 				</Head>
 				<body>
 					<Main />

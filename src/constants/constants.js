@@ -71,6 +71,24 @@ export const projects = [
 	},
 ];
 
+export const loaders = [
+	{
+		title: 'Keyframes',
+		image: '/images/loader_tf.png',
+		id: 0,
+	},
+	{
+		title: 'GSAP',
+		image: '/images/loader_ga.png',
+		id: 1,
+	},
+	{
+		title: 'Javascript',
+		image: '/images/loader_lp.png',
+		id: 2,
+	},
+];
+
 export const TimeLineData = [
 	{ year: 2017, text: 'Started my journey' },
 	{ year: 2018, text: 'Worked as a freelance developer' },
