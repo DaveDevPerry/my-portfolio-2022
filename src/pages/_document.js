@@ -44,7 +44,7 @@ export default class MyDocument extends Document {
 						href='https://fonts.googleapis.com/css2?family=Gemunu+Libre:wght@800&display=swap'
 						rel='stylesheet'
 					/>
-					<script
+					{/* <script
 						src='https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js'
 						integrity='sha512-dLxUelApnYxpLt6K2iomGngnHO83iUvZytA3YjDUCjT0HDOHKXnVYdf3hU4JjM8uEhxf9nD1/ey98U3t2vZ0qQ=='
 						crossOrigin='anonymous'
@@ -56,9 +56,7 @@ export default class MyDocument extends Document {
 						crossOrigin='anonymous'
 						referrerpolicy='no-referrer'
 					></script>
-					{/* <script defer src='./hover-effect.js'></script> */}
-					{/* <script defer src='./app.js' /> */}
-					{/* <script src='../app.js'></script> */}
+				
 					<script
 						src='https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js'
 						integrity='sha512-dLxUelApnYxpLt6K2iomGngnHO83iUvZytA3YjDUCjT0HDOHKXnVYdf3hU4JjM8uEhxf9nD1/ey98U3t2vZ0qQ=='
@@ -70,9 +68,7 @@ export default class MyDocument extends Document {
 						integrity='sha512-eP6ippJojIKXKO8EPLtsUMS+/sAGHGo1UN/38swqZa1ypfcD4I0V/ac5G3VzaHfDaklFmQLEs51lhkkVaqg60Q=='
 						crossOrigin='anonymous'
 						referrerpolicy='no-referrer'
-					></script>
-					{/* <script src='./hover-effect.js'></script> */}
-					{/* <script src='../../../pages/app.js'></script> */}
+					></script> */}
 				</Head>
 				<body>
 					<Main />
