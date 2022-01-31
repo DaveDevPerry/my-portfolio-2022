@@ -1,3 +1,4 @@
+import About from '../components/About/About';
 import Accomplishments from '../components/Accomplishments/Accomplishments';
 import BgAnimation from '../components/BackgroundAnimation/BackgroundAnimation';
 import LogoAnimation from '../components/BackgroundAnimation/LogoAnimation';
@@ -8,6 +9,8 @@ import Timeline from '../components/TimeLine/TimeLine';
 import Contact from '../components/Contact/Contact';
 import { Layout } from '../layout/Layout';
 import { Section } from '../styles/GlobalComponents';
+import ProfilePicAnimation from '../components/BackgroundAnimation/ProfilePicAnimation';
+import Loaders from '../components/Loaders/Loaders';
 
 const Home = () => {
 	return (
@@ -17,6 +20,12 @@ const Home = () => {
 				{/* <BgAnimation /> */}
 				<LogoAnimation />
 			</Section>
+			<Loaders />
+			<Section>
+				<About />
+				<ProfilePicAnimation />
+			</Section>
+			<About />
 			<Projects />
 			<Technologies />
 			<Timeline />

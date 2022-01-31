@@ -68,6 +68,8 @@ const GlobalStyles = createGlobalStyle`
   animation-delay: 2s;
 }
 
+
+
 @keyframes line-anim {
 	to {
 		stroke-dashoffset: 0;

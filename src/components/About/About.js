@@ -1,0 +1,46 @@
+import React from 'react';
+// import { GrDocumentPdf } from 'react-icons/gr';
+import Link from 'next/link';
+
+import {
+	Section,
+	SectionText,
+	SectionTitle,
+	BtnWrapper,
+} from '../../styles/GlobalComponents';
+import Button from '../../styles/GlobalComponents/Button';
+import { LeftSection } from './AboutStyles';
+
+const About = (props) => (
+	<Section row nopadding>
+		<LeftSection>
+			<SectionTitle main center>
+				About Me
+			</SectionTitle>
+			<SectionText>
+				I help companies design and develop digital products to turn ideas into
+				fully functional, enjoyable experiences.
+			</SectionText>
+			<BtnWrapper>
+				{/* <Link href='#contact'>
+					<Button>Contact Me</Button>
+				</Link> */}
+				<Link href='#'>
+					<Button>
+						{/* <GrDocumentPdf size='3rem' /> */}
+						View C.V.
+					</Button>
+				</Link>
+				<Link href='#projects'>
+					<Button>My Projects</Button>
+				</Link>
+			</BtnWrapper>
+
+			{/* <Button onClick={() => (window.location = 'https://google.com')}>
+				Learn More
+			</Button> */}
+		</LeftSection>
+	</Section>
+);
+
+export default About;
