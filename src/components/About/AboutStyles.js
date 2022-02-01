@@ -22,6 +22,7 @@ export const LeftSection = styled.div`
 
 export const InfoText = styled.p`
 	width: 100%;
+	max-width: 800px;
 	padding: 0;
 	/* color: #e4e6e7; */
 	color: rgba(255, 255, 255, 0.5);

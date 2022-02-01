@@ -73,6 +73,17 @@ const GlobalStyles = createGlobalStyle`
 }
 
 
+.left #card-temp,
+.right #card-temp{
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  height: 50%;
+  transform: translate(-50%,0);
+  z-index: -5;
+}
+
+
 
 @keyframes line-anim {
 	to {

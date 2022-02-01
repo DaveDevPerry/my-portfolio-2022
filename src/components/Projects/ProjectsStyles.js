@@ -29,6 +29,8 @@ export const BlogCard = styled.div`
 	/* width: 400px; */
 	width: 450px;
 	transition: 0.5s;
+
+	position: relative;
 	&:hover {
 		box-shadow: 3px 3px 20px rgba(219, 8, 8, 0.5);
 	}

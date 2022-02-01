@@ -41,9 +41,21 @@ const Projects = () => (
 				</BlogCard>
 			))} */}
 			{projects.map(
-				({ id, image, title, subtitle, description, tags, source, visit }) => (
-					<BlogCard key={id}>
-						{/* <Img src={image} /> */}
+				({
+					id,
+					image,
+					bgimage,
+					bgid,
+					cardclass,
+					title,
+					subtitle,
+					description,
+					tags,
+					source,
+					visit,
+				}) => (
+					<BlogCard key={id} className={cardclass}>
+						<Img src={bgimage} id={bgid} />
 						<TitleContent>
 							<HeaderThree title>{title}</HeaderThree>
 							{/* <Hr /> */}
