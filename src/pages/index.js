@@ -22,15 +22,15 @@ const Home = () => {
 				<LogoAnimation />
 			</Section>
 			{/* <PageLoaders /> */}
-			<Section grid>
+			{/* <Section grid>
 				<About />
 				<ProfilePicAnimation />
-				{/* <BgAnimation /> */}
-			</Section>
-			{/* <About /> */}
+				<BgAnimation />
+			</Section> */}
+			<About />
 			<Projects />
 			<Technologies />
-			<Timeline />
+			{/* <Timeline /> */}
 			<Accomplishments />
 			<Contact />
 		</Layout>
