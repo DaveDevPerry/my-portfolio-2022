@@ -31,7 +31,7 @@ const Home = () => {
 			<Projects />
 			<Technologies />
 			{/* <Timeline /> */}
-			<Accomplishments />
+			{/* <Accomplishments /> */}
 			<Contact />
 		</Layout>
 	);
