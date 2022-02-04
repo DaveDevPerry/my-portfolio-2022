@@ -1,0 +1,40 @@
+@font-face {
+	font-family: 'Cherl';
+	src: url('/fonts/CheriLiney.woff2') format('woff2'),
+		url('/fonts/CheriLiney.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'New Tegomin';
+	src: url('/fonts/NewTegomin-Regular.woff2') format('woff2'),
+		url('/fonts/NewTegomin-Regular.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'BadSignal';
+	src: url('/fonts/Bad Signal.otf');
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'James Stroker';
+	src: url('/fonts/JamesStroker.woff2') format('woff2'),
+		url('/fonts/JamesStroker.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+}
+@font-face {
+	font-family: 'Terrorvision';
+	src: url('/fonts/Terrorvision.woff') format('woff2'),
+		url('/fonts/Terrorvision.woff') format('woff');
+	font-weight: 100;
+	font-style: normal;
+	font-display: swap;
+}

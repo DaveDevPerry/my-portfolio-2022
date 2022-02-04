@@ -241,10 +241,10 @@ flex-direction: column;
 			}
 			.about-me {
 				// border: 4px solid green;
-				margin: 1rem 0;
-				padding-left: 3rem;
-				position: relative;
-				&::before {
+				margin: 2rem 0 1rem 0;
+				/* padding-left: 3rem; */
+				/* position: relative; */
+				/* &::before {
 					position: absolute;
 					content: '';
 					background-color: #780202;
@@ -261,8 +261,9 @@ flex-direction: column;
 					width: 10rem;
 					bottom: -3px;
 					left: 0;
-				}
+				} */
 				P {
+					/* margin-top: 2rem; */
 					margin-bottom: 1rem;
 				}
 			}

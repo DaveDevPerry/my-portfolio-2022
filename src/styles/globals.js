@@ -1,6 +1,15 @@
 import { createGlobalStyle } from 'styled-components';
 import { normalize } from 'styled-normalize';
 
+// @font-face {
+// 	font-family: 'Cheri Liney';
+// 	src: url('./CheriLiney.woff2') format('woff2'),
+// 		url('./CheriLiney.woff') format('woff');
+// 	font-weight: normal;
+// 	font-style: normal;
+// 	font-display: swap;
+// }
+
 const GlobalStyles = createGlobalStyle`
   ${normalize};
 
@@ -81,6 +90,40 @@ const GlobalStyles = createGlobalStyle`
   height: 50%;
   transform: translate(-50%,0);
   z-index: -5;
+}
+#card-filter{
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  height: 100%;
+  transform: translate(-50%,0);
+  z-index: -4;
+}
+
+.font-loopy-lotto{
+  font-family: 'Cherl';
+  color: #af0303;
+}
+.font-guitar-archive{
+  font-family: 'New Tegomin';
+  color: #c7581d;
+}
+.font-terror-fi{
+  font-family: 'BadSignal';
+  color: #ffffff;
+}
+.font-pinks-n-purples{
+  font-family: 'James Stroker';
+  color: #c92fa2;
+}
+.font-some-people-say{
+  font-family: 'Terrorvision';
+  color: #ffffff;
+  text-transform: uppercase;
+}
+.font-tv-times{
+  font-family: 'Montserrat', sans-serif;
+  color: red;
 }
 
 

@@ -1,0 +1,32 @@
+/* @font-face {
+	font-family: 'New Tegomin';
+	src: url('/public/fonts//NewTegomin-Regular.woff2') format('woff2'),
+		url('/public/fonts/NewTegomin-Regular.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'BadSignal';
+	src: url('./Bad Signal.otf');
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'James Stroker';
+	src: url('./JamesStroker.woff2') format('woff2'),
+		url('./JamesStroker.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Cheri Liney';
+	src: url('/public/fonts/CheriLiney.woff2') format('woff2'),
+		url('/public/fonts/CheriLiney.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+} */

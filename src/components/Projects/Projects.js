@@ -15,6 +15,7 @@ import {
 	SubtitleContent,
 	UtilityList,
 	Img,
+	ImgFilter,
 	LinkWrapper,
 } from './ProjectsStyles';
 import {
@@ -23,6 +24,8 @@ import {
 	SectionTitle,
 } from '../../styles/GlobalComponents';
 import { projects } from '../../constants/constants';
+
+// import '../../../globals.css';
 
 const Projects = () => (
 	<Section id='projects'>
@@ -53,11 +56,15 @@ const Projects = () => (
 					tags,
 					source,
 					visit,
+					font,
 				}) => (
 					<BlogCard key={id} className={cardclass}>
+						<ImgFilter id='card-filter' />
 						<Img src={bgimage} id={bgid} />
 						<TitleContent>
-							<HeaderThree title>{title}</HeaderThree>
+							<HeaderThree title={title} className={font}>
+								{title}
+							</HeaderThree>
 							{/* <Hr /> */}
 						</TitleContent>
 						<SubtitleContent>{subtitle}</SubtitleContent>

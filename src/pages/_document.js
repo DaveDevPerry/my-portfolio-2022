@@ -44,6 +44,18 @@ export default class MyDocument extends Document {
 						href='https://fonts.googleapis.com/css2?family=Gemunu+Libre:wght@800&display=swap'
 						rel='stylesheet'
 					/>
+					{/* <link href='/fonts/style.css' rel='stylesheet' /> */}
+					<link
+						href='https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap'
+						rel='stylesheet'
+					/>
+					{/* <link
+						rel='preload'
+						href='/fonts/CheriLiney.woff2'
+						as='font'
+						crossOrigin=''
+					/> */}
+					{/* <title>daveperry.tech</title> */}
 					{/* <script
 						src='https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js'
 						integrity='sha512-dLxUelApnYxpLt6K2iomGngnHO83iUvZytA3YjDUCjT0HDOHKXnVYdf3hU4JjM8uEhxf9nD1/ey98U3t2vZ0qQ=='

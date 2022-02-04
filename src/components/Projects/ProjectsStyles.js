@@ -7,6 +7,13 @@ export const Img = styled.img`
 	overflow: hidden;
 `;
 
+export const ImgFilter = styled.div`
+	/* border: 2px solid green; */
+	width: 100%;
+	height: 100%;
+	background-color: rgba(36, 33, 33, 0.9);
+`;
+
 export const GridContainer = styled.section`
 	display: grid;
 	grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
@@ -29,7 +36,7 @@ export const BlogCard = styled.div`
 	/* width: 400px; */
 	width: 450px;
 	transition: 0.5s;
-
+	align-self: start;
 	position: relative;
 	&:hover {
 		box-shadow: 3px 3px 20px rgba(219, 8, 8, 0.5);
@@ -53,6 +60,10 @@ export const HeaderThree = styled.h3`
 	/* color: #c40303; */
 	padding: 0.5rem 0;
 	font-size: ${(props) => (props.title ? '3rem' : '2rem')};
+	/* font-family: 'Cherl'; */
+	/* .font-loopy-lotto {
+		font-family: 'Cherl';
+		/* color: red; */
 `;
 
 export const SubtitleContent = styled.div`

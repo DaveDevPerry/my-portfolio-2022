@@ -35,22 +35,22 @@ const About = (props) => (
 			and design.
 		</SectionText>
 		<AboutPageContainer>
-			<div class='about-container'>
-				<div class='about-header'>
-					<div class='about-image' id='about-image'></div>
-					<div class='about-brief'>
-						<div class='about-top'>
-							<div class='about-box'></div>
-							<div class='about-name'>
+			<div className='about-container'>
+				<div className='about-header'>
+					<div className='about-image' id='about-image'></div>
+					<div className='about-brief'>
+						<div className='about-top'>
+							<div className='about-box'></div>
+							<div className='about-name'>
 								<h2>dave perry</h2>
 							</div>
 						</div>
 
-						<div class='about-middle'></div>
+						<div className='about-middle'></div>
 
-						<div class='about-bottom'>
-							<div class='about-box hide-box'></div>
-							<div class='about-headline'>
+						<div className='about-bottom'>
+							<div className='about-box hide-box'></div>
+							<div className='about-headline'>
 								<p>
 									I am a self-taught developer who
 									<br />
@@ -59,10 +59,10 @@ const About = (props) => (
 									development and design.
 								</p>
 							</div>
-							<div class='about-box'>
+							<div className='about-box'>
 								<a href='https://github.com/DaveDevPerry' target='_blank'>
 									{/* <span
-										class='iconify'
+										className='iconify'
 										id='about-gh'
 										data-inline='false'
 										data-icon='akar-icons:github-fill'
@@ -74,7 +74,7 @@ const About = (props) => (
 					</div>
 				</div>
 
-				<div class='about-intro'>
+				<div className='about-intro'>
 					<p>
 						I’m naturally creative and enjoy problem solving. I have a
 						meticulous attention to detail and enjoy building stylish, engaging,
@@ -82,14 +82,14 @@ const About = (props) => (
 					</p>
 				</div>
 
-				<div class='about-coding'>
-					<div class='about-left'>
+				<div className='about-coding'>
+					<div className='about-left'>
 						<p>
 							I’ve built and designed all my web applications thus far using
 							html, sass and vanilla javascript. You can view all the
 							technologies I have used in each project in my portfolio page.
 						</p>
-						<div class='tech-icons'>
+						<div className='tech-icons'>
 							{/* <img src='./img/vscode.png' alt='vs code' /> */}
 							<SiVisualstudiocode size={40} />
 							<SiHtml5 size={40} />
@@ -110,17 +110,17 @@ const About = (props) => (
 							<img src='./img/photoshop.png' alt='photoshop' /> */}
 						</div>
 					</div>
-					{/* <div class='about-right'>
+					{/* <div className='about-right'>
 						<a href='./pdf/daveperry_cv_2021.pdf' download>
 							<h2>resume</h2>
 						</a>
-						<a class='button' id='go-to-projects' href='#projects-page'>
+						<a className='button' id='go-to-projects' href='#projects-page'>
 							<h2>projects</h2>
 						</a>
 					</div> */}
 				</div>
 
-				<div class='about-me'>
+				<div className='about-me'>
 					<p>
 						Before moving into development, I worked in the Courier and
 						Logistics sector, where I produced and managed a few small projects
@@ -136,7 +136,7 @@ const About = (props) => (
 			</div>
 		</AboutPageContainer>
 
-		<SectionDivider />
+		{/* <SectionDivider /> */}
 	</Section>
 	// <Section row nopadding>
 	// 	<LeftSection>

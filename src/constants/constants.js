@@ -12,7 +12,7 @@ export const projects = [
 
 		source: 'https://relaxed-dijkstra-f29d44.netlify.app/',
 		visit: 'https://github.com/DaveDevPerry/LoopyLottoMVP',
-
+		font: 'font-loopy-lotto',
 		id: 0,
 	},
 	{
@@ -27,6 +27,7 @@ export const projects = [
 		tags: ['3rd Party API', 'React', 'Node'],
 		source: 'https://heuristic-newton-ad6a42.netlify.app/',
 		visit: 'https://github.com/DaveDevPerry/guitARCHIVE',
+		font: 'font-guitar-archive',
 		id: 1,
 	},
 	{
@@ -41,6 +42,7 @@ export const projects = [
 		tags: ['Vanilla JS', 'ES6 Syntax', 'Animations'],
 		source: 'https://terror-fi.netlify.app/',
 		visit: 'https://github.com/DaveDevPerry/Terror-Fi_v1',
+		font: 'font-terror-fi',
 		id: 2,
 	},
 	{
@@ -56,6 +58,7 @@ export const projects = [
 		tags: ['Express', 'MongoDB'],
 		source: 'https://tv-lyrics-test-v2.herokuapp.com/',
 		visit: 'https://github.com/DaveDevPerry/tv-lyric-library-v2',
+		font: 'font-some-people-say',
 		id: 3,
 	},
 
@@ -71,6 +74,7 @@ export const projects = [
 		tags: ['React', 'ChatEngine', 'Firebase'],
 		source: 'https://goofy-swartz-1ec98c.netlify.app/',
 		visit: 'https://github.com/DaveDevPerry/tic-tac-toe',
+		font: 'font-pinks-n-purples',
 		id: 4,
 	},
 	,
@@ -87,6 +91,7 @@ export const projects = [
 		tags: ['GraphCMS', 'Next.js', 'Firebase'],
 		source: 'https://goofy-swartz-1ec98c.netlify.app/',
 		visit: 'https://github.com/DaveDevPerry/tic-tac-toe',
+		font: 'font-tv-times',
 		id: 5,
 	},
 ];

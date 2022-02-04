@@ -3,6 +3,7 @@ export default {
 	fonts: {
 		title: 'Oswald, sans-serif',
 		main: 'Roboto, sans-serif',
+		background: 'Gemunu, sans-serif',
 		// title: 'Space Grotesk, sans-serif',
 		// main: 'Space Grotesk, sans-serif',
 	},
