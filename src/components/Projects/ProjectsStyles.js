@@ -57,7 +57,7 @@ export const HeaderThree = styled.h3`
 	font-weight: 500;
 	letter-spacing: 2px;
 	/* color: #9cc9e3; */
-	/* color: #c40303; */
+	/* color: #780202; */
 	padding: 0.5rem 0;
 	font-size: ${(props) => (props.title ? '3rem' : '2rem')};
 	/* font-family: 'Cherl'; */
@@ -82,7 +82,7 @@ export const Hr = styled.hr`
 	height: 3px;
 	margin: 20px auto;
 	border: 0;
-	background: #c40303;
+	background: #780202;
 `;
 
 export const Intro = styled.div`
@@ -122,13 +122,13 @@ export const ExternalLinks = styled.a`
 	font-size: 1.8rem;
 	padding: 0 0.5rem;
 	/* background: #6b3030; */
-	/* border: 1px solid #c40303; */
+	/* border: 1px solid #780202; */
 	/* border-radius: 15px; */
 	transition: 0.5s;
 	text-transform: uppercase;
 	/* flex: 1; */
 	&:hover {
-		color: #c40303;
+		color: #780202;
 	}
 `;
 // export const ExternalLinks = styled.a`
@@ -136,7 +136,7 @@ export const ExternalLinks = styled.a`
 // 	font-size: 1.6rem;
 // 	padding: 1rem 1.5rem;
 // 	/* background: #6b3030; */
-// 	border: 1px solid #c40303;
+// 	border: 1px solid #780202;
 // 	border-radius: 15px;
 // 	transition: 0.5s;
 // 	/* flex: 1; */
@@ -151,7 +151,7 @@ export const TagList = styled.ul`
 	padding: 2rem;
 `;
 export const Tag = styled.li`
-	/* color: #c40303; */
+	/* color: #780202; */
 	color: white;
 	font-size: 1.5rem;
 	font-weight: bold;

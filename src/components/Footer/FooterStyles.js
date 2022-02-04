@@ -1,15 +1,18 @@
 import styled from 'styled-components';
 
 export const FooterWrapper = styled.section`
-	width: 100%;
+	width: 95%;
 	/* max-width: 1040px; */
 	/* border: 2px solid blue; */
 	padding: 2rem 2rem;
-	z-index: 2;
+	z-index: 20000;
 	margin: 6rem auto 0 auto;
 	box-sizing: border-box;
 	background-color: rgb(27, 27, 27);
 	border-top: 5px solid #780202;
+	border: 5px solid #780202;
+	border-bottom: 0px solid transparent;
+	border-radius: 10px 10px 0 0;
 	position: relative;
 	height: 4rem;
 	#chevron-up {
@@ -23,7 +26,7 @@ export const FooterWrapper = styled.section`
 	.footer-container {
 		border: 5px solid #780202;
 		padding: 0.5rem;
-		background-color: rgb(27, 27, 27);
+		background-color: #1b1b1b;
 		position: absolute;
 		top: 0;
 		border-radius: 10rem;

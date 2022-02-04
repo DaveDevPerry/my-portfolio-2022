@@ -34,7 +34,7 @@ export const Brand = styled.div`
 		font-weight: bolder;
 	}
 	span:last-child {
-		color: #c40303;
+		color: #780202;
 		font-size: 5rem;
 		line-height: 1.15;
 		font-weight: bolder;
@@ -143,7 +143,7 @@ export const NavLink = styled.a`
 	transition: 0.4s ease;
 	z-index: 5;
 	&:hover {
-		color: #c40303;
+		color: #780202;
 		opacity: 1;
 		cursor: pointer;
 	}

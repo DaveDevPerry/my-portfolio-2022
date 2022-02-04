@@ -23,7 +23,7 @@ const GlobalStyles = createGlobalStyle`
     scroll-behavior: smooth;
     scroll-behavior: smooth;
 	scrollbar-width: normal;
-	scrollbar-color: #c40303 rgb(75, 74, 74);
+	scrollbar-color: #780202 rgb(75, 74, 74);
 	::-webkit-scrollbar {
 		height: 12px;
 		width: 12px;
@@ -31,7 +31,7 @@ const GlobalStyles = createGlobalStyle`
 	}
 
 	::-webkit-scrollbar-thumb {
-		background-color: #c40303;
+		background-color: #780202;
 		// -webkit-border-radius: 1ex;
 		-webkit-box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.75);
 		box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.75);
