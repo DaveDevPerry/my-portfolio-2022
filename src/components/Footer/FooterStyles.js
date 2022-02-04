@@ -9,8 +9,8 @@ export const FooterWrapper = styled.section`
 	margin: 6rem auto 0 auto;
 	box-sizing: border-box;
 	background-color: rgb(27, 27, 27);
-	border-top: 5px solid #780202;
-	border: 5px solid #780202;
+	border-top: 3px solid #780202;
+	border: 3px solid #780202;
 	border-bottom: 0px solid transparent;
 	border-radius: 10px 10px 0 0;
 	position: relative;
@@ -24,7 +24,7 @@ export const FooterWrapper = styled.section`
 		font-size: 8rem;
 	}
 	.footer-container {
-		border: 5px solid #780202;
+		border: 3px solid #780202;
 		padding: 0.5rem;
 		background-color: #1b1b1b;
 		position: absolute;
