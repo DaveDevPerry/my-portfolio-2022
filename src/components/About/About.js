@@ -10,7 +10,12 @@ import {
 	BtnWrapper,
 } from '../../styles/GlobalComponents';
 import Button from '../../styles/GlobalComponents/Button';
-import { AboutPageContainer, InfoText, LeftSection } from './AboutStyles';
+import {
+	AboutPageContainer,
+	InfoText,
+	LeftSection,
+	AboutHeader,
+} from './AboutStyles';
 
 import {
 	SiVisualstudiocode,
@@ -36,6 +41,39 @@ const About = (props) => (
 		</SectionText>
 		<AboutPageContainer>
 			<div className='about-container'>
+				{/* <AboutHeader>
+					<div className='about-image' id='about-image'></div>
+					<div className='about-brief'>
+						<div className='about-top'>
+							<div className='about-box'></div>
+							<div className='about-name'>
+								<h2>dave perry</h2>
+							</div>
+						</div>
+
+						<div className='about-middle'></div>
+
+						<div className='about-bottom'>
+							<div className='about-box hide-box'></div>
+							<div className='about-headline'>
+								<p>
+									I am a self-taught developer who
+									<br />
+									enjoys working in front-end
+									<br />
+									development and design.
+								</p>
+							</div>
+							<div className='about-box'>
+								<a href='https://github.com/DaveDevPerry' target='_blank'>
+									
+									<SiGithub color='#ffffff' size={50} />
+								</a>
+							</div>
+						</div>
+					</div>
+				</AboutHeader> */}
+
 				<div className='about-header'>
 					<div className='about-image' id='about-image'></div>
 					<div className='about-brief'>

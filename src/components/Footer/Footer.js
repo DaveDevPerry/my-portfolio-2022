@@ -20,7 +20,7 @@ import {
 const Footer = () => {
 	return (
 		<FooterWrapper>
-			<a href='#home' id='chevron-up'>
+			<a href='/' id='chevron-up'>
 				{/* <span class='iconify' data-icon='bi:chevron-compact-up'></span> */}
 				<FaChevronUp size={50} color='#780202' />
 			</a>

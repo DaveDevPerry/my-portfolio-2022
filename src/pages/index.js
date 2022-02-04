@@ -16,7 +16,7 @@ import PageLoaders from '../components/Loaders/Loaders';
 const Home = () => {
 	return (
 		<Layout>
-			<Contact />
+			{/* <Contact /> */}
 			<Section grid>
 				<Hero />
 				{/* <BgAnimation /> */}
@@ -33,7 +33,7 @@ const Home = () => {
 			<Technologies />
 			{/* <Timeline /> */}
 			{/* <Accomplishments /> */}
-			{/* <Contact /> */}
+			<Contact />
 		</Layout>
 	);
 };

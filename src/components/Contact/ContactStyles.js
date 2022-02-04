@@ -65,7 +65,11 @@ transition: 0.5s;
 &:hover {
 		box-shadow: 3px 3px 20px rgba(219, 8, 8, 0.5);
 	}
-
+	@media ${(props) => props.theme.breakpoints.sm} {
+		width: 328px;
+		padding: 2rem 2rem;
+		margin: 3rem 0;
+	}
  		.form-wrapper {
  			// background-color: blue;
  			width: 100%;
