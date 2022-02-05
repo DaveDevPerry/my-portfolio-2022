@@ -12,11 +12,13 @@ import { Section } from '../styles/GlobalComponents';
 import ProfilePicAnimation from '../components/BackgroundAnimation/ProfilePicAnimation';
 // import Loaders from '../components/Loaders/Loaders';
 import PageLoaders from '../components/Loaders/Loaders';
+import Animations from '../components/Animations/Animations';
 
 const Home = () => {
 	return (
 		<Layout>
 			{/* <Contact /> */}
+
 			<Section grid>
 				<Hero />
 				{/* <BgAnimation /> */}
@@ -30,6 +32,7 @@ const Home = () => {
 			</Section> */}
 			<About />
 			<Projects />
+			<Animations />
 			<Technologies />
 			{/* <Timeline /> */}
 			{/* <Accomplishments /> */}

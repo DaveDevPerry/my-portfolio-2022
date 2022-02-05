@@ -127,6 +127,12 @@ const GlobalStyles = createGlobalStyle`
 }
 
 
+/* #animations{ */
+  /* border: 1px solid green; */
+  /* margin-top: 100px; */
+/* } */
+/*  */
+
 
 @keyframes line-anim {
 	to {

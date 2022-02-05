@@ -174,7 +174,7 @@ const About = (props) => (
 			</div>
 		</AboutPageContainer>
 
-		{/* <SectionDivider /> */}
+		<SectionDivider />
 	</Section>
 	// <Section row nopadding>
 	// 	<LeftSection>
