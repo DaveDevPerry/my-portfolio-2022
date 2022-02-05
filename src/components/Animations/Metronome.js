@@ -3,159 +3,159 @@ import { Container } from './MetronomeStyles';
 const Metronome = () => {
 	return (
 		<Container>
-			<div class='loader-container'>
-				<div class='loader'>
-					<div class='top'>
-						<div class='point'></div>
-						<div class='line'></div>
+			<div className='loader-container'>
+				<div className='loader'>
+					<div className='top'>
+						<div className='point'></div>
+						<div className='line'></div>
 					</div>
 
-					<div class='middle'>
-						<div class='gubbins'>
-							<div class='strip'>
+					<div className='middle'>
+						<div className='gubbins'>
+							<div className='strip'>
 								<ul>
-									<li class='small'>
+									<li className='small'>
 										<u>80</u>
 									</li>
-									<li class='small'>
+									<li className='small'>
 										<u>84</u>
 									</li>
-									<li class='small'>
+									<li className='small'>
 										<u>88</u>
 									</li>
-									<li class='small'>
+									<li className='small'>
 										<u>92</u>
 									</li>
-									<li class='small'>
+									<li className='small'>
 										<u>96</u>
 									</li>
-									<li class='small'>
+									<li className='small'>
 										<u>100</u>
 									</li>
-									<li class='small'>
+									<li className='small'>
 										<u>104</u>
 									</li>
-									<li class='small'>
+									<li className='small'>
 										<u>108</u>
 									</li>
-									<li class='small'>
+									<li className='small'>
 										<u>112</u>
 									</li>
-									<li class='small'>
+									<li className='small'>
 										<u>116</u>
 									</li>
-									<li class='small'>
+									<li className='small'>
 										<u>120</u>
 									</li>
-									<li class='medium'>
+									<li className='medium'>
 										<u>126</u>
 									</li>
-									<li class='medium'>
+									<li className='medium'>
 										<u>132</u>
 									</li>
-									<li class='medium'>
+									<li className='medium'>
 										<u>138</u>
 									</li>
-									<li class='medium'>
+									<li className='medium'>
 										<u>144</u>
 									</li>
-									<li class='medium'>
+									<li className='medium'>
 										<u>152</u>
 									</li>
-									<li class='medium'>
+									<li className='medium'>
 										<u>160</u>
 									</li>
-									<li class='medium'>
+									<li className='medium'>
 										<u>168</u>
 									</li>
-									<li class='large'>
+									<li className='large'>
 										<u>176</u>
 									</li>
-									<li class='large'>
+									<li className='large'>
 										<u>184</u>
 									</li>
-									<li class='large'>
+									<li className='large'>
 										<u>192</u>
 									</li>
-									<li class='large'>
+									<li className='large'>
 										<u>200</u>
 									</li>
-									<li class='large'>
+									<li className='large'>
 										<u>208</u>
 									</li>
 								</ul>
 							</div>
-							<div class='wand-wrapper'>
-								<div class='wand'>
-									<ul class='marks'>
-										<li class='little'>
+							<div className='wand-wrapper'>
+								<div className='wand'>
+									<ul className='marks'>
+										<li className='little'>
 											<u></u>
 										</li>
-										<li class='little'>
+										<li className='little'>
 											<u></u>
 										</li>
-										<li class='little'>
+										<li className='little'>
 											<u></u>
 										</li>
-										<li class='little'>
+										<li className='little'>
 											<u></u>
 										</li>
-										<li class='little'>
+										<li className='little'>
 											<u></u>
 										</li>
-										<li class='little'>
+										<li className='little'>
 											<u></u>
 										</li>
-										<li class='little'>
+										<li className='little'>
 											<u></u>
 										</li>
-										<li class='little'>
+										<li className='little'>
 											<u></u>
 										</li>
-										<li class='medium'>
+										<li className='medium'>
 											<u></u>
 										</li>
-										<li class='medium'>
+										<li className='medium'>
 											<u></u>
 										</li>
-										<li class='medium'>
+										<li className='medium'>
 											<u></u>
 										</li>
-										<li class='medium'>
+										<li className='medium'>
 											<u></u>
 										</li>
-										<li class='medium'>
+										<li className='medium'>
 											<u></u>
 										</li>
-										<li class='medium'>
+										<li className='medium'>
 											<u></u>
 										</li>
-										<li class='medium'>
+										<li className='medium'>
 											<u></u>
 										</li>
-										<li class='medium'>
+										<li className='medium'>
 											<u></u>
 										</li>
-										<li class='medium'>
+										<li className='medium'>
 											<u></u>
 										</li>
-										<li class='medium'>
+										<li className='medium'>
 											<u></u>
 										</li>
 									</ul>
 								</div>
-								<div class='block'></div>
+								<div className='block'></div>
 							</div>
 						</div>
 
-						<div class='base'>
-							<div class='winder'></div>
+						<div className='base'>
+							<div className='winder'></div>
 						</div>
 					</div>
 
-					<div class='bottom'>
-						<div class='foot'></div>
-						<div class='foot'></div>
+					<div className='bottom'>
+						<div className='foot'></div>
+						<div className='foot'></div>
 					</div>
 				</div>
 			</div>

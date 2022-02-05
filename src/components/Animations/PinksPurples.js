@@ -3,35 +3,35 @@ import { Container } from './PinksPurplesStyles';
 const PinksPurples = () => {
 	return (
 		<Container>
-			<div class='content-wrapper'>
-				<div class='container'>
-					<div class='board'>
-						<div class='square'>
-							<div class='circle pink win' id='win'></div>
+			<div className='content-wrapper'>
+				<div className='container'>
+					<div className='board'>
+						<div className='square'>
+							<div className='circle pink win' id='win'></div>
 						</div>
-						<div class='square'>
-							<div class='circle pink win' id='win'></div>
+						<div className='square'>
+							<div className='circle pink win' id='win'></div>
 						</div>
-						<div class='square'>
-							<div class='circle pink win' id='win'></div>
+						<div className='square'>
+							<div className='circle pink win' id='win'></div>
 						</div>
-						<div class='square'>
-							<div class='circle purple'></div>
+						<div className='square'>
+							<div className='circle purple'></div>
 						</div>
-						<div class='square'>
-							<div class='circle purple'></div>
+						<div className='square'>
+							<div className='circle purple'></div>
 						</div>
-						<div class='square'>
-							<div class='circle'></div>
+						<div className='square'>
+							<div className='circle'></div>
 						</div>
-						<div class='square'>
-							<div class='circle pink'></div>
+						<div className='square'>
+							<div className='circle pink'></div>
 						</div>
-						<div class='square'>
-							<div class='circle'></div>
+						<div className='square'>
+							<div className='circle'></div>
 						</div>
-						<div class='square'>
-							<div class='circle purple'></div>
+						<div className='square'>
+							<div className='circle purple'></div>
 						</div>
 					</div>
 				</div>

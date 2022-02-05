@@ -51,6 +51,8 @@ export const TitleContent = styled.div`
 	z-index: 20;
 	width: 100%;
 	padding-bottom: 10px;
+	background-color: rgb(31, 30, 30);
+	border-radius: 10px 10px 0 0;
 `;
 
 export const HeaderThree = styled.h3`
@@ -75,6 +77,8 @@ export const SubtitleContent = styled.div`
 	/* border: 1px solid white; */
 	color: rgba(255, 255, 255, 0.5);
 	margin-bottom: 1rem;
+	background-color: rgb(31, 30, 30);
+	border-radius: 0 0 10px 10px;
 `;
 
 export const Hr = styled.hr`

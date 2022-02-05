@@ -3,9 +3,9 @@ import { Container } from './TellyStyles';
 const TerrorTelly = () => {
 	return (
 		<Container>
-			<div class='loader-container'>
-				<div class='tv-loader'>
-					<div class='tv-wrapper'>
+			<div className='loader-container'>
+				<div className='tv-loader'>
+					<div className='tv-wrapper'>
 						<div id='tv-signal'></div>
 						<img
 							src='./images/tv-telly_screen2.png'
