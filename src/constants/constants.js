@@ -54,7 +54,6 @@ export const projects = [
 		bgimage: '/images/bg_balls.png',
 		bgid: 'card-temp',
 		cardclass: 'right',
-
 		tags: ['Express', 'MongoDB'],
 		source: 'https://tv-lyrics-test-v2.herokuapp.com/',
 		visit: 'https://github.com/DaveDevPerry/tv-lyric-library-v2',
@@ -87,7 +86,6 @@ export const projects = [
 		bgimage: '/images/bg_hearts.png',
 		bgid: 'card-temp',
 		cardclass: 'right',
-
 		tags: ['GraphCMS', 'Next.js', 'Firebase'],
 		source: 'https://goofy-swartz-1ec98c.netlify.app/',
 		visit: 'https://github.com/DaveDevPerry/tic-tac-toe',

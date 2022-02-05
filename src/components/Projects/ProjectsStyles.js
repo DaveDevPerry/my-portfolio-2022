@@ -50,9 +50,10 @@ export const TitleContent = styled.div`
 	text-align: center;
 	z-index: 20;
 	width: 100%;
-	padding-bottom: 10px;
+	padding: 10px;
+	/* padding-bottom: 0px; */
 	background-color: rgb(31, 30, 30);
-	border-radius: 10px 10px 0 0;
+	border-radius: 10px;
 `;
 
 export const HeaderThree = styled.h3`
@@ -72,13 +73,15 @@ export const SubtitleContent = styled.div`
 	text-align: center;
 	z-index: 20;
 	width: 100%;
-	padding-bottom: 10px;
+	padding: 10px;
+	/* padding-top: 0px; */
 	font-style: italic;
+	font-size: 14px;
 	/* border: 1px solid white; */
 	color: rgba(255, 255, 255, 0.5);
-	margin-bottom: 1rem;
-	background-color: rgb(31, 30, 30);
-	border-radius: 0 0 10px 10px;
+	/* margin-bottom: 1rem; */
+	/* background-color: rgb(31, 30, 30); */
+	/* border-radius: 0 0 10px 10px; */
 `;
 
 export const Hr = styled.hr`
