@@ -38,7 +38,7 @@ const About = (props) => (
 		<InfoText>
 			I’ve built and designed all my web applications thus far using html, sass
 			and vanilla javascript. You can view all the technologies I have used in
-			each project in my portfolio page.
+			each project on my portfolio page.
 		</InfoText>
 		<InfoText>
 			Before moving into development, I worked in the Courier and Logistics

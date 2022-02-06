@@ -1,6 +1,6 @@
 import { useForm, ValidationError } from '@formspree/react';
 import { SectionTitle, Section } from '../../styles/GlobalComponents';
-import { FormContainer, ImgFilter, Img } from './ContactFormStyles';
+import { FormContainer, ImgFilter, Img, FormButton } from './ContactFormStyles';
 
 export default function ContactForm() {
 	// const [state, handleSubmit] = useForm(process.env.YOUR_FORM_ID);
@@ -77,13 +77,20 @@ export default function ContactForm() {
 						</div>
 
 						<div className='end-form-wrapper'>
-							<button
+							<FormButton
 								type='submit'
 								id='submit-form'
 								disabled={state.submitting}
 							>
 								Submit
-							</button>
+							</FormButton>
+							{/* <button
+								type='submit'
+								id='submit-form'
+								disabled={state.submitting}
+							>
+								Submit
+							</button> */}
 							<ValidationError errors={state.errors} />
 						</div>
 					</form>
