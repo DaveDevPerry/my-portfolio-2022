@@ -1,6 +1,15 @@
 import React from 'react';
 import { Container } from './PinksPurplesStyles';
 const PinksPurples = () => {
+	// const circles = document.querySelectorAll('.circle');
+	// setInterval(() => {
+
+	// 	circles.forEach(circle => {
+	// 		circle.classList.add('play')
+	// 	})
+
+	// }, 10000)
+
 	return (
 		<Container>
 			<div className='content-wrapper'>

@@ -32,12 +32,14 @@ export const Container = styled.div`
 		height: 100px;
 		display: grid;
 		place-content: center;
+		
 	}
 	.circle {
 		height: 60px;
 		width: 60px;
 		border-radius: 50%;
 		opacity: 0;
+		/* animation-play-state: paused; */
 	}
 	.pink {
 		background-color: #ce1ac8;
@@ -85,7 +87,34 @@ export const Container = styled.div`
 	.square:nth-child(9) {
 		border-bottom: 0;
 	}
-
+/* 
+	.square:nth-child(2) .circle.play {
+		animation: placeCounter 1s ease-in forwards;
+	}
+	.square:nth-child(5) .circle.play {
+		animation: placeCounter 1s ease-in forwards;
+		animation-delay: 1s;
+	}
+	.square:nth-child(7) .circle.play {
+		animation: placeCounter 1s ease-in forwards;
+		animation-delay: 2s;
+	}
+	.square:nth-child(9) .circle.play {
+		animation: placeCounter 1s ease-in forwards;
+		animation-delay: 3s;
+	}
+	.square:nth-child(1) .circle.play {
+		animation: placeCounter 1s ease-in forwards;
+		animation-delay: 4s;
+	}
+	.square:nth-child(4) .circle.play {
+		animation: placeCounter 1s ease-in forwards;
+		animation-delay: 5s;
+	}
+	.square:nth-child(3) .circle.play {
+		animation: placeCounter 1s ease-in forwards;
+		animation-delay: 6s;
+	} */
 	.square:nth-child(2) .circle {
 		animation: placeCounter 1s ease-in forwards;
 	}

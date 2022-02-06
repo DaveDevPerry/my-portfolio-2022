@@ -49,6 +49,10 @@ export default class MyDocument extends Document {
 						href='https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap'
 						rel='stylesheet'
 					/>
+					<link
+						href='https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@1,800&display=swap'
+						rel='stylesheet'
+					/>
 					{/* <link
 						rel='preload'
 						href='/fonts/CheriLiney.woff2'

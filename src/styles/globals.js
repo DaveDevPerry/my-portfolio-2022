@@ -104,17 +104,31 @@ const GlobalStyles = createGlobalStyle`
   font-family: 'Cherl';
   color: #af0303;
 }
+/* #test{
+  h3{
+    font-family: 'New Tegomin';
+  }
+  
+} */
 .font-guitar-archive{
-  font-family: 'New Tegomin';
+  
+    font-family: 'New Tegomin';
   color: #c7581d;
+  span{
+    color: rgb(105, 54, 25);
+    /* font-weight: bolder; */
+  }
+  
+ 
 }
+
 .font-terror-fi{
   font-family: 'BadSignal';
   color: #ffffff;
 }
 .font-pinks-n-purples{
   font-family: 'James Stroker';
-  color: #c92fa2;
+  color: #ce1ac8;
 }
 .font-some-people-say{
   font-family: 'Terrorvision';
@@ -122,7 +136,7 @@ const GlobalStyles = createGlobalStyle`
   text-transform: uppercase;
 }
 .font-tv-times{
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Work Sans', sans-serif;
   color: red;
 }
 

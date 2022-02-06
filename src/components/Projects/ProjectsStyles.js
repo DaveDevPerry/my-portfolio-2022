@@ -63,10 +63,14 @@ export const HeaderThree = styled.h3`
 	/* color: #780202; */
 	padding: 0.5rem 0;
 	font-size: ${(props) => (props.title ? '3rem' : '2rem')};
+
 	/* font-family: 'Cherl'; */
 	/* .font-loopy-lotto {
 		font-family: 'Cherl';
 		/* color: red; */
+	/* span {
+		color: blue;
+	} */
 `;
 
 export const SubtitleContent = styled.div`

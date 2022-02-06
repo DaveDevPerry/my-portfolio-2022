@@ -1,6 +1,7 @@
 export const projects = [
 	{
 		title: 'Loopy Lotto',
+		titleCode: '<p>hel<span>l</span>o</p>',
 		subtitle: 'A lottery game with a twist!',
 		description:
 			'A paid to play app, designed and developed using vanilla Javascript. A site to allow participants to check game progress based on the real life lottery draws. ',
@@ -17,6 +18,7 @@ export const projects = [
 	},
 	{
 		title: 'guitARCHIVE',
+		titleCode: '<h3>guit<span>ARCHIVE</span></h3>',
 		subtitle: 'An easy to access storage solution for my sheet music',
 		description:
 			'An app for me to keep all my sheet music in one place that I can access from any device when needed. It also keeps track of my progress and songs to prioritize practicing to upload to my YouTube channel.  ',
@@ -32,6 +34,7 @@ export const projects = [
 	},
 	{
 		title: 'TERROR-Fi',
+		titleCode: `<p>TEST</p>`,
 		subtitle: 'Streaming un-released demo tracks by Terrorvision',
 		description:
 			'A single page app built for Terrorvision fans to easily stream rare demo songs from the bands early days.  Containing custom animations and an audio visualizer to provide a great user experience',
@@ -47,6 +50,7 @@ export const projects = [
 	},
 	{
 		title: 'Some People Say',
+		titleCode: `<p>TEST</p>`,
 		subtitle: 'Fan based lyric collaboration',
 		description:
 			'An app built solely for fans to collaborate missing lyrics to songs.  Based on a voting system to produce the lyrics that are most likely to be correct.',
@@ -63,6 +67,7 @@ export const projects = [
 
 	{
 		title: "Pinks N' Purples",
+		titleCode: `<p>TEST</p>`,
 		subtitle: 'a custom two-player game of naughts & crosses',
 		description:
 			'A game specifically built for my nieces which is a re-imagining of Tic-Tac-Toe',
@@ -79,6 +84,7 @@ export const projects = [
 	,
 	{
 		title: 'TV Times',
+		titleCode: `<p>TEST</p>`,
 		subtitle: 'Terrorvision tour and gig listings site',
 		description:
 			'A CRUD based, fully responsive band gig history site enabling the users to add dates and set lists for missing gigs.',

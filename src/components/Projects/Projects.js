@@ -51,6 +51,7 @@ const Projects = () => (
 					bgid,
 					cardclass,
 					title,
+					titleCode,
 					subtitle,
 					description,
 					tags,
@@ -65,6 +66,25 @@ const Projects = () => (
 							<HeaderThree title={title} className={font}>
 								{title}
 							</HeaderThree>
+							{/* <p
+								id='test'
+								className={font}
+								dangerouslySetInnerHTML={{
+									__html: titleCode,
+								}}
+							></p>
+							<HeaderThree
+								dangerouslySetInnerHTML={{
+									__html: titleCode,
+								}}
+								className={font}
+							></HeaderThree> */}
+							{/* <HeaderThree
+								dangerouslySetInnerHTML={{
+									__html: '<p>hel<span>l</span>o</p>',
+								}}
+								className={font}
+							></HeaderThree> */}
 							{/* <Hr /> */}
 						</TitleContent>
 						<SubtitleContent>{subtitle}</SubtitleContent>
