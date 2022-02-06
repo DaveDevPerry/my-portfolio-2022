@@ -29,6 +29,8 @@ export const AnimationCard = styled.div`
 		box-shadow: 3px 3px 20px rgba(219, 8, 8, 0.5);
 	}
 	@media ${(props) => props.theme.breakpoints.sm} {
-		width: 100%;
+		/* width: 100%; */
+		width: 180px;
+		align-self: center;
 	}
 `;
