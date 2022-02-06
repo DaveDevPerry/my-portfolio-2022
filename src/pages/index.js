@@ -1,3 +1,5 @@
+import { useForm, ValidationError } from '@formspree/react';
+
 import About from '../components/About/About';
 // import Accomplishments from '../components/Accomplishments/Accomplishments';
 // import BgAnimation from '../components/BackgroundAnimation/BackgroundAnimation';
@@ -14,9 +16,13 @@ import { Section } from '../styles/GlobalComponents';
 // import PageLoaders from '../components/Loaders/Loaders';
 import Animations from '../components/Animations/Animations';
 
+import ContactForm from '../components/ContactForm/contact-form';
+
 const Home = () => {
+	// const [state, handleSubmit] = useForm(process.env.YOUR_FORM_ID);
 	return (
 		<Layout>
+			{/* <ContactForm /> */}
 			<Section grid>
 				<Hero />
 				{/* <BgAnimation /> */}
@@ -28,7 +34,8 @@ const Home = () => {
 			<Technologies />
 			{/* <Timeline /> */}
 			{/* <Accomplishments /> */}
-			<Contact />
+			{/* <Contact /> */}
+			<ContactForm />
 		</Layout>
 	);
 };
