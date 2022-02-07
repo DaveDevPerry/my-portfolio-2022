@@ -24,6 +24,10 @@ export const Container = styled.div`
 		grid-column-gap: 0.5rem;
 		grid-row-gap: 0.5rem;
 	}
+	@media ${(props) => props.theme.breakpoints.xsm} {
+		grid-template-rows: auto;
+		padding: 0rem 1rem;
+	}
 `;
 
 export const Brand = styled.div`
@@ -91,6 +95,9 @@ export const Div2 = styled.div`
 		column-gap: 0;
 		align-items: center;
 		grid-area: 2 / 1 / 3 / 6;
+	}
+	@media ${(props) => props.theme.breakpoints.xsm} {
+		display: none;
 	}
 `;
 

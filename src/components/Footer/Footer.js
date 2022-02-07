@@ -80,7 +80,7 @@ const Footer = () => {
 
 			<div className='links-container footer-container'>
 				<a href='https:github.com/DaveDevPerry' target='_blank'>
-					<SiGithub size={30} color='#ffffff' />
+					<SiGithub size={30} color='#ffffff' pointerEvents='none' />
 				</a>
 			</div>
 
