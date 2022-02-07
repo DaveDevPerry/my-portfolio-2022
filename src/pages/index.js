@@ -17,12 +17,14 @@ import { Section } from '../styles/GlobalComponents';
 import Animations from '../components/Animations/Animations';
 
 import ContactForm from '../components/ContactForm/contact-form';
+import PageLoader from '../components/PageLoader/PageLoader';
 
 const Home = () => {
 	// const [state, handleSubmit] = useForm(process.env.YOUR_FORM_ID);
 	return (
 		<Layout>
 			{/* <ContactForm /> */}
+			<PageLoader />
 			<Section grid>
 				<Hero />
 				{/* <BgAnimation /> */}

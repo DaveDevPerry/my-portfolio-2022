@@ -1,5 +1,6 @@
 import Link from 'next/link';
-import React from 'react';
+import React, { useRef, useEffect } from 'react';
+import { gsap } from 'gsap';
 import { AiFillGithub, AiFillInstagram, AiFillLinkedin } from 'react-icons/ai';
 import { DiCssdeck } from 'react-icons/di';
 
@@ -16,51 +17,65 @@ import {
 	BGNav,
 } from './HeaderStyles';
 
-const Header = () => (
-	<Container>
-		<Div1>
-			<BGBrand>BRAND</BGBrand>
-			<Link href='/'>
-				<a
-					style={{
-						display: 'flex',
-						alignItems: 'center',
-						color: 'white',
-						marginBottom: '20px',
-					}}
-				>
-					{/* <DiCssdeck size='3rem' />{' '} */}
-					<Brand>
-						dave<span>perry</span>
-						<span>.</span>tech
-					</Brand>
-				</a>
-			</Link>
-		</Div1>
-		<Div2>
-			<BGNav>NAVIGATION</BGNav>
-			<li>
-				<Link href='#about'>
-					<NavLink>About</NavLink>
+const Header = () => {
+	const tl = useRef();
+
+	useEffect(() => {
+		tl.current = gsap
+			.timeline()
+			.fromTo('#header', { y: '-500' }, { y: 0, duration: 2, delay: 8 })
+			.from('#brand', { x: '-200', duration: 2 })
+			.from('#about-link', { y: '-100px', duration: 1.5 })
+			.from('#projects-link', { y: '-100px', duration: 1.5 }, '-=1')
+			.from('#tech-link', { y: '-100px', duration: 1.5 }, '-=1')
+			.from('#contact-link', { y: '-100px', duration: 1.5 }, '-=1');
+	}, []);
+
+	return (
+		<Container id='header'>
+			<Div1>
+				<BGBrand>BRAND</BGBrand>
+				<Link href='/'>
+					<a
+						style={{
+							display: 'flex',
+							alignItems: 'center',
+							color: 'white',
+							marginBottom: '20px',
+						}}
+					>
+						{/* <DiCssdeck size='3rem' />{' '} */}
+						<Brand id='brand'>
+							dave<span>perry</span>
+							<span>.</span>tech
+						</Brand>
+					</a>
 				</Link>
-			</li>
-			<li>
-				<Link href='#projects'>
-					<NavLink>Projects</NavLink>
-				</Link>
-			</li>
-			<li>
-				<Link href='#tech'>
-					<NavLink>Tech</NavLink>
-				</Link>
-			</li>
-			<li>
-				<Link href='#contact'>
-					<NavLink>Contact</NavLink>
-				</Link>
-			</li>
-		</Div2>
-		{/* <Div3>
+			</Div1>
+			<Div2>
+				<BGNav>NAVIGATION</BGNav>
+				<li id='about-link'>
+					<Link href='#about'>
+						<NavLink>About</NavLink>
+					</Link>
+				</li>
+				<li id='projects-link'>
+					<Link href='#projects'>
+						<NavLink>Projects</NavLink>
+					</Link>
+				</li>
+				<li id='tech-link'>
+					<Link href='#tech'>
+						<NavLink>Tech</NavLink>
+					</Link>
+				</li>
+				<li id='contact-link'>
+					<Link href='#contact'>
+						<NavLink>Contact</NavLink>
+					</Link>
+				</li>
+			</Div2>
+			{/* <Div3>
 			<SocialIcons href='https://github.com'>
 				<AiFillGithub size='3rem' />
 			</SocialIcons>
@@ -71,7 +86,8 @@ const Header = () => (
 				<AiFillInstagram size='3rem' />
 			</SocialIcons>
 		</Div3> */}
-	</Container>
-);
+		</Container>
+	);
+};
 
 export default Header;
