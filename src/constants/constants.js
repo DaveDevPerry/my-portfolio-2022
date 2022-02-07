@@ -9,7 +9,7 @@ export const projects = [
 		bgimage: '/images/bg_balls.png',
 		bgid: 'card-temp',
 		cardclass: 'left',
-		tags: ['HTML', 'SASS', 'Vanilla JS'],
+		tags: ['SCSS', 'ES6 Syntax', 'Vanilla JS'],
 
 		source: 'https://relaxed-dijkstra-f29d44.netlify.app/',
 		visit: 'https://github.com/DaveDevPerry/LoopyLottoMVP',
@@ -58,7 +58,7 @@ export const projects = [
 		bgimage: '/images/bg_mic.png',
 		bgid: 'card-temp',
 		cardclass: 'right',
-		tags: ['Express', 'MongoDB'],
+		tags: ['SPA', 'Express', 'MongoDB'],
 		source: 'https://tv-lyrics-test-v2.herokuapp.com/',
 		visit: 'https://github.com/DaveDevPerry/tv-lyric-library-v2',
 		font: 'font-some-people-say',
@@ -75,7 +75,7 @@ export const projects = [
 		bgimage: '/images/bg_game.png',
 		bgid: 'card-temp',
 		cardclass: 'left',
-		tags: ['React', 'ChatEngine', 'Firebase'],
+		tags: ['Vanilla JS', 'LocalStorage', 'Firebase'],
 		source: 'https://goofy-swartz-1ec98c.netlify.app/',
 		visit: 'https://github.com/DaveDevPerry/tic-tac-toe',
 		font: 'font-pinks-n-purples',
@@ -100,28 +100,25 @@ export const projects = [
 	},
 ];
 
-export const loaders = [
-	{
-		title: 'Keyframes',
-		image: '/images/loader_tf.png',
-		id: 0,
-	},
-	{
-		title: 'GSAP',
-		image: '/images/loader_ga.png',
-		id: 1,
-	},
-	{
-		title: 'Javascript',
-		image: '/images/loader_lp.png',
-		id: 2,
-	},
-];
+// export const loaders = [
+// 	{
+// 		title: 'Keyframes',
+// 		image: '/images/loader_tf.png',
+// 		id: 0,
+// 	},
+// 	{
+// 		title: 'GSAP',
+// 		image: '/images/loader_ga.png',
+// 		id: 1,
+// 	},
+// 	{
+// 		title: 'Javascript',
+// 		image: '/images/loader_lp.png',
+// 		id: 2,
+// 	},
+// ];
 
 export const TimeLineData = [
-	{ year: 2017, text: 'Started my journey' },
-	{ year: 2018, text: 'Worked as a freelance developer' },
-	{ year: 2019, text: 'Founded JavaScript Mastery' },
 	{ year: 2020, text: 'Coded my first app' },
 	{ year: 2021, text: 'Building Portfolio Projects' },
 	{ year: 2022, text: 'Looking for employment' },
