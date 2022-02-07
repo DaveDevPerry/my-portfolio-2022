@@ -13,21 +13,23 @@ const PageLoader = () => {
 	const bgTextName = useRef();
 	const tl = useRef();
 
-	// useEffect(() => {
-	// 	gsap.to(circleOuter.current, { rotation: '+=340' });
-	// }, []);
 	useEffect(() => {
-		// gsap.fromTo(bgTextName.current, 3, { scale: 50 }, { scale: 0 });
-		// gsap.from(circleOuter.current, 2, { scale: 0 });
 		tl.current = gsap
 			.timeline()
 			.fromTo('#bg-text-name', { scale: 50 }, { scale: 0, duration: 3 })
-			.from('.circle-outer', { scale: 0, duration: 2 })
-			.from('.circle-inner', { scale: 0, duration: 4 }, '-=2')
+			.fromTo('.circle-outer', { scale: 0 }, { scale: 2, duration: 2 })
+			.fromTo('.circle-inner', { scale: 0 }, { scale: 2, duration: 4 }, '-=2')
 			.fromTo('#bg-text-name', { scale: 0 }, { scale: 80, duration: 4 }, '-=4')
-			.fromTo('#bg-text-name', { scale: 0 }, { scale: 1, duration: 3 }, '-=2')
 			.to('#loader-container', { opacity: 0, duration: 1 })
 			.to('#loader-container', { display: 'none' });
+		// tl.current = gsap
+		// 	.timeline()
+		// 	.fromTo('#bg-text-name', { scale: 50 }, { scale: 0, duration: 3 })
+		// 	.from('.circle-outer', { scale: 0, duration: 2 })
+		// 	.from('.circle-inner', { scale: 0, duration: 4 }, '-=2')
+		// 	.fromTo('#bg-text-name', { scale: 0 }, { scale: 80, duration: 4 }, '-=4')
+		// 	.to('#loader-container', { opacity: 0, duration: 1 })
+		// 	.to('#loader-container', { display: 'none' });
 	}, []);
 
 	// 	function explode() {

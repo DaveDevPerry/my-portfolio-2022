@@ -74,7 +74,7 @@ const GlobalStyles = createGlobalStyle`
 	stroke-dashoffset: 1569;
 	/* stroke-dashoffset: ; */
 	animation: line-anim 2s ease-in-out forwards;
-  animation-delay: 8.2s;
+  animation-delay: 5.2s;
 }
 
 #about-anim{

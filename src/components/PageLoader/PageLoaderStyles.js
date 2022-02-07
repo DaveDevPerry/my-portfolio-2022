@@ -11,7 +11,7 @@ export const Container = styled.div`
 	height: 100vh;
 	width: 100%;
 	/* background: red; */
-	background: #242121;
+	/* background: #242121; */
 	z-index: 5000;
 	overflow: hidden;
 	h4#bg-text-name {

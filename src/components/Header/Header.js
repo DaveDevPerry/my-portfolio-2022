@@ -23,7 +23,7 @@ const Header = () => {
 	useEffect(() => {
 		tl.current = gsap
 			.timeline()
-			.fromTo('#header', { y: '-500' }, { y: 0, duration: 2, delay: 8 })
+			.fromTo('#header', { y: '-500' }, { y: 0, duration: 2, delay: 6 })
 			.from('#brand', { x: '-200', duration: 2 })
 			.from('#about-link', { y: '-100px', duration: 1.5 })
 			.from('#projects-link', { y: '-100px', duration: 1.5 }, '-=1')
