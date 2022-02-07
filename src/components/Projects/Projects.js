@@ -92,11 +92,15 @@ const Projects = () => (
 						<UtilityList>
 							<LinkWrapper>
 								<SiNetlify size='2.2rem' color='#1186b4' />
-								<ExternalLinks href={source}>Visit Site</ExternalLinks>
+								<ExternalLinks href={source} target='_blank'>
+									Visit Site
+								</ExternalLinks>
 							</LinkWrapper>
 							<LinkWrapper>
 								<VscGithub size='2.2rem' />
-								<ExternalLinks href={visit}>View Code</ExternalLinks>
+								<ExternalLinks href={visit} target='_blank'>
+									View Code
+								</ExternalLinks>
 							</LinkWrapper>
 						</UtilityList>
 						<Hr />

@@ -23,7 +23,7 @@ export const projects = [
 		description:
 			'An app for me to keep all my sheet music in one place that I can access from any device when needed. It also keeps track of my progress and songs to prioritize practicing to upload to my YouTube channel.  ',
 		image: '/images/ga.png',
-		bgimage: '/images/bg_guitar.png',
+		bgimage: '/images/bg_guitar1.png',
 		bgid: 'card-temp',
 		cardclass: 'right',
 		tags: ['3rd Party API', 'React', 'Node'],
@@ -55,7 +55,7 @@ export const projects = [
 		description:
 			'An app built solely for fans to collaborate missing lyrics to songs.  Based on a voting system to produce the lyrics that are most likely to be correct.',
 		image: '/images/sps.png',
-		bgimage: '/images/bg_balls.png',
+		bgimage: '/images/bg_mic.png',
 		bgid: 'card-temp',
 		cardclass: 'right',
 		tags: ['Express', 'MongoDB'],
@@ -89,7 +89,7 @@ export const projects = [
 		description:
 			'A CRUD based, fully responsive band gig history site enabling the users to add dates and set lists for missing gigs.',
 		image: '/images/tvtimes.png',
-		bgimage: '/images/bg_hearts.png',
+		bgimage: '/images/bg_band.png',
 		bgid: 'card-temp',
 		cardclass: 'right',
 		tags: ['GraphCMS', 'Next.js', 'Firebase'],

@@ -1,6 +1,16 @@
 import { useForm, ValidationError } from '@formspree/react';
-import { SectionTitle, Section } from '../../styles/GlobalComponents';
-import { FormContainer, ImgFilter, Img, FormButton } from './ContactFormStyles';
+import {
+	SectionTitle,
+	Section,
+	SectionText,
+} from '../../styles/GlobalComponents';
+import {
+	FormContainer,
+	ImgFilter,
+	Img,
+	FormButton,
+	ContactText,
+} from './ContactFormStyles';
 
 export default function ContactForm() {
 	// const [state, handleSubmit] = useForm(process.env.YOUR_FORM_ID);
@@ -9,7 +19,7 @@ export default function ContactForm() {
 	if (state.succeeded) {
 		return (
 			<p style={{ textAlign: 'center', padding: '20px', fontSize: '22px' }}>
-				Thanks for your submission!
+				Thank you for your message. I will get back to you shortly!
 			</p>
 		);
 	}
@@ -17,6 +27,12 @@ export default function ContactForm() {
 	return (
 		<Section id='contact'>
 			<SectionTitle>Contact Me</SectionTitle>
+			<SectionText>
+				If you have any questions about my services, a job opportunity, maybe a
+				coding collaboration, or just want to say hello, then I would love to
+				hear from you.
+			</SectionText>
+
 			<FormContainer>
 				<ImgFilter id='card-filter' />
 				<Img src='/images/bg_contact.png' id='contact-bg-img' />

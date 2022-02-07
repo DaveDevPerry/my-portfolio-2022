@@ -194,3 +194,18 @@ export const FormButton = styled.button`
 		font-size: 22px;
 	}
 `;
+
+export const ContactText = styled.p`
+	width: 100%;
+	/* max-width: 800px; */
+	padding: 0;
+	/* color: #e4e6e7; */
+	color: rgba(255, 255, 255, 0.5);
+	font-style: 2rem;
+	line-height: 24px;
+	text-align: justify;
+	margin-bottom: 2rem;
+	@media ${(props) => props.theme.breakpoints.sm} {
+		padding: 0.3rem;
+	}
+`;

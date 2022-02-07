@@ -49,11 +49,53 @@ export const TechIcons = styled.div`
 	}
 	.tech-icon {
 		font-size: 40px;
-		animation: grow 1s ease-in-out infinite;
+		animation: grow 3s ease-in-out infinite;
 		flex-basis: 8%;
 	}
+	.tech-icon:nth-child(2) {
+		animation-delay: 0.2s;
+	}
+	.tech-icon:nth-child(3) {
+		animation-delay: 0.4s;
+	}
+	.tech-icon:nth-child(4) {
+		animation-delay: 0.6s;
+	}
+	.tech-icon:nth-child(5) {
+		animation-delay: 0.8s;
+	}
+	.tech-icon:nth-child(6) {
+		animation-delay: 1s;
+	}
+	.tech-icon:nth-child(7) {
+		animation-delay: 1.2s;
+	}
+	.tech-icon:nth-child(8) {
+		animation-delay: 1.4s;
+	}
+	/* .tech-icon {
+		font-size: 40px;
+		animation: grow 1s ease-in-out infinite;
+		flex-basis: 8%;
+	} */
 
 	@keyframes grow {
+		0% {
+			transform: scale(1);
+		}
+
+		10% {
+			transform: scale(1.2);
+		}
+		20% {
+			transform: scale(1);
+		}
+
+		100% {
+			transform: scale(1);
+		}
+	}
+	/* @keyframes grow {
 		0% {
 			transform: scale(1);
 		}
@@ -65,7 +107,7 @@ export const TechIcons = styled.div`
 		100% {
 			transform: scale(1);
 		}
-	}
+	} */
 	/* @keyframes grow {
 		0% {
 			transform: translateY(0);

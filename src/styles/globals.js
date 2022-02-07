@@ -65,7 +65,7 @@ const GlobalStyles = createGlobalStyle`
 	/* top: 50%; */
 	/* left: 50%; */
 	/* transform: translate(-50%, -50%); */
-	animation: fill 0.5s ease forwards 4s;
+	/* animation: fill 0.5s ease forwards 4s; */
   
 }
 #dp-logo-svg path:nth-child(1) {
