@@ -95,6 +95,7 @@ export const Div2 = styled.div`
 		column-gap: 0;
 		align-items: center;
 		grid-area: 2 / 1 / 3 / 6;
+		display: none;
 	}
 	@media ${(props) => props.theme.breakpoints.xsm} {
 		display: none;

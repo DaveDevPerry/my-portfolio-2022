@@ -49,23 +49,6 @@ export const projects = [
 		id: 2,
 	},
 	{
-		title: 'Some People Say',
-		titleCode: `<p>TEST</p>`,
-		subtitle: 'Fan based lyric collaboration',
-		description:
-			'An app built solely for fans to collaborate missing lyrics to songs.  Based on a voting system to produce the lyrics that are most likely to be correct.',
-		image: '/images/sps.png',
-		bgimage: '/images/bg_mic.png',
-		bgid: 'card-temp',
-		cardclass: 'right',
-		tags: ['SPA', 'Express', 'MongoDB'],
-		source: 'https://tv-lyrics-test-v2.herokuapp.com/',
-		visit: 'https://github.com/DaveDevPerry/tv-lyric-library-v2',
-		font: 'font-some-people-say',
-		id: 3,
-	},
-
-	{
 		title: "Pinks N' Purples",
 		titleCode: `<p>TEST</p>`,
 		subtitle: 'a custom two-player game of naughts & crosses',
@@ -79,6 +62,24 @@ export const projects = [
 		source: 'https://goofy-swartz-1ec98c.netlify.app/',
 		visit: 'https://github.com/DaveDevPerry/tic-tac-toe',
 		font: 'font-pinks-n-purples',
+		id: 3,
+	},
+
+	{
+		title: 'Some People Say',
+		titleCode: `<p>TEST</p>`,
+		subtitle: 'Fan based lyric collaboration',
+		description:
+			'An app built solely for fans to collaborate missing lyrics to songs.  Based on a voting system to produce the lyrics that are most likely to be correct.',
+		image: '/images/sps.png',
+		bgimage: '/images/bg_mic.png',
+		bgid: 'card-temp',
+		cardclass: 'right',
+		tags: ['SPA', 'MERN Stack', 'User Auth'],
+		source: 'https://tv-lyrics-test-v2.herokuapp.com/',
+		visit: 'https://github.com/DaveDevPerry/tv-lyric-library-v2',
+		font: 'font-some-people-say',
+
 		id: 4,
 	},
 	,

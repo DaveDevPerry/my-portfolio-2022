@@ -28,7 +28,7 @@ const About = (props) => {
 	useEffect(() => {
 		tl.current = gsap
 			.timeline()
-			.from('#about', { opacity: 0, duration: 1, delay: 15 });
+			.from('#about', { opacity: 0, duration: 1, delay: 9 });
 	}, []);
 
 	return (
