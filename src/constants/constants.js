@@ -66,6 +66,22 @@ export const projects = [
 	},
 
 	{
+		title: 'Made 2 Measure',
+		titleCode: `<p>TEST</p>`,
+		subtitle: 'An app to ',
+		description:
+			'A CRUD based, user authenticated, fully responsive application to record your kids height as they grow.',
+		image: '/images/m2m.png',
+		bgimage: '/images/bg_m2m.png',
+		bgid: 'card-temp',
+		cardclass: 'right',
+		tags: ['Express.js', 'Node.js', 'MongoDb'],
+		source: 'https://made-to-measure.herokuapp.com/',
+		visit: 'https://github.com/DaveDevPerry/made-to-measure',
+		font: 'font-m2m',
+		id: 4,
+	},
+	{
 		title: 'Some People Say',
 		titleCode: `<p>TEST</p>`,
 		subtitle: 'Fan based lyric collaboration',
@@ -80,9 +96,8 @@ export const projects = [
 		visit: 'https://github.com/DaveDevPerry/tv-lyric-library-v2',
 		font: 'font-some-people-say',
 
-		id: 4,
+		id: 5,
 	},
-	,
 	{
 		title: 'TV Times',
 		titleCode: `<p>TEST</p>`,
@@ -97,7 +112,7 @@ export const projects = [
 		source: 'https://goofy-swartz-1ec98c.netlify.app/',
 		visit: 'https://github.com/DaveDevPerry/tic-tac-toe',
 		font: 'font-tv-times',
-		id: 5,
+		id: 6,
 	},
 ];
 

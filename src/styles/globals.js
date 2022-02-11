@@ -139,6 +139,10 @@ const GlobalStyles = createGlobalStyle`
   font-family: 'Work Sans', sans-serif;
   color: red;
 }
+.font-m2m{
+  font-family: 'Gala Script';
+  color: rgb(255, 196, 0);
+}
 
 
 /* #animations{ */
