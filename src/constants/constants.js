@@ -98,22 +98,22 @@ export const projects = [
 
 		id: 5,
 	},
-	{
-		title: 'TV Times',
-		titleCode: `<p>TEST</p>`,
-		subtitle: 'Terrorvision tour and gig listings site',
-		description:
-			'A CRUD based, fully responsive band gig history site enabling the users to add dates and set lists for missing gigs.',
-		image: '/images/tvtimes.png',
-		bgimage: '/images/bg_band.png',
-		bgid: 'card-temp',
-		cardclass: 'right',
-		tags: ['GraphCMS', 'Next.js', 'Firebase'],
-		source: 'https://goofy-swartz-1ec98c.netlify.app/',
-		visit: 'https://github.com/DaveDevPerry/tic-tac-toe',
-		font: 'font-tv-times',
-		id: 6,
-	},
+	// {
+	// 	title: 'TV Times',
+	// 	titleCode: `<p>TEST</p>`,
+	// 	subtitle: 'Terrorvision tour and gig listings site',
+	// 	description:
+	// 		'A CRUD based, fully responsive band gig history site enabling the users to add dates and set lists for missing gigs.',
+	// 	image: '/images/tvtimes.png',
+	// 	bgimage: '/images/bg_band.png',
+	// 	bgid: 'card-temp',
+	// 	cardclass: 'right',
+	// 	tags: ['GraphCMS', 'Next.js', 'Firebase'],
+	// 	source: 'https://goofy-swartz-1ec98c.netlify.app/',
+	// 	visit: 'https://github.com/DaveDevPerry/tic-tac-toe',
+	// 	font: 'font-tv-times',
+	// 	id: 6,
+	// },
 ];
 
 // export const loaders = [

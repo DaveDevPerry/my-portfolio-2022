@@ -24,6 +24,15 @@ const GlobalStyles = createGlobalStyle`
     scroll-behavior: smooth;
 	scrollbar-width: normal;
 	scrollbar-color: #780202 rgb(75, 74, 74);
+  /* --background: #242121;
+  --background2: rgb(31,30,30);
+  --headerText: 
+  --text: rgba(255,255,255,0.5);
+  --primary1: 'hsl(204,23.8%,95.9%)';
+	--red: '#780202';
+	--accent1: 'hsl(34.9,98.6%,72.9%)';
+	--button: 'hsl(205.1,100%,36.1%)'; */
+	--background2: 'hsl(232.7,27.3%,23.7%)';
 	::-webkit-scrollbar {
 		height: 12px;
 		width: 12px;
@@ -42,10 +51,21 @@ const GlobalStyles = createGlobalStyle`
 	}
 
   }
+  /* html[data-theme="light"]{ */
+    /* --background: #fcfcfc;
+    --background2: #cecece;
+    --text: #2020207f;
+    --primary1: '#3b3a35';
+    --red: '#780202';
+    --accent1: 'hsl(34.9,98.6%,72.9%)';
+    --button: 'hsl(205.1,100%,36.1%)'; */
+    /* --background2: 'hsl(232.7,27.3%,23.7%)'; */
+  /* } */
   body {
     font-family: ${(props) => props.theme.fonts.main};
     font-size: 1.6rem;
     background: ${(props) => props.theme.colors.background1};
+    /* background-color: var(--background); */
     color: ${(props) => props.theme.colors.primary1};
     cursor: default;
 

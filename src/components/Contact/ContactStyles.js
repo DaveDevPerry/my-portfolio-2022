@@ -218,7 +218,7 @@ transition: 0.5s;
  			font-weight: 800;
  			text-transform: uppercase;
  			// outline: none;
- 			/* border: 1px solid rgba(255, 255, 255, 0.5); */
+ 			/* border: 1px solid rgba(255,255,255,0.5); */
  			border: 1px solid #780202;
 			 border-radius: 10px;
 
@@ -293,7 +293,7 @@ transition: 0.5s;
 // 			flex-direction: column;
 // 			p {
 // 				font-size: 2rem;
-// 				color: rgba(255, 255, 255, 0.5);
+// 				color: rgba(255,255,255,0.5);
 
 // 				&:last-of-type {
 // 					align-self: flex-end;
@@ -316,7 +316,7 @@ transition: 0.5s;
 // 				height: 40px;
 // 				.iconify {
 // 					font-size: 40px;
-// 					color: rgba(255, 255, 255, 0.5);
+// 					color: rgba(255,255,255,0.5);
 // 				}
 // 				.dl-text {
 // 					font-size: 2.4rem;
@@ -494,7 +494,7 @@ transition: 0.5s;
 // 			font-weight: 800;
 // 			text-transform: uppercase;
 // 			// outline: none;
-// 			border: 1px solid rgba(255, 255, 255, 0.5);
+// 			border: 1px solid rgba(255,255,255,0.5);
 // 			padding: 0 2rem;
 // 			height: 7.5rem;
 // 			width: 100%;

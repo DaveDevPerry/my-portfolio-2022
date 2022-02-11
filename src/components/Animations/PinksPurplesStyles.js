@@ -14,7 +14,7 @@ export const Container = styled.div`
 		transform: scale(0.3);
 
 		.container {
-			background-color: rgb(31, 30, 30);
+			background-color: rgb(31,30,30);
 			padding: 30px;
 			border-radius: 15px;
 		}

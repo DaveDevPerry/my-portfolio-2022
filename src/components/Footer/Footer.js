@@ -17,8 +17,11 @@ import {
 	SocialIconsContainer,
 } from './FooterStyles';
 
+// import Anime, { anime } from 'react-anime';
+
 const Footer = () => {
-	// // dark mode toggle
+	// const { Anime, stagger } = ReactAnime;
+	// dark mode toggle
 	// const moonPath =
 	// 	'M16 27.5C16 42.6878 27 54 27.5 55C12.3122 55 0 42.6878 0 27.5C0 12.3122 12.3122 0 27.5 0C27.5 0 16 12.3122 16 27.5Z';
 	// const sunPath =
@@ -26,14 +29,15 @@ const Footer = () => {
 	// const darkMode = document.querySelector('#dark-mode');
 	// let toggle = false;
 
-	// darkMode.addEventListener('click', () => {
-	// 	// we need anime.js
+	// const handleClick = () => {
+	// 	// darkMode.addEventListener('click', () => {
+	// 	// 	// we need anime.js
 	// 	// set up timeline
 	// 	const timeline = anime.timeline({
 	// 		duration: 750,
 	// 		easing: 'easeOutExpo',
 	// 	});
-	// 	// add diff animations to timeline
+	// 	// 	// add diff animations to timeline
 	// 	timeline
 	// 		.add({
 	// 			targets: '.sun',
@@ -70,7 +74,8 @@ const Footer = () => {
 	// 		document.documentElement.removeAttribute('data-theme', 'light');
 	// 	}
 	// 	// run change to sun
-	// });
+	// 	// });
+	// };
 
 	return (
 		<FooterWrapper>
@@ -98,6 +103,7 @@ const Footer = () => {
 						viewBox='0 0 55 55'
 						fill='none'
 						xmlns='http:www.w3.org/2000/svg'
+						// onClick={handleClick}
 					>
 						<path
 							className='sun'

@@ -39,7 +39,16 @@ export const SectionTitle = styled.h2`
 	-webkit-text-fill-color: transparent;
 	margin-bottom: 16px;
 	padding: ${(props) => (props.main ? '58px 0 16px' : '0')};
-
+	/* position: relative; */
+	/* :after {
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 0;
+		height: 100%;
+		width: 5px;
+		background-color: red;
+	} */
 	@media ${(props) => props.theme.breakpoints.md} {
 		font-size: ${(props) => (props.main ? '56px' : '48px')};
 		line-height: ${(props) => (props.main ? '56px' : '48px')};

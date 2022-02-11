@@ -12,7 +12,7 @@ export const Container = styled.div`
 		display: flex;
 		justify-content: center;
 		align-items: center;
-		/* background-color: rgb(31, 30, 30); */
+		/* background-color: rgb(31,30,30); */
 		z-index: 50;
 		transform: scale(0.5);
 		/* } */
