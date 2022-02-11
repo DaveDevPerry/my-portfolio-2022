@@ -34,8 +34,8 @@ const Hero = (props) => {
 					your digital world.
 				</SectionTitle>
 				<SectionText id='hero-text'>
-					I help companies design and develop digital products to turn ideas
-					into fully functional, enjoyable experiences.
+					I aim to help companies design and develop digital products to turn
+					ideas into fully functional, enjoyable experiences.
 				</SectionText>
 				<BtnWrapper id='hero-buttons'>
 					{/* <Link href='#contact'>
@@ -50,6 +50,7 @@ const Hero = (props) => {
 					<Link href='#projects'>
 						<Button>My Projects</Button>
 					</Link>
+					{/* <Button>Available for work</Button> */}
 				</BtnWrapper>
 
 				{/* <Button onClick={() => (window.location = 'https://google.com')}>

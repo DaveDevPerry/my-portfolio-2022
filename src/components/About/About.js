@@ -52,14 +52,14 @@ const About = (props) => {
 			</InfoText>
 			<InfoText>
 				Before moving into development, I worked in the Courier and Logistics
-				sector, where I produced and managed a few small projects with excel,
-				some of which I have since been able to develop further with the
-				knowledge I have gained in javascript.
+				sector, where I designed and developed a basic intranet site and a few
+				html email promo offers. I also produced a few small projects with excel
+				such as dynamic tariffs and shipping quotes.
 			</InfoText>
 			<InfoText>
 				When I am not coding, I enjoy playing and arranging pieces on guitar for
-				my youtube channel, gaming and watching dev channels and tutorials on
-				youtube.
+				my youtube channel, gaming and watching development channels and
+				tutorials on youtube.
 			</InfoText>
 
 			{/* <AboutPageContainer>

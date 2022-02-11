@@ -53,7 +53,7 @@ export const projects = [
 		titleCode: `<p>TEST</p>`,
 		subtitle: 'a custom two-player game of naughts & crosses',
 		description:
-			'A game specifically built for my nieces which is a re-imagining of Tic-Tac-Toe',
+			'A game specifically built for my four and six year old nieces to play on their tablet together. It is a re-imagining of Tic-Tac-Toe',
 		image: '/images/pp.png',
 		bgimage: '/images/bg_game.png',
 		bgid: 'card-temp',

@@ -4,6 +4,7 @@ import {
 	Section,
 	SectionText,
 } from '../../styles/GlobalComponents';
+import { InfoText } from '../ContactForm/ContactFormStyles';
 import {
 	FormContainer,
 	ImgFilter,
@@ -28,10 +29,12 @@ export default function ContactForm() {
 		<Section id='contact'>
 			<SectionTitle>Contact Me</SectionTitle>
 			<SectionText>
-				If you have any questions about my services, a job opportunity, maybe a
-				coding collaboration, or just want to say hello, then I would love to
-				hear from you.
+				I am actively looking for job, project and collaboration opportunities.
+				I would love to hear from you and welcome any feedback on my portfolio.
 			</SectionText>
+			{/* <InfoText>
+				I would love to hear from you and welcome any feedback on my portfolio.
+			</InfoText> */}
 
 			<FormContainer>
 				<ImgFilter id='card-filter' />
