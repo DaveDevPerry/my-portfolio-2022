@@ -233,12 +233,19 @@ export const WorkStatus = styled.div`
 	column-gap: 2rem;
 	align-items: center;
 	p {
-		width: 160px;
+		width: clamp(220px, 220px, 80%);
 		background-color: #780202;
 		padding: 0.7rem 1rem;
-		font-size: 1.2rem;
+		font-size: 1.8rem;
 		border-radius: 5px;
 		text-align: center;
+	}
+	@media ${(props) => props.theme.breakpoints.lg} {
+		p {
+			width: clamp(180px, 180px, 100%);
+			padding: 0.7rem 0.5rem;
+			font-size: 1.4rem;
+		}
 	}
 	@media ${(props) => props.theme.breakpoints.md} {
 		justify-content: center;

@@ -20,7 +20,7 @@ const PageLoader = () => {
 			.fromTo('.circle-outer', { scale: 0 }, { scale: 2, duration: 2 })
 			.fromTo('.circle-inner', { scale: 0 }, { scale: 2, duration: 4 }, '-=2')
 			.fromTo('#bg-text-name', { scale: 0 }, { scale: 80, duration: 22 }, '-=4')
-			.to('#loader-container', { opacity: 0, duration: 1 })
+			.to('#loader-container', { opacity: 0, duration: 1 }, '-=14')
 			.to('#loader-container', { display: 'none' });
 		// tl.current = gsap
 		// 	.timeline()

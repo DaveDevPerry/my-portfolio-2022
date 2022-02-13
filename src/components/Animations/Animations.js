@@ -19,7 +19,7 @@ const Animations = () => {
 			{/* <br /> */}
 			<SectionTitle>Animations</SectionTitle>
 			<SectionText style={{ paddingBottom: '0px' }}>
-				A selection of custom built animations and loaders
+				A selection of custom built animations and loaders using CSS keyframes.
 			</SectionText>
 
 			<GridContainer>

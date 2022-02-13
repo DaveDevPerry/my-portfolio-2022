@@ -5,12 +5,11 @@ import Link from 'next/link';
 
 import {
 	Section,
-	SectionText,
 	SectionTitle,
 	BtnWrapper,
 } from '../../styles/GlobalComponents';
 import Button from '../../styles/GlobalComponents/Button';
-import { LeftSection } from './HeroStyles';
+import { LeftSection, SectionText } from './HeroStyles';
 
 const Hero = (props) => {
 	const tl = useRef();

@@ -9,7 +9,7 @@ export const projects = [
 		bgimage: '/images/bg_balls.png',
 		bgid: 'card-temp',
 		cardclass: 'left',
-		tags: ['SCSS', 'ES6 Syntax', 'Vanilla JS'],
+		tags: ['Vanilla JS', 'SCSS', 'ES6 Syntax'],
 
 		source: 'https://relaxed-dijkstra-f29d44.netlify.app/',
 		visit: 'https://github.com/DaveDevPerry/LoopyLottoMVP',
@@ -68,7 +68,7 @@ export const projects = [
 	{
 		title: 'Made 2 Measure',
 		titleCode: `<p>TEST</p>`,
-		subtitle: 'An app to ',
+		subtitle: "An app to log your child's height as they grow",
 		description:
 			'A CRUD based, user authenticated, fully responsive application to record your kids height as they grow.',
 		image: '/images/m2m.png',

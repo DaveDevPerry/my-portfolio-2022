@@ -19,11 +19,11 @@ export const FormContainer = styled.div`
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	padding: 2rem 4rem;
+	padding: 0 4rem 2rem 4rem;
 	border-radius: 10px;
 	box-shadow: 3px 3px 20px rgba(80, 78, 78, 0.4);
 	margin-bottom: 4rem;
-	margin: 3rem auto;
+	margin: 0 auto 3rem auto;
 	width: clamp(400px, 100%, 800px);
 	position: relative;
 	transition: 0.5s;

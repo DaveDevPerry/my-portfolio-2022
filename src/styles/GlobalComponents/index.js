@@ -38,6 +38,7 @@ export const SectionTitle = styled.h2`
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 	margin-bottom: 16px;
+	/* padding: ${(props) => (props.main ? '0' : '0')}; */
 	padding: ${(props) => (props.main ? '58px 0 16px' : '0')};
 	/* position: relative; */
 	/* :after {
@@ -68,7 +69,7 @@ export const SectionTitle = styled.h2`
 `;
 
 export const SectionText = styled.p`
-	max-width: 800px;
+	max-width: 100%;
 	font-size: 24px;
 	line-height: 40px;
 	font-weight: 300;
@@ -86,7 +87,7 @@ export const SectionText = styled.p`
 		background-color: #780202;
 	}
 	@media ${(props) => props.theme.breakpoints.md} {
-		max-width: 670px;
+		max-width: 100%;
 		font-size: 20px;
 		line-height: 32px;
 		margin-bottom: 24px;
@@ -205,7 +206,7 @@ export const ButtonBack = styled.div`
 		alt
 			? 'linear-gradient(270deg, #ff622e 0%, #B133FF 100%)'
 			: 'linear-gradient(270deg, #00DBD8 0%, #B133FF 100%)'}; */
-	border: ${({ alt }) => (alt ? '1px solid #ecb723' : '1px solid #780202')};
+	border: ${({ alt }) => (alt ? '1px solid #ecb723' : '2px solid #780202')};
 	cursor: pointer;
 	transition: 0.5s ease;
 	position: relative;
