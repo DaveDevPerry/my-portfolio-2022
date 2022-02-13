@@ -44,6 +44,9 @@ export const BlogCard = styled.div`
 	@media ${(props) => props.theme.breakpoints.sm} {
 		width: 100%;
 	}
+	@media ${(props) => props.theme.breakpoints.xsm} {
+		padding: 10px;
+	}
 `;
 
 export const TitleContent = styled.div`

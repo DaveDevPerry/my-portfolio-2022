@@ -16,13 +16,21 @@ export const Container = styled.div`
 	padding: 1rem;
 	/* padding-top: 2rem; */
 	/* border-bottom: 1px solid red; */
-
 	@media ${(props) => props.theme.breakpoints.sm} {
 		display: grid;
 		grid-template-columns: repeat(5, 1fr);
 		grid-template-rows: repeat(2, 60px);
 		grid-column-gap: 0.5rem;
 		grid-row-gap: 0.5rem;
+	}
+	@media ${(props) => props.theme.breakpoints.sm} {
+		/* display: grid;
+		grid-template-columns: repeat(5, 1fr);
+		grid-template-rows: repeat(2, 60px);
+		grid-column-gap: 0.5rem;
+		grid-row-gap: 0.5rem; */
+		grid-template-rows: auto;
+		padding: 0rem 1rem;
 	}
 	@media ${(props) => props.theme.breakpoints.xsm} {
 		grid-template-rows: auto;
@@ -262,8 +270,23 @@ export const WorkStatus = styled.div`
 		grid-area: 1 / 4 / 2 / 6;
 		/* display: none; */
 		display: flex;
+		p {
+			font-size: 1.2rem;
+			padding: 0.5rem 0.2rem;
+		}
 	}
 	@media ${(props) => props.theme.breakpoints.xsm} {
-		display: none;
+		justify-content: center;
+		column-gap: 0;
+		align-items: center;
+		grid-area: 1 / 4 / 2 / 6;
+		/* display: none; */
+		display: flex;
+		/* height: 40px; */
+		p {
+			font-size: 1.4rem;
+			padding: 0.4rem 0.8rem;
+			height: 40px;
+		}
 	}
 `;

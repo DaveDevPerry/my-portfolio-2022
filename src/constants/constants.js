@@ -4,7 +4,7 @@ export const projects = [
 		titleCode: '<p>hel<span>l</span>o</p>',
 		subtitle: 'A lottery game with a twist!',
 		description:
-			'A paid to play app, designed and developed using vanilla Javascript. A site to allow participants to check game progress based on the real life lottery draws. ',
+			'A pay-to-play app, designed and developed using vanilla javascript. This is a site to allow participants to check game progress based on the real life lottery draws. ',
 		image: '/images/ll.png',
 		bgimage: '/images/bg_balls.png',
 		bgid: 'card-temp',

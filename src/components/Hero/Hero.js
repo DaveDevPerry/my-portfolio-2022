@@ -30,11 +30,11 @@ const Hero = (props) => {
 					{/* My Personal Portfolio  */}
 					I design and develop <br />
 					complete solutions for <br />
-					your digital world.
+					the digital world.
 				</SectionTitle>
 				<SectionText id='hero-text'>
-					I aim to help companies design and develop digital products to turn
-					ideas into fully functional, enjoyable experiences.
+					I aim to help design and develop digital products to turn ideas into
+					fully functional, enjoyable experiences.
 				</SectionText>
 				<BtnWrapper id='hero-buttons'>
 					{/* <Link href='#contact'>
