@@ -21,6 +21,7 @@ import {
 import {
 	Section,
 	SectionDivider,
+	SectionText,
 	SectionTitle,
 } from '../../styles/GlobalComponents';
 import { projects } from '../../constants/constants';
@@ -31,6 +32,11 @@ const Projects = () => (
 	<Section id='projects'>
 		{/* <SectionDivider /> */}
 		<SectionTitle main>My Projects</SectionTitle>
+		<SectionText>
+			Below is a showcase of my work that I have both designed and developed,
+			most of which are my original ideas. They range from vanilla javascript
+			front-end to full stack back-end.
+		</SectionText>
 		<GridContainer>
 			{/* {[0, 1, 2, 3, 4, 5].map((project) => (
 				<div>{project}</div>

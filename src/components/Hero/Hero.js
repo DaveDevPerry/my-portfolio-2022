@@ -41,12 +41,16 @@ const Hero = (props) => {
 					{/* <Link href='#contact'>
 					<Button>Contact Me</Button>
 				</Link> */}
+					{/* <div className='link-btns'> */}
+					{/* <img src='/images/bg_cv.png' alt='cv' /> */}
 					<Link href='#'>
 						<Button>
 							{/* <GrDocumentPdf size='3rem' /> */}
 							View C.V.
 						</Button>
 					</Link>
+					{/* </div> */}
+
 					<Link href='#projects'>
 						<Button>My Projects</Button>
 					</Link>

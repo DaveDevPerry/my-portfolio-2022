@@ -15,6 +15,7 @@ import {
 	Brand,
 	BGBrand,
 	BGNav,
+	WorkStatus,
 } from './HeaderStyles';
 
 const Header = () => {
@@ -25,11 +26,34 @@ const Header = () => {
 			.timeline()
 			.fromTo('#header', { y: '-500' }, { y: 0, duration: 2, delay: 6 })
 			.from('#brand', { x: '-200', duration: 2 })
-			.from('#about-link', { y: '-100px', duration: 1.5 })
+			.from('#work-status', { opacity: 0, duration: 1 })
+			.from('#about-link', { y: '-100px', duration: 1.5 }, '-=1')
 			.from('#projects-link', { y: '-100px', duration: 1.5 }, '-=1')
 			.from('#tech-link', { y: '-100px', duration: 1.5 }, '-=1')
-			.from('#contact-link', { y: '-100px', duration: 1.5 }, '-=1');
+			.from('#contact-link', { y: '-100px', duration: 1.5 }, '-=1')
+			.from('#typewriter-text', { opacity: 0 });
+		typewriterText();
 	}, []);
+
+	const typewriterText = () => {
+		// const str = 'Available for freelance work';
+
+		const text = document.querySelector('#typewriter-text');
+
+		let typewriter = new Typewriter(text, {
+			loop: true,
+			delay: 100,
+		});
+
+		typewriter
+			.pauseFor(2000)
+			.typeString('AVAILABLE FOR WORK')
+			.pauseFor(5000)
+			.deleteAll('natural')
+			.pauseFor(1000)
+
+			.start();
+	};
 
 	return (
 		<Container id='header'>
@@ -52,6 +76,9 @@ const Header = () => {
 					</a>
 				</Link>
 			</Div1>
+			<WorkStatus id='work-status'>
+				<p id='typewriter-text'></p>
+			</WorkStatus>
 			<Div2>
 				<BGNav>NAVIGATION</BGNav>
 				<li id='about-link'>

@@ -164,6 +164,18 @@ const GlobalStyles = createGlobalStyle`
   color: rgb(255, 196, 0);
 }
 
+.link-btns{
+  position: relative;
+  img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: -1;
+    height: 80px;
+    width: 80px;
+  }
+}
 
 /* #animations{ */
   /* border: 1px solid green; */

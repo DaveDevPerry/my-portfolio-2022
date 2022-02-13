@@ -38,9 +38,9 @@ export const BlogCard = styled.div`
 	transition: 0.5s;
 	align-self: start;
 	position: relative;
-	&:hover {
+	/* &:hover {
 		box-shadow: 3px 3px 20px rgba(219, 8, 8, 0.5);
-	}
+	} */
 	@media ${(props) => props.theme.breakpoints.sm} {
 		width: 100%;
 	}

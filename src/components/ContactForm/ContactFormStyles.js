@@ -27,9 +27,9 @@ export const FormContainer = styled.div`
 	width: clamp(400px, 100%, 800px);
 	position: relative;
 	transition: 0.5s;
-	&:hover {
+	/* &:hover {
 		box-shadow: 3px 3px 20px rgba(219, 8, 8, 0.5);
-	}
+	} */
 	@media ${(props) => props.theme.breakpoints.sm} {
 		width: 100%;
 		padding: 2rem 2rem;

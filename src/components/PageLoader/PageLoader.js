@@ -19,7 +19,7 @@ const PageLoader = () => {
 			.fromTo('#bg-text-name', { scale: 50 }, { scale: 0, duration: 3 })
 			.fromTo('.circle-outer', { scale: 0 }, { scale: 2, duration: 2 })
 			.fromTo('.circle-inner', { scale: 0 }, { scale: 2, duration: 4 }, '-=2')
-			.fromTo('#bg-text-name', { scale: 0 }, { scale: 80, duration: 4 }, '-=4')
+			.fromTo('#bg-text-name', { scale: 0 }, { scale: 80, duration: 22 }, '-=4')
 			.to('#loader-container', { opacity: 0, duration: 1 })
 			.to('#loader-container', { display: 'none' });
 		// tl.current = gsap

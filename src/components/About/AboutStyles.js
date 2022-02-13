@@ -330,3 +330,27 @@ export const InfoText = styled.p`
 		font-weight: 300;
 	}
 `;
+
+export const AboutTextWrapper = styled.div`
+	/* border: 1px solid green; */
+	position: relative;
+	overflow: hidden;
+	#about-bg-text-name {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		font-family: 'Gemunu Libre', sans-serif;
+		color: rgba(255, 255, 255, 0.013);
+		-webkit-text-stroke: 1px rgba(229, 229, 229, 0.08);
+		-webkit-text-fill-color: rgba(255, 255, 255, 0.013);
+		color: white;
+		font-size: 14rem;
+		z-index: -1;
+		width: 100%;
+		text-align: center;
+		span {
+			text-transform: uppercase;
+		}
+	}
+`;

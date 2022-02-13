@@ -72,20 +72,30 @@ export const SectionText = styled.p`
 	font-size: 24px;
 	line-height: 40px;
 	font-weight: 300;
-	padding-bottom: 3.6rem;
+	margin-bottom: 3.6rem;
 	color: rgba(255, 255, 255, 0.5);
-
+	padding-left: 20px;
+	position: relative;
+	&:before {
+		position: absolute;
+		content: '';
+		top: 0;
+		left: 0;
+		height: 100%;
+		width: 10px;
+		background-color: #780202;
+	}
 	@media ${(props) => props.theme.breakpoints.md} {
 		max-width: 670px;
 		font-size: 20px;
 		line-height: 32px;
-		padding-bottom: 24px;
+		margin-bottom: 24px;
 	}
 
 	@media ${(props) => props.theme.breakpoints.sm} {
 		font-size: 16px;
 		line-height: 24px;
-		padding-bottom: 16px;
+		margin-bottom: 16px;
 	}
 `;
 

@@ -219,3 +219,44 @@ export const SocialIcons = styled.a`
 		cursor: pointer;
 	}
 `;
+
+// export const W = styled.div`
+// 	border: 1px solid white;
+// 	flex: 1;
+// `;
+
+export const WorkStatus = styled.div`
+	position: relative;
+	grid-area: 1 / 2/ 2 / 3;
+	display: flex;
+	justify-content: center;
+	column-gap: 2rem;
+	align-items: center;
+	p {
+		width: 160px;
+		background-color: #780202;
+		padding: 0.7rem 1rem;
+		font-size: 1.2rem;
+		border-radius: 5px;
+		text-align: center;
+	}
+	@media ${(props) => props.theme.breakpoints.md} {
+		justify-content: center;
+		column-gap: 0;
+		align-items: center;
+		grid-area: 2 / 1 / 3 / 6;
+		display: none;
+	}
+	/* font-weight: bold; */
+	@media ${(props) => props.theme.breakpoints.sm} {
+		justify-content: center;
+		column-gap: 0;
+		align-items: center;
+		grid-area: 1 / 4 / 2 / 6;
+		/* display: none; */
+		display: flex;
+	}
+	@media ${(props) => props.theme.breakpoints.xsm} {
+		display: none;
+	}
+`;
