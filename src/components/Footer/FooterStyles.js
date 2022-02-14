@@ -77,6 +77,7 @@ export const FooterWrapper = styled.section`
 		border: 2px solid #780202;
 		.footer-container {
 			border: 2px solid #780202;
+			border-bottom: 0px solid transparent;
 		}
 		.company-container p {
 			font-size: 10px;

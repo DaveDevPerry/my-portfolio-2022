@@ -180,7 +180,7 @@ export const FormButton = styled.button`
 	font-size: 22px;
 	color: white;
 	font-weight: 600;
-	border: 2px solid #780202;
+	border: 3px solid #780202;
 	border-radius: 10px;
 	padding: 0 2rem;
 	height: 7.5rem;

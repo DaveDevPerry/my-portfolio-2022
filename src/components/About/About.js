@@ -52,8 +52,8 @@ const About = (props) => {
 					functional web applications.
 				</InfoText>
 				<InfoText>
-					I’ve built and designed all my web applications thus far using html,
-					sass and vanilla javascript. You can view all the technologies I have
+					I’ve built and designed all my web applications thus far using HTML,
+					SCSS and vanilla Javascript. You can view all the technologies I have
 					used in each project on my portfolio page.
 				</InfoText>
 				<InfoText>
