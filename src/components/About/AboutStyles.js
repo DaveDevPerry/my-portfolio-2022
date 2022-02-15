@@ -337,7 +337,7 @@ export const AboutTextWrapper = styled.div`
 	overflow: hidden;
 	#about-bg-text-name {
 		position: absolute;
-		top: 50%;
+		top: 45%;
 		left: 50%;
 		transform: translate(-50%, -50%);
 		font-family: 'Gemunu Libre', sans-serif;
@@ -345,12 +345,19 @@ export const AboutTextWrapper = styled.div`
 		-webkit-text-stroke: 1px rgba(229, 229, 229, 0.08);
 		-webkit-text-fill-color: rgba(255, 255, 255, 0.013);
 		color: white;
-		font-size: 14rem;
+		font-size: 20rem;
 		z-index: -1;
 		width: 100%;
 		text-align: center;
+		line-height: 14rem;
 		span {
 			text-transform: uppercase;
+		}
+		@media ${(props) => props.theme.breakpoints.sm} {
+			font-size: 14rem;
+		}
+		@media ${(props) => props.theme.breakpoints.xsm} {
+			font-size: 10rem;
 		}
 	}
 `;
