@@ -177,6 +177,10 @@ const GlobalStyles = createGlobalStyle`
   }
 }
 
+/* .SiHtml5{
+  color: orange;
+} */
+
 /* #animations{ */
   /* border: 1px solid green; */
   /* margin-top: 100px; */

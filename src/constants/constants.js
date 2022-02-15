@@ -10,7 +10,7 @@ export const projects = [
 		bgid: 'card-temp',
 		cardclass: 'left',
 		tags: ['Vanilla JS', 'SCSS', 'ES6 Syntax'],
-
+		icons: ['SiHtml5', 'SiSass', 'SiJavascript'],
 		source: 'https://relaxed-dijkstra-f29d44.netlify.app/',
 		visit: 'https://github.com/DaveDevPerry/LoopyLottoMVP',
 		font: 'font-loopy-lotto',
@@ -27,6 +27,7 @@ export const projects = [
 		bgid: 'card-temp',
 		cardclass: 'right',
 		tags: ['3rd Party API', 'React', 'Node'],
+		icons: ['SiHtml5', 'SiSass', 'SiJavascript'],
 		source: 'https://heuristic-newton-ad6a42.netlify.app/',
 		visit: 'https://github.com/DaveDevPerry/guitARCHIVE',
 		font: 'font-guitar-archive',
@@ -35,7 +36,7 @@ export const projects = [
 	{
 		title: 'TERROR-Fi',
 		titleCode: `<p>TEST</p>`,
-		subtitle: 'Streaming un-released demo tracks by Terrorvision',
+		subtitle: 'Streaming un-released Terrorvision demo tracks',
 		description:
 			'A single page app built for Terrorvision fans to easily stream rare demo songs from the bands early days.  Containing custom animations and an audio visualizer to provide a great user experience',
 		image: '/images/tf.png',
@@ -43,6 +44,7 @@ export const projects = [
 		bgid: 'card-temp',
 		cardclass: 'left',
 		tags: ['Vanilla JS', 'ES6 Syntax', 'Animations'],
+		icons: ['SiHtml5', 'SiSass', 'SiJavascript'],
 		source: 'https://terror-fi.netlify.app/',
 		visit: 'https://github.com/DaveDevPerry/Terror-Fi_v1',
 		font: 'font-terror-fi',
@@ -51,7 +53,7 @@ export const projects = [
 	{
 		title: "Pinks N' Purples",
 		titleCode: `<p>TEST</p>`,
-		subtitle: 'a custom two-player game of naughts & crosses',
+		subtitle: 'A custom two-player game of naughts & crosses',
 		description:
 			'A game specifically built for my four and six year old nieces to play on their tablet together. It is a re-imagining of Tic-Tac-Toe',
 		image: '/images/pp.png',
@@ -59,6 +61,7 @@ export const projects = [
 		bgid: 'card-temp',
 		cardclass: 'left',
 		tags: ['Vanilla JS', 'LocalStorage', 'Firebase'],
+		icons: ['SiHtml5', 'SiSass', 'SiJavascript'],
 		source: 'https://goofy-swartz-1ec98c.netlify.app/',
 		visit: 'https://github.com/DaveDevPerry/tic-tac-toe',
 		font: 'font-pinks-n-purples',
@@ -76,6 +79,7 @@ export const projects = [
 		bgid: 'card-temp',
 		cardclass: 'right',
 		tags: ['Express.js', 'Node.js', 'MongoDb'],
+		icons: ['FaNodeJs', 'FaExpress', 'SiMongodb'],
 		source: 'https://made-to-measure.herokuapp.com/',
 		visit: 'https://github.com/DaveDevPerry/made-to-measure',
 		font: 'font-m2m',
@@ -92,6 +96,7 @@ export const projects = [
 		bgid: 'card-temp',
 		cardclass: 'right',
 		tags: ['SPA', 'MERN Stack', 'User Auth'],
+		icons: ['SiNodedotjs', 'SiExpress', 'SiMongodb'],
 		source: 'https://tv-lyrics-test-v2.herokuapp.com/',
 		visit: 'https://github.com/DaveDevPerry/tv-lyric-library-v2',
 		font: 'font-some-people-say',
