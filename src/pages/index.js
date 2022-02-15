@@ -24,7 +24,7 @@ const Home = () => {
 	return (
 		<Layout>
 			{/* <ContactForm /> */}
-			{/* <PageLoader /> */}
+			<PageLoader />
 			<Section grid>
 				<Hero />
 				{/* <BgAnimation /> */}

@@ -37,9 +37,9 @@ const Animations = () => {
 				<AnimationCard>
 					<Cassette />
 				</AnimationCard>
-				<AnimationCard>
+				{/* <AnimationCard>
 					<PinksPurples />
-				</AnimationCard>
+				</AnimationCard> */}
 			</GridContainer>
 
 			<SectionDivider />

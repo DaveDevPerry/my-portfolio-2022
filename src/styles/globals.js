@@ -177,15 +177,67 @@ const GlobalStyles = createGlobalStyle`
   }
 }
 
-/* .SiHtml5{
-  color: orange;
+
+/* #about-link{
+  position: relative;
+  transition: 0.5s ease;
+  
+  ::before{
+    position: absolute;
+    content: '';
+    top: -4px;
+    left: -100%;
+    width: 100%;
+    height: 3px;
+    background-color: #780202;
+    /* transform: scaleX(0); */
+    /* transform-origin: left; */
+    /* transition: slideIn .5s; */
+    /* transition: all 0.5s; 
+   
+  }
+  ::after{
+    position: absolute;
+    content: '';
+    bottom: -4px;
+    right: -100%;
+    width: 100%;
+    height: 3px;
+    background-color: #780202;
+    /* transform: scaleX(0); 
+    transform-origin: right;
+    /* transition: all .5s; 
+  }
+  :hover::before{
+        animation: hoverLinkLeft 1s ease-in-out forwards;
+        /* transform: scaleX(1); 
+      }
+  :hover::after{
+        animation: hoverLinkRight 1s ease-in-out forwards;
+        /* transform: scaleX(1); 
+      }
+    
+  
+}
+@keyframes hoverLinkLeft{
+  to{
+    transform: translateX(100%)
+  }
+}
+@keyframes hoverLinkRight{
+  to{
+    transform: translateX(-100%)
+  }
 } */
 
-/* #animations{ */
-  /* border: 1px solid green; */
-  /* margin-top: 100px; */
-/* } */
-/*  */
+/* @keyframes slideIn {
+    from{
+
+    }
+    to{
+        transform: translateX(0);
+    }
+} */
 
 
 @keyframes line-anim {
