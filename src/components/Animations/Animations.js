@@ -11,6 +11,7 @@ import Metronome from './Metronome';
 import TerrorTelly from './TerrorTelly';
 import RecordPlayer from './RecordPlayer';
 import PinksPurples from './PinksPurples';
+import Cassette from './Cassette';
 
 const Animations = () => {
 	return (
@@ -26,11 +27,15 @@ const Animations = () => {
 				<AnimationCard>
 					<Metronome />
 				</AnimationCard>
+
+				<AnimationCard>
+					<RecordPlayer />
+				</AnimationCard>
 				<AnimationCard>
 					<TerrorTelly />
 				</AnimationCard>
 				<AnimationCard>
-					<RecordPlayer />
+					<Cassette />
 				</AnimationCard>
 				<AnimationCard>
 					<PinksPurples />
