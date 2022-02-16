@@ -30,7 +30,8 @@ export default function ContactForm() {
 			<SectionTitle>Contact Me</SectionTitle>
 			<SectionText>
 				I am actively looking for job, project and collaboration opportunities.
-				I would love to hear from you and welcome any feedback on my portfolio.
+				I would love to hear from you and any feedback on my portfolio is
+				welcome.
 			</SectionText>
 			{/* <InfoText>
 				I would love to hear from you and welcome any feedback on my portfolio.

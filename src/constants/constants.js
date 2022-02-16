@@ -4,7 +4,7 @@ export const projects = [
 		titleCode: '<p>hel<span>l</span>o</p>',
 		subtitle: 'A lottery game with a twist!',
 		description:
-			'A pay-to-play app in which my family members all participate and can check game progress based on the real life lottery draws. I designed this from scratch and is developed using vanilla javascript. ',
+			'A pay-to-play app in which my family members all participate and can check game progress based on the real life lottery draws. I designed this from scratch and it is developed using vanilla javascript. ',
 		image: '/images/ll.png',
 		bgimage: '/images/bg_balls.png',
 		bgid: 'card-temp',
@@ -21,7 +21,7 @@ export const projects = [
 		titleCode: '<h3>guit<span>ARCHIVE</span></h3>',
 		subtitle: 'An easy to access storage solution for my sheet music',
 		description:
-			'An app for me to keep all my sheet music in one place that I can access from any device when needed. It also keeps track of my progress and songs to prioritize practicing to upload to my YouTube channel.  ',
+			'A storage solution for all my sheet music that I can access from any device.  Allowing me to track my progress and songs to prioritize practicing to upload to my YouTube channel.  ',
 		image: '/images/ga.png',
 		bgimage: '/images/bg_guitar1.png',
 		bgid: 'card-temp',
@@ -38,7 +38,7 @@ export const projects = [
 		titleCode: `<p>TEST</p>`,
 		subtitle: 'Streaming un-released Terrorvision demo tracks',
 		description:
-			'A single page app built for Terrorvision fans to easily stream rare demo songs from the bands early days.  Containing custom animations and an audio visualizer to provide a great user experience',
+			'A single page app built for Terrorvision fans to easily stream rare demo songs from the bands early days.  Containing custom animations and an audio visualizer to provide a great user experience.',
 		image: '/images/tf.png',
 		bgimage: '/images/bg_cans.png',
 		bgid: 'card-temp',

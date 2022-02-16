@@ -9,7 +9,7 @@ import {
 	BtnWrapper,
 } from '../../styles/GlobalComponents';
 import Button from '../../styles/GlobalComponents/Button';
-import { LeftSection, SectionText } from './HeroStyles';
+import { LeftSection, SectionText, SectionTextBar } from './HeroStyles';
 
 const Hero = (props) => {
 	const tl = useRef();
@@ -36,6 +36,7 @@ const Hero = (props) => {
 					I aim to help design and develop digital products to turn ideas into
 					fully functional, enjoyable experiences.
 				</SectionText>
+				{/* <SectionTextBar id='hero-text-bar'></SectionTextBar> */}
 				<BtnWrapper id='hero-buttons'>
 					{/* <Link href='#contact'>
 					<Button>Contact Me</Button>

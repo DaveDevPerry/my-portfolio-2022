@@ -112,6 +112,15 @@ const Projects = () => {
 								</LinkWrapper>
 							</UtilityList>
 							<Hr />
+							{/* <div>
+					
+								<TagList>
+									{icons.map((icon, i) => (
+								
+										<DynamicSiIcon name={icon} key={i} className={icon} />
+									))}
+								</TagList>
+							</div> */}
 							<CardInfo>{description}</CardInfo>
 							{/* <div>
 							<TitleContent>Stack</TitleContent>
@@ -135,7 +144,6 @@ const Projects = () => {
 									))}
 								</TagList>
 							</div>
-
 							<div>
 								{/* <TitleContent>Stack</TitleContent> */}
 								<TagList>
