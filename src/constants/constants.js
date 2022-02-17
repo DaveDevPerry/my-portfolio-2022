@@ -4,7 +4,7 @@ export const projects = [
 		titleCode: '<p>hel<span>l</span>o</p>',
 		subtitle: 'A lottery game with a twist!',
 		description:
-			'A pay-to-play app in which my family members all participate and can check game progress based on the real life lottery draws. I designed this from scratch and it is developed using vanilla javascript. ',
+			'A pay-to-play app in which my family members all participate and can check game progress based on the real life lottery draws. I designed this from scratch and it is developed using vanilla javascript.',
 		image: '/images/ll.png',
 		bgimage: '/images/bg_balls.png',
 		bgid: 'card-temp',
@@ -21,7 +21,7 @@ export const projects = [
 		titleCode: '<h3>guit<span>ARCHIVE</span></h3>',
 		subtitle: 'An easy to access storage solution for my sheet music',
 		description:
-			'A storage solution for all my sheet music that I can access from any device.  Allowing me to track my progress and songs to prioritize practicing to upload to my YouTube channel.  ',
+			'A storage solution for all my sheet music that I can access from any device.  Allowing me to track my progress and songs to prioritize practicing to upload to my YouTube channel.',
 		image: '/images/ga.png',
 		bgimage: '/images/bg_guitar1.png',
 		bgid: 'card-temp',
@@ -55,7 +55,7 @@ export const projects = [
 		titleCode: `<p>TEST</p>`,
 		subtitle: 'A custom two-player game of naughts & crosses',
 		description:
-			'A game specifically built for my four and six year old nieces to play on their tablet together. It is a re-imagining of Tic-Tac-Toe',
+			'A game specifically built for my four and six year old nieces to play on their tablet together. It is a re-imagining of Tic-Tac-Toe.',
 		image: '/images/pp.png',
 		bgimage: '/images/bg_game.png',
 		bgid: 'card-temp',

@@ -31,6 +31,23 @@ export const Container = styled.div`
 			margin-left: 30rem;
 		}
 	}
+	h4#bg-text-name-red {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		font-family: 'Gemunu Libre', sans-serif;
+		// color: var(--primaryColor);
+		-webkit-text-stroke: 1px rgba(66, 65, 65, 0.329);
+		-webkit-text-fill-color: #78020242;
+		font-size: 30rem;
+		line-height: 20rem;
+
+		span {
+			text-transform: uppercase;
+			margin-left: 30rem;
+		}
+	}
 	.circle-outer {
 		z-index: -2;
 		width: 80vw;

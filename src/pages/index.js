@@ -1,4 +1,5 @@
 import { useForm, ValidationError } from '@formspree/react';
+import { useEffect } from 'react';
 
 import About from '../components/About/About';
 // import Accomplishments from '../components/Accomplishments/Accomplishments';
@@ -21,9 +22,32 @@ import PageLoader from '../components/PageLoader/PageLoader';
 
 const Home = () => {
 	// const [state, handleSubmit] = useForm(process.env.YOUR_FORM_ID);
+	// useEffect(() => {
+	// 	let mouseCursor = document.querySelector('.cursor');
+	// 	let navLinks = document.querySelectorAll('.nav-links');
+	// 	window.addEventListener('mousemove', cursor);
+	// 	function cursor(e) {
+	// 		mouseCursor.style.top = e.pageY + 'px';
+	// 		mouseCursor.style.left = e.pageX + 'px';
+	// 	}
+
+	// 	navLinks.forEach((link) => {
+	// 		link.addEventListener('mouseleave', () => {
+	// 			mouseCursor.classList.remove('link-grow');
+	// 			link.classList.remove('hovered-link');
+	// 		});
+	// 		link.addEventListener('mouseover', () => {
+	// 			mouseCursor.classList.add('link-grow');
+	// 			link.classList.add('hovered-link');
+	// 		});
+	// 	});
+	// }, []);
+	// window.addEventListener('mousemove', cursor);
+
 	return (
 		<Layout>
 			{/* <ContactForm /> */}
+			{/* <div className='cursor'></div> */}
 			<PageLoader />
 			<Section grid>
 				<Hero />

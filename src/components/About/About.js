@@ -45,6 +45,25 @@ const About = (props) => {
 				<h4 id='about-bg-text-name'>
 					dave <span>perry</span>
 				</h4>
+				{/* <div className='text-wrapper'>
+					<div className='dave'>
+						<p>
+							<span>d</span>
+							<span>a</span>
+							<span>v</span>
+							<span>e</span>
+						</p>
+					</div>
+					<div className='perry'>
+						<p>
+							<span>P</span>
+							<span>E</span>
+							<span>R</span>
+							<span>R</span>
+							<span>Y</span>
+						</p>
+					</div>
+				</div> */}
 				{/* </div> */}
 				<InfoText>
 					I’m naturally creative and enjoy problem solving. I have a meticulous

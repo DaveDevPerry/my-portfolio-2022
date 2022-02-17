@@ -322,6 +322,7 @@ export const InfoText = styled.p`
 	line-height: 24px;
 	text-align: justify;
 	margin-bottom: 2rem;
+	pointer-events: none;
 
 	@media ${(props) => props.theme.breakpoints.sm} {
 		padding: 0.3rem;
@@ -335,6 +336,11 @@ export const AboutTextWrapper = styled.div`
 	/* border: 1px solid green; */
 	position: relative;
 	overflow: hidden;
+	/* &:hover {
+		.dave p span {
+			animation: jump 1s ease-in-out forwards;
+		}
+	} */
 	#about-bg-text-name {
 		position: absolute;
 		top: 45%;
@@ -353,11 +359,61 @@ export const AboutTextWrapper = styled.div`
 		span {
 			text-transform: uppercase;
 		}
+	}
+	/* .text-wrapper {
+		position: absolute;
+		top: 0;
+		left: 0;
+		display: flex;
+		align-items: center;
+		flex-wrap: wrap;
+		z-index: -1;
+		border: 2px solid green;
+		width: 100%;
+		justify-content: center;
+		.dave {
+			p {
+				font-family: 'Gemunu Libre', sans-serif;
+				color: rgba(255, 255, 255, 0.013);
+				-webkit-text-stroke: 1px rgba(229, 229, 229, 0.08);
+				-webkit-text-fill-color: rgba(255, 255, 255, 0.013);
+				color: white;
+				font-size: 20rem;
+				span {
+					transition: 1s ease-in-out;
+				}
+			}
+		}
+		.perry {
+			p {
+				font-family: 'Gemunu Libre', sans-serif;
+				color: rgba(255, 255, 255, 0.013);
+				-webkit-text-stroke: 1px rgba(229, 229, 229, 0.08);
+				-webkit-text-fill-color: rgba(255, 255, 255, 0.013);
+				color: white;
+				font-size: 20rem;
+				span {
+					transition: 1s ease-in-out;
+				}
+			}
+		} */
+
 		@media ${(props) => props.theme.breakpoints.sm} {
 			font-size: 14rem;
 		}
 		@media ${(props) => props.theme.breakpoints.xsm} {
 			font-size: 10rem;
+		}
+	}
+
+	@keyframes jump {
+		0%,
+		100% {
+			transform: translateY(0px);
+		}
+		,
+		50% {
+			transform: translateY(-50px);
 		}
 	}
 `;

@@ -81,22 +81,22 @@ const Header = () => {
 			</WorkStatus>
 			<Div2>
 				<BGNav>NAVIGATION</BGNav>
-				<li id='about-link'>
+				<li id='about-link' className='nav-links'>
 					<Link href='#about'>
 						<NavLink>About</NavLink>
 					</Link>
 				</li>
-				<li id='projects-link'>
+				<li id='projects-link' className='nav-links'>
 					<Link href='#projects'>
 						<NavLink>Projects</NavLink>
 					</Link>
 				</li>
-				<li id='tech-link'>
+				<li id='tech-link' className='nav-links'>
 					<Link href='#tech'>
 						<NavLink>Tech</NavLink>
 					</Link>
 				</li>
-				<li id='contact-link'>
+				<li id='contact-link' className='nav-links'>
 					<Link href='#contact'>
 						<NavLink>Contact</NavLink>
 					</Link>

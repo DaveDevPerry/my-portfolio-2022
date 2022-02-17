@@ -68,7 +68,7 @@ const GlobalStyles = createGlobalStyle`
     /* background-color: var(--background); */
     color: ${(props) => props.theme.colors.primary1};
     cursor: default;
-
+    /* cursor: none; */
   }
   h1,h2,h3,h4,h5,h6,button {
     font-family: ${(props) => props.theme.fonts.title};
@@ -175,6 +175,28 @@ const GlobalStyles = createGlobalStyle`
     height: 80px;
     width: 80px;
   }
+}
+
+.cursor {
+	width: 3rem;
+	height: 3rem;
+	transform: translate(-50%, -50%);
+	border: 2px solid #780202;
+	border-radius: 50%;
+	position: absolute;
+	pointer-events: none;
+	transition: all 0.3s ease;
+	transition-property: background, transform;
+	transform-origin: 100% 100%;
+	z-index: 5;
+	backdrop-filter: grayscale();
+}
+.link-grow {
+	transform: scale(2);
+	background-color: #780202;
+}
+.hovered-link {
+	color: white;
 }
 
 
