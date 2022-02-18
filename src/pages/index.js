@@ -63,7 +63,7 @@ const Home = () => {
 			/> */}
 			{/* <ContactForm /> */}
 			{/* <div className='cursor'></div> */}
-			{/* <PageLoader /> */}
+			<PageLoader />
 			<Section grid>
 				<Hero />
 				{/* <BgAnimation /> */}
