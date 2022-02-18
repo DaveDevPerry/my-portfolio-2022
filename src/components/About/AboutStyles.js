@@ -361,13 +361,21 @@ export const AboutTextWrapper = styled.div`
 		-webkit-text-fill-color: rgba(255, 255, 255, 0.013);
 		color: white;
 		font-size: 20rem;
-		z-index: -1;
+		/* z-index: -1; */
 		width: 100%;
 		text-align: center;
 		line-height: 14rem;
+		&:hover{
+			color: rgba(221, 9, 9, 0.013);
+		-webkit-text-stroke: 1px #5e060621;
+		-webkit-text-fill-color: #5e060621;
+		}
 		span {
 			text-transform: uppercase;
 		}
+	}
+	.red#about-bg-text-name{
+		color: red;
 	}
 	/* .text-wrapper {
 		position: absolute;

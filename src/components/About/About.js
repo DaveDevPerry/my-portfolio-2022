@@ -31,6 +31,22 @@ const About = (props) => {
 			.from('#about', { opacity: 0, duration: 1, delay: 9 });
 	}, []);
 
+	function changeBackground(e) {
+		e.target.style.background = 'red';
+	}
+
+	// function goRed(e) {
+	// 	e.target.style.background = 'red';
+	// }
+	// function goGrey(e) {
+	// 	e.target.style.background = 'transparent';
+	// }
+	// const aboutSection = document.querySelector('#about');
+	// aboutSection.addEventListener('mouseover', () => {
+	// 	const aboutText = document.querySelector('#about-bg-text-name');
+	// 	aboutText.className.add('red');
+	// });
+
 	return (
 		<Section id='about'>
 			{/* <SectionDivider /> */}
