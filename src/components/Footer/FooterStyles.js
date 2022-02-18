@@ -5,7 +5,7 @@ export const FooterWrapper = styled.section`
 	/* max-width: 1040px; */
 	/* border: 2px solid blue; */
 	padding: 2rem 2rem;
-	z-index: 20000;
+	/* z-index: 20000; */
 	margin: 6rem auto 0 auto;
 	box-sizing: border-box;
 	background-color: rgb(27, 27, 27);
@@ -50,10 +50,10 @@ export const FooterWrapper = styled.section`
 		display: grid;
 		place-content: center;
 		padding: 0.8rem;
-		svg {
-			// display: none;
-			cursor: pointer;
-		}
+		/* svg { */
+		// display: none;
+		/* cursor: pointer; */
+		/* } */
 		// .toggle-mode {
 		// 	// display: none;
 		// 	// position: absolute;
@@ -75,9 +75,11 @@ export const FooterWrapper = styled.section`
 		padding: 0 16px 48px;
 		/* width: calc(100vw - 32px); */
 		border: 2px solid #780202;
+		padding-bottom: 0px;
+		border-bottom: 0px solid transparent;
 		.footer-container {
 			border: 2px solid #780202;
-			border-bottom: 0px solid transparent;
+			/* border-bottom: 0px solid transparent; */
 		}
 		.company-container p {
 			font-size: 10px;
