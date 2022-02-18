@@ -20,7 +20,13 @@ import Animations from '../components/Animations/Animations';
 import ContactForm from '../components/ContactForm/contact-form';
 import PageLoader from '../components/PageLoader/PageLoader';
 
+// import AnimatedCursor from 'react-animated-cursor';
+// import dynamic from 'next/dynamic';
+
 const Home = () => {
+	// 	const AnimatedCursor = dynamic(() => import('react-animated-cursor'), {
+	// 		ssr: false,
+	// 	});
 	// const [state, handleSubmit] = useForm(process.env.YOUR_FORM_ID);
 	// useEffect(() => {
 	// 	let mouseCursor = document.querySelector('.cursor');
@@ -46,6 +52,15 @@ const Home = () => {
 
 	return (
 		<Layout>
+			{/* <AnimatedCursor /> */}
+			{/* <AnimatedCursor
+				innerSize={8}
+				outerSize={8}
+				color='193, 11, 111'
+				outerAlpha={0.2}
+				innerScale={0.7}
+				outerScale={5}
+			/> */}
 			{/* <ContactForm /> */}
 			{/* <div className='cursor'></div> */}
 			{/* <PageLoader /> */}
