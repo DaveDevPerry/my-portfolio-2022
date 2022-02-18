@@ -10,7 +10,11 @@ flex-direction: row;
 		column-gap: 5rem;
 		height: 100%;
 		padding: 0;
-	
+		user-select: none; /* supported by Chrome and Opera */
+   -webkit-user-select: none; /* Safari */
+   -khtml-user-select: none; /* Konqueror HTML */
+   -moz-user-select: none; /* Firefox */
+   -ms-user-select: none; /* Internet Explorer/Edge */
 		.about-container {
 			// border: 5px solid yellow;
 			// width: 60%;
@@ -28,6 +32,11 @@ flex-direction: row;
 justify-content: flex-start;
 align-items: center;
 flex-direction: column;
+user-select: none; /* supported by Chrome and Opera */
+   -webkit-user-select: none; /* Safari */
+   -khtml-user-select: none; /* Konqueror HTML */
+   -moz-user-select: none; /* Firefox */
+   -ms-user-select: none; /* Internet Explorer/Edge */
 			// background-color: rgba(35, 36, 36, 0.7);
 			// border: 1px solid green;
 			// background-color: rgba(35, 36, 36, 0.9);

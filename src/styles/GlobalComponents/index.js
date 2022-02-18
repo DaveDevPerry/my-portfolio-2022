@@ -40,6 +40,11 @@ export const SectionTitle = styled.h2`
 	margin-bottom: 16px;
 	/* padding: ${(props) => (props.main ? '0' : '0')}; */
 	padding: ${(props) => (props.main ? '58px 0 16px' : '0')};
+	user-select: none; /* supported by Chrome and Opera */
+	-webkit-user-select: none; /* Safari */
+	-khtml-user-select: none; /* Konqueror HTML */
+	-moz-user-select: none; /* Firefox */
+	-ms-user-select: none; /* Internet Explorer/Edge */
 	/* position: relative; */
 	/* :after {
 		content: '';
@@ -77,6 +82,11 @@ export const SectionText = styled.p`
 	color: rgba(255, 255, 255, 0.5);
 	padding-left: 20px;
 	position: relative;
+	user-select: none; /* supported by Chrome and Opera */
+	-webkit-user-select: none; /* Safari */
+	-khtml-user-select: none; /* Konqueror HTML */
+	-moz-user-select: none; /* Firefox */
+	-ms-user-select: none; /* Internet Explorer/Edge */
 	&:before {
 		position: absolute;
 		content: '';
@@ -128,7 +138,11 @@ export const SectionSubText = styled.p`
 	font-size: 18px;
 	line-height: 32px;
 	color: rgba(255, 255, 255, 0.75);
-
+	user-select: none; /* supported by Chrome and Opera */
+	-webkit-user-select: none; /* Safari */
+	-khtml-user-select: none; /* Konqueror HTML */
+	-moz-user-select: none; /* Firefox */
+	-ms-user-select: none; /* Internet Explorer/Edge */
 	@media ${(props) => props.theme.breakpoints.md} {
 		max-width: 672px;
 		font-size: 16px;

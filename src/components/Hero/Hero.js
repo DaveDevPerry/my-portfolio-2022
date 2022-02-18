@@ -20,6 +20,7 @@ const Hero = (props) => {
 			.from('#hero-title', { opacity: 0, duration: 1, delay: 6 })
 			.from('#hero-text', { opacity: 0, duration: 1 })
 			.from('#hero-buttons', { opacity: 0, duration: 1 });
+		// .from('.btn-left', { x: '200px', duration: 1 }, '-=1');
 	}, []);
 
 	return (
@@ -44,7 +45,7 @@ const Hero = (props) => {
 					{/* <div className='link-btns'> */}
 					{/* <img src='/images/bg_cv.png' alt='cv' /> */}
 					<Link href='#'>
-						<Button>
+						<Button className='btn-left'>
 							{/* <GrDocumentPdf size='3rem' /> */}
 							View C.V.
 						</Button>
