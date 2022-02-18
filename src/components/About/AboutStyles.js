@@ -350,6 +350,86 @@ export const AboutTextWrapper = styled.div`
 			animation: jump 1s ease-in-out forwards;
 		}
 	} */
+	/* #name-anim {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		animation-play-state: paused;
+		cursor: pointer;
+	}
+	#name-anim.play {
+		path {
+			stroke: white;
+			&:nth-child(1) {
+				stroke-dasharray: 282;
+				stroke-dashoffset: 282;
+				animation: draw-line-name 3s ease forwards;
+				// animation-play-state: paused;
+				// animation-delay: 5s;
+				stroke: #780202;
+			}
+			&:nth-child(2) {
+				stroke-dasharray: 255;
+				stroke-dashoffset: 255;
+				stroke: #780202;
+				animation: draw-line-name 2s ease forwards 0.8s;
+			}
+			&:nth-child(3) {
+				stroke-dasharray: 242;
+				stroke-dashoffset: 242;
+				stroke: #780202;
+				animation: draw-line-name 1s ease forwards 1.4s;
+			}
+			&:nth-child(4) {
+				stroke-dasharray: 225;
+				stroke-dashoffset: 225;
+				stroke: #780202;
+				animation: draw-line-name 1s ease forwards 1.8s;
+			}
+			&:nth-child(5) {
+				stroke-dasharray: 231;
+				stroke-dashoffset: 231;
+				stroke: #780202;
+				// animation: draw-line 2s ease forwards 0.8s;
+				animation: fill 0.5s ease forwards 2.6s;
+			}
+			&:nth-child(6) {
+				stroke-dasharray: 225;
+				stroke-dashoffset: 225;
+				animation: fill 0.5s ease forwards 2.8s;
+			}
+			&:nth-child(7) {
+				stroke-dasharray: 292;
+				stroke-dashoffset: 292;
+				animation: fill 0.5s ease forwards 3s;
+			}
+			&:nth-child(8) {
+				stroke-dasharray: 292;
+				stroke-dashoffset: 292;
+				animation: fill 0.5s ease forwards 3.2s;
+			}
+			&:nth-child(9) {
+				stroke-dasharray: 207;
+				stroke-dashoffset: 207;
+				animation: fill 0.5s ease forwards 3.4s;
+			}
+		}
+	}
+
+	@keyframes draw-line-name {
+		to {
+			stroke-dashoffset: 0;
+		}
+	}
+	@keyframes fill {
+		from {
+			fill: transparent;
+		}
+		to {
+			fill: #780202;
+		}
+	} */
 	#about-bg-text-name {
 		position: absolute;
 		top: 45%;
@@ -365,17 +445,20 @@ export const AboutTextWrapper = styled.div`
 		width: 100%;
 		text-align: center;
 		line-height: 14rem;
-		&:hover{
+		transition: 0.5s ease-in;
+		/* &:hover{
 			color: rgba(221, 9, 9, 0.013);
 		-webkit-text-stroke: 1px #5e060621;
 		-webkit-text-fill-color: #5e060621;
-		}
+		} */
 		span {
 			text-transform: uppercase;
 		}
 	}
 	.red#about-bg-text-name{
-		color: red;
+		color: rgba(221, 9, 9, 0.013);
+		-webkit-text-stroke: 1px #5e060621;
+		-webkit-text-fill-color: #5e060621;
 	}
 	/* .text-wrapper {
 		position: absolute;

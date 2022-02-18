@@ -16,53 +16,12 @@ import { Section } from '../styles/GlobalComponents';
 // import Loaders from '../components/Loaders/Loaders';
 // import PageLoaders from '../components/Loaders/Loaders';
 import Animations from '../components/Animations/Animations';
-
 import ContactForm from '../components/ContactForm/contact-form';
 import PageLoader from '../components/PageLoader/PageLoader';
 
-// import AnimatedCursor from 'react-animated-cursor';
-// import dynamic from 'next/dynamic';
-
 const Home = () => {
-	// 	const AnimatedCursor = dynamic(() => import('react-animated-cursor'), {
-	// 		ssr: false,
-	// 	});
-	// const [state, handleSubmit] = useForm(process.env.YOUR_FORM_ID);
-	// useEffect(() => {
-	// 	let mouseCursor = document.querySelector('.cursor');
-	// 	let navLinks = document.querySelectorAll('.nav-links');
-	// 	window.addEventListener('mousemove', cursor);
-	// 	function cursor(e) {
-	// 		mouseCursor.style.top = e.pageY + 'px';
-	// 		mouseCursor.style.left = e.pageX + 'px';
-	// 	}
-
-	// 	navLinks.forEach((link) => {
-	// 		link.addEventListener('mouseleave', () => {
-	// 			mouseCursor.classList.remove('link-grow');
-	// 			link.classList.remove('hovered-link');
-	// 		});
-	// 		link.addEventListener('mouseover', () => {
-	// 			mouseCursor.classList.add('link-grow');
-	// 			link.classList.add('hovered-link');
-	// 		});
-	// 	});
-	// }, []);
-	// window.addEventListener('mousemove', cursor);
-
 	return (
 		<Layout>
-			{/* <AnimatedCursor /> */}
-			{/* <AnimatedCursor
-				innerSize={8}
-				outerSize={8}
-				color='193, 11, 111'
-				outerAlpha={0.2}
-				innerScale={0.7}
-				outerScale={5}
-			/> */}
-			{/* <ContactForm /> */}
-			{/* <div className='cursor'></div> */}
 			<PageLoader />
 			<Section grid>
 				<Hero />
@@ -75,7 +34,6 @@ const Home = () => {
 			<Technologies />
 			{/* <Timeline /> */}
 			{/* <Accomplishments /> */}
-			{/* <Contact /> */}
 			<ContactForm />
 		</Layout>
 	);

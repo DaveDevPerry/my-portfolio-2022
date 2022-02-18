@@ -3,6 +3,7 @@ import React from 'react';
 import * as Icons from 'react-icons/si';
 import { SiNetlify } from 'react-icons/si';
 import { VscGithub } from 'react-icons/vsc';
+import { FaNodeJs } from 'react-icons/fa';
 
 import {
 	BlogCard,
@@ -35,7 +36,7 @@ const Projects = () => {
 		const IconComponent = Icons[name];
 
 		if (!IconComponent) {
-			return <Icons.SiGithub />;
+			return <FaNodeJs size='30' />;
 		}
 
 		return <IconComponent size='30' />;

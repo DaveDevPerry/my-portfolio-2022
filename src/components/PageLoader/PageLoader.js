@@ -21,7 +21,7 @@ const PageLoader = () => {
 			.fromTo('.circle-inner', { scale: 0 }, { scale: 2, duration: 4 }, '-=2')
 			.fromTo('#bg-text-name', { scale: 0 }, { scale: 80, duration: 22 }, '-=4')
 			.to('#loader-container', { opacity: 0, duration: 1 }, '-=14')
-			.to('#loader-container', { display: 'none' }, '-=10');
+			.to('#loader-container', { display: 'none' }, '-=13.5');
 		// tl.current = gsap
 		// 	.timeline()
 		// 	.fromTo('#bg-text-name', { scale: 50 }, { scale: 0, duration: 3 })
