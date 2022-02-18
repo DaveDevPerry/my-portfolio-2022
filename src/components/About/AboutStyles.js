@@ -459,6 +459,11 @@ export const AboutTextWrapper = styled.div`
 		color: rgba(221, 9, 9, 0.013);
 		-webkit-text-stroke: 1px #5e060621;
 		-webkit-text-fill-color: #5e060621;
+		span{
+			color: rgba(221, 9, 9, 0.013);
+		-webkit-text-stroke: 1px #5e060621;
+		-webkit-text-fill-color: #5e060621;
+		}
 	}
 	/* .text-wrapper {
 		position: absolute;
