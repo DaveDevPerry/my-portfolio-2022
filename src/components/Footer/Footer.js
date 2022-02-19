@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import Link from 'next/link';
 import { AiFillGithub, AiFillInstagram, AiFillLinkedin } from 'react-icons/ai';
 import { FaChevronUp } from 'react-icons/fa';
@@ -17,22 +17,25 @@ import {
 	SocialIconsContainer,
 } from './FooterStyles';
 
-// import Anime, { anime } from 'react-anime';
+// import { anime } from 'react-anime';
 
 const Footer = () => {
-	// const { Anime, stagger } = ReactAnime;
+	// useEffect(() => {
+	// 	const moonPath =
+	// 		'M16 27.5C16 42.6878 27 54 27.5 55C12.3122 55 0 42.6878 0 27.5C0 12.3122 12.3122 0 27.5 0C27.5 0 16 12.3122 16 27.5Z';
+	// 	const sunPath =
+	// 		'M55 27.5C55 42.6878 42.6878 55 27.5 55C12.3122 55 0 42.6878 0 27.5C0 12.3122 12.3122 0 27.5 0C42.6878 0 55 12.3122 55 27.5Z';
+	// 	const darkMode = document.querySelector('#dark-mode');
+	// 	let toggle = false;
+	// 	// const { Anime, stagger } = ReactAnime;
+	// }, []);
+
 	// dark mode toggle
-	// const moonPath =
-	// 	'M16 27.5C16 42.6878 27 54 27.5 55C12.3122 55 0 42.6878 0 27.5C0 12.3122 12.3122 0 27.5 0C27.5 0 16 12.3122 16 27.5Z';
-	// const sunPath =
-	// 	'M55 27.5C55 42.6878 42.6878 55 27.5 55C12.3122 55 0 42.6878 0 27.5C0 12.3122 12.3122 0 27.5 0C42.6878 0 55 12.3122 55 27.5Z';
-	// const darkMode = document.querySelector('#dark-mode');
-	// let toggle = false;
 
 	// const handleClick = () => {
-	// 	// darkMode.addEventListener('click', () => {
-	// 	// 	// we need anime.js
-	// 	// set up timeline
+	// darkMode.addEventListener('click', () => {
+	// 	// we need anime.js
+	// set up timeline
 	// 	const timeline = anime.timeline({
 	// 		duration: 750,
 	// 		easing: 'easeOutExpo',

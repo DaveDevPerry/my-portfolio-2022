@@ -50,10 +50,10 @@ export const FooterWrapper = styled.section`
 		display: grid;
 		place-content: center;
 		padding: 0.8rem;
-		/* svg { */
-		// display: none;
-		/* cursor: pointer; */
-		/* } */
+		svg {
+			// display: none;
+			cursor: pointer;
+		}
 		// .toggle-mode {
 		// 	// display: none;
 		// 	// position: absolute;

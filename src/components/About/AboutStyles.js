@@ -345,91 +345,7 @@ export const AboutTextWrapper = styled.div`
 	/* border: 1px solid green; */
 	position: relative;
 	overflow: hidden;
-	/* &:hover {
-		.dave p span {
-			animation: jump 1s ease-in-out forwards;
-		}
-	} */
-	/* #name-anim {
-		position: absolute;
-		top: 50%;
-		left: 50%;
-		transform: translate(-50%, -50%);
-		animation-play-state: paused;
-		cursor: pointer;
-	}
-	#name-anim.play {
-		path {
-			stroke: white;
-			&:nth-child(1) {
-				stroke-dasharray: 282;
-				stroke-dashoffset: 282;
-				animation: draw-line-name 3s ease forwards;
-				// animation-play-state: paused;
-				// animation-delay: 5s;
-				stroke: #780202;
-			}
-			&:nth-child(2) {
-				stroke-dasharray: 255;
-				stroke-dashoffset: 255;
-				stroke: #780202;
-				animation: draw-line-name 2s ease forwards 0.8s;
-			}
-			&:nth-child(3) {
-				stroke-dasharray: 242;
-				stroke-dashoffset: 242;
-				stroke: #780202;
-				animation: draw-line-name 1s ease forwards 1.4s;
-			}
-			&:nth-child(4) {
-				stroke-dasharray: 225;
-				stroke-dashoffset: 225;
-				stroke: #780202;
-				animation: draw-line-name 1s ease forwards 1.8s;
-			}
-			&:nth-child(5) {
-				stroke-dasharray: 231;
-				stroke-dashoffset: 231;
-				stroke: #780202;
-				// animation: draw-line 2s ease forwards 0.8s;
-				animation: fill 0.5s ease forwards 2.6s;
-			}
-			&:nth-child(6) {
-				stroke-dasharray: 225;
-				stroke-dashoffset: 225;
-				animation: fill 0.5s ease forwards 2.8s;
-			}
-			&:nth-child(7) {
-				stroke-dasharray: 292;
-				stroke-dashoffset: 292;
-				animation: fill 0.5s ease forwards 3s;
-			}
-			&:nth-child(8) {
-				stroke-dasharray: 292;
-				stroke-dashoffset: 292;
-				animation: fill 0.5s ease forwards 3.2s;
-			}
-			&:nth-child(9) {
-				stroke-dasharray: 207;
-				stroke-dashoffset: 207;
-				animation: fill 0.5s ease forwards 3.4s;
-			}
-		}
-	}
 
-	@keyframes draw-line-name {
-		to {
-			stroke-dashoffset: 0;
-		}
-	}
-	@keyframes fill {
-		from {
-			fill: transparent;
-		}
-		to {
-			fill: #780202;
-		}
-	} */
 	#about-bg-text-name {
 		position: absolute;
 		top: 45%;
@@ -455,63 +371,29 @@ export const AboutTextWrapper = styled.div`
 			text-transform: uppercase;
 		}
 	}
-	.red#about-bg-text-name{
+
+	.red#about-bg-text-name {
 		color: rgba(221, 9, 9, 0.013);
 		-webkit-text-stroke: 1px #5e060621;
 		-webkit-text-fill-color: #5e060621;
-		span{
+		span {
 			color: rgba(221, 9, 9, 0.013);
-		-webkit-text-stroke: 1px #5e060621;
-		-webkit-text-fill-color: #5e060621;
+			-webkit-text-stroke: 1px #5e060621;
+			-webkit-text-fill-color: #5e060621;
 		}
 	}
-	/* .text-wrapper {
-		position: absolute;
-		top: 0;
-		left: 0;
-		display: flex;
-		align-items: center;
-		flex-wrap: wrap;
-		z-index: -1;
-		border: 2px solid green;
-		width: 100%;
-		justify-content: center;
-		.dave {
-			p {
-				font-family: 'Gemunu Libre', sans-serif;
-				color: rgba(255, 255, 255, 0.013);
-				-webkit-text-stroke: 1px rgba(229, 229, 229, 0.08);
-				-webkit-text-fill-color: rgba(255, 255, 255, 0.013);
-				color: white;
-				font-size: 20rem;
-				span {
-					transition: 1s ease-in-out;
-				}
-			}
-		}
-		.perry {
-			p {
-				font-family: 'Gemunu Libre', sans-serif;
-				color: rgba(255, 255, 255, 0.013);
-				-webkit-text-stroke: 1px rgba(229, 229, 229, 0.08);
-				-webkit-text-fill-color: rgba(255, 255, 255, 0.013);
-				color: white;
-				font-size: 20rem;
-				span {
-					transition: 1s ease-in-out;
-				}
-			}
-		} */
-
-		@media ${(props) => props.theme.breakpoints.sm} {
+	@media ${(props) => props.theme.breakpoints.sm} {
+		#about-bg-text-name {
 			font-size: 14rem;
 		}
-		@media ${(props) => props.theme.breakpoints.xsm} {
+	}
+	@media ${(props) => props.theme.breakpoints.xsm} {
+		#about-bg-text-name {
 			font-size: 10rem;
 		}
 	}
 
-	@keyframes jump {
+	/* @keyframes jump {
 		0%,
 		100% {
 			transform: translateY(0px);
@@ -520,5 +402,5 @@ export const AboutTextWrapper = styled.div`
 		50% {
 			transform: translateY(-50px);
 		}
-	}
+	} */
 `;
