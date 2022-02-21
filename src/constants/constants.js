@@ -5,8 +5,8 @@ export const projects = [
 		subtitle: 'A lottery game with a twist!',
 		description:
 			'A pay-to-play app in which my family members all participate and can check game progress based on the real life lottery draws. I designed this from scratch and it is developed using vanilla javascript.',
-		image: '/images/ll.png',
-		bgimage: '/images/bg_balls.png',
+		image: '/images/ll.webp',
+		bgimage: '/images/bg_balls.webp',
 		bgid: 'card-temp',
 		cardclass: 'left',
 		tags: ['Vanilla JS', 'SCSS', 'ES6 Syntax'],
@@ -22,8 +22,8 @@ export const projects = [
 		subtitle: 'An easy to access storage solution for my sheet music',
 		description:
 			'A storage solution for all my sheet music that I can access from any device.  Allowing me to track my progress and songs to prioritize practicing to upload to my YouTube channel.',
-		image: '/images/ga.png',
-		bgimage: '/images/bg_guitar1.png',
+		image: '/images/ga.webp',
+		bgimage: '/images/bg_guitar1.webp',
 		bgid: 'card-temp',
 		cardclass: 'right',
 		tags: ['3rd Party API', 'React', 'Node'],
@@ -74,7 +74,7 @@ export const projects = [
 		subtitle: "An app to log your child's height as they grow",
 		description:
 			'A CRUD based, user authenticated, fully responsive application to record your kids height as they grow.',
-		image: '/images/m2m.png',
+		image: '/images/m2m.webp',
 		bgimage: '/images/bg_m2m.png',
 		bgid: 'card-temp',
 		cardclass: 'right',
@@ -92,7 +92,7 @@ export const projects = [
 		description:
 			'An app built solely for fans to collaborate missing lyrics to songs.  Based on a voting system to produce the lyrics that are most likely to be correct.',
 		image: '/images/sps.png',
-		bgimage: '/images/bg_mic.png',
+		bgimage: '/images/bg_mic.webp',
 		bgid: 'card-temp',
 		cardclass: 'right',
 		tags: ['SPA', 'MERN Stack', 'User Auth'],

@@ -39,7 +39,7 @@ export default function ContactForm() {
 
 			<FormContainer>
 				<ImgFilter id='card-filter' />
-				<Img src='/images/bg_contact.png' id='contact-bg-img' />
+				<Img src='/images/bg_contact.webp' id='contact-bg-img' />
 				<div className='form-wrapper'>
 					<form
 						id='contact-form'
