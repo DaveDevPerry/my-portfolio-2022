@@ -70,7 +70,7 @@ const Projects = () => {
 					}) => (
 						<BlogCard key={id} className={cardclass}>
 							<ImgFilter id='card-filter' />
-							<Img src={bgimage} id={bgid} />
+							<Img src={bgimage} id={bgid} alt={bgid} />
 							<TitleContent>
 								<HeaderThree title={title} className={font}>
 									{title}
@@ -97,7 +97,7 @@ const Projects = () => {
 								{/* <Hr /> */}
 							</TitleContent>
 							<SubtitleContent>{subtitle}</SubtitleContent>
-							<Img src={image} />
+							<Img src={image} alt={id} />
 							<UtilityList>
 								<LinkWrapper>
 									<SiNetlify size='2.2rem' color='#1186b4' />
