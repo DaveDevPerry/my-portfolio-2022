@@ -35,7 +35,7 @@ export default class MyDocument extends Document {
 						name='description'
 						content='daveperry.tech | Dave Perry is a web designer and developer from London.'
 					/>
-					<meta name='robots' content='index,follow' />
+
 					<link
 						href='https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap'
 						rel='stylesheet'
