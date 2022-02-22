@@ -8,12 +8,12 @@ const RecordPlayer = () => {
 					<div id='turntable'>
 						<div className='circle-wrapper lp-table play'>
 							<img
-								src='./images/vinyl.png'
+								src='./images/vinyl.webp'
 								alt='vinyl record'
 								className='black-vinyl'
 							/>
 							<img
-								src='./images/01 Under the Moon of Love.jpg'
+								src='./images/01 Under the Moon of Love.webp'
 								alt='music-cover'
 								className='cover'
 							/>
@@ -22,7 +22,7 @@ const RecordPlayer = () => {
 						<div className='record-player-arm'>
 							<div className='arm-wrapper'>
 								<img
-									src='./images/record-player-arm-1.png'
+									src='./images/record-player-arm-1.webp'
 									alt='turntable arm'
 									id='player-arm'
 								/>

@@ -97,14 +97,14 @@ export const Container = styled.div`
 								// text-align: center;
 							}
 							#left-spindle {
-								background-image: url('/images/reel.png');
+								background-image: url('/images/reel.webp');
 								background-position: center;
 								background-repeat: no-repeat;
 								background-origin: center;
 								background-size: 6rem;
 							}
 							#right-spindle {
-								background-image: url('/images/reel-r.png');
+								background-image: url('/images/reel-r.webp');
 								background-position: center;
 								background-repeat: no-repeat;
 								background-origin: center;

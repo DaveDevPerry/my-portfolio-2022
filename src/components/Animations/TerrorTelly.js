@@ -8,7 +8,7 @@ const TerrorTelly = () => {
 					<div className='tv-wrapper'>
 						<div id='tv-signal'></div>
 						<img
-							src='./images/tv-telly_screen2.png'
+							src='./images/tv-telly_screen2.webp'
 							alt='telly'
 							id='terror-tv'
 						/>

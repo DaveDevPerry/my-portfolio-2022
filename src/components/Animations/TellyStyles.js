@@ -42,7 +42,7 @@ export const Container = styled.div`
 			left: 28px;
 			width: 110px;
 			height: 50px;
-			background: url('../images/tv-signal.png');
+			background: url('../images/tv-signal.webp');
 			background-repeat: repeat;
 			background-position: 0 0;
 			background-size: auto 100%;
