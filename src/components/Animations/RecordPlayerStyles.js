@@ -36,14 +36,16 @@ export const Container = styled.div`
 					display: grid;
 					place-content: center;
 					.black-vinyl {
-						height: 20rem;
-						width: 20rem;
+						height: 200px;
+						width: 200px;
+						/* height: 20rem;
+						width: 20rem; */
 						border-radius: 50%;
 						position: absolute;
 					}
 					.cover {
-						height: 6rem;
-						width: 6rem;
+						height: 60px;
+						width: 60px;
 						border-radius: 50%;
 						animation: rotate 10s linear infinite;
 						/* animation-play-state: paused; */
@@ -56,8 +58,10 @@ export const Container = styled.div`
 					position: absolute;
 					top: 0;
 					left: 20rem;
-					height: 22rem;
-					width: 8rem;
+					height: 220px;
+					width: 80px;
+					/* height: 22rem;
+					width: 8rem; */
 					padding-top: 4rem;
 					.arm-wrapper {
 						position: relative;

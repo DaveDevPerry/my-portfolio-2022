@@ -151,7 +151,7 @@ export const Div3 = styled.div`
 `;
 
 // Navigation Links
-export const NavLink = styled.a`
+export const NavLink = styled.p`
 	text-transform: uppercase;
 	font-size: 2rem;
 	line-height: 32px;

@@ -20,6 +20,7 @@ import {
 	Img,
 	ImgFilter,
 	LinkWrapper,
+	IconWrapper,
 } from './ProjectsStyles';
 import {
 	Section,
@@ -147,12 +148,12 @@ const Projects = () => {
 							</div>
 							<div>
 								{/* <TitleContent>Stack</TitleContent> */}
-								<TagList>
+								<IconWrapper>
 									{icons.map((icon, i) => (
 										// <DynamicFaIcon name={icon} key={i} />
 										<DynamicSiIcon name={icon} key={i} className={icon} />
 									))}
-								</TagList>
+								</IconWrapper>
 							</div>
 						</BlogCard>
 					)

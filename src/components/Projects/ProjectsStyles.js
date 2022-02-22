@@ -122,7 +122,7 @@ export const CardInfo = styled.p`
 	}
 `;
 
-export const UtilityList = styled.ul`
+export const UtilityList = styled.div`
 	list-style-type: none;
 	padding: 0;
 	display: flex;
@@ -130,6 +130,14 @@ export const UtilityList = styled.ul`
 	margin: 1rem 0;
 	column-gap: 2rem;
 `;
+// export const UtilityList = styled.ul`
+// 	list-style-type: none;
+// 	padding: 0;
+// 	display: flex;
+// 	justify-content: center;
+// 	margin: 1rem 0;
+// 	column-gap: 2rem;
+// `;
 
 export const ExternalLinks = styled.a`
 	color: #ffffff;
@@ -169,6 +177,12 @@ export const Tag = styled.li`
 	color: white;
 	font-size: 1.5rem;
 	font-weight: bold;
+`;
+
+export const IconWrapper = styled.div`
+	display: flex;
+	justify-content: space-around;
+	padding: 2rem;
 `;
 
 export const LinkWrapper = styled.div`
