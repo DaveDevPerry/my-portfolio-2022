@@ -114,9 +114,9 @@ const About = (props) => {
 					/>
 				</svg> */}
 				{/* <AboutBgText /> */}
-				<h4 id='about-bg-text-name' onMouseOver={goRed}>
+				<p id='about-bg-text-name' onMouseOver={goRed}>
 					dave <span>perry</span>
-				</h4>
+				</p>
 				{/* <div className='text-wrapper'>
 					<div className='dave'>
 						<p>
