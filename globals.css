@@ -1,7 +1,6 @@
 @font-face {
 	font-family: 'Cherl';
-	src: url('/fonts/CheriLiney.woff2') format('woff2'),
-		url('/fonts/CheriLiney.woff') format('woff');
+	src: url('/fonts/CheriLiney.woff') format('woff');
 	font-weight: normal;
 	font-style: normal;
 	font-display: swap;
@@ -9,8 +8,7 @@
 
 @font-face {
 	font-family: 'New Tegomin';
-	src: url('/fonts/NewTegomin-Regular.woff2') format('woff2'),
-		url('/fonts/NewTegomin-Regular.woff') format('woff');
+	src: url('/fonts/NewTegomin-Regular.woff') format('woff');
 	font-weight: normal;
 	font-style: normal;
 	font-display: swap;
@@ -24,24 +22,21 @@
 
 @font-face {
 	font-family: 'James Stroker';
-	src: url('/fonts/JamesStroker.woff2') format('woff2'),
-		url('/fonts/JamesStroker.woff') format('woff');
+	src: url('/fonts/JamesStroker.woff') format('woff');
 	font-weight: normal;
 	font-style: normal;
 	font-display: swap;
 }
 @font-face {
 	font-family: 'Terrorvision';
-	src: url('/fonts/Terrorvision.woff') format('woff2'),
-		url('/fonts/Terrorvision.woff') format('woff');
+	src: url('/fonts/Terrorvision.woff') format('woff');
 	font-weight: 100;
 	font-style: normal;
 	font-display: swap;
 }
 @font-face {
 	font-family: 'Gala Script';
-	src: url('/fonts/GalaScript.woff2') format('woff2'),
-		url('/fonts/GalaScript.woff') format('woff');
+	src: url('/fonts/GalaScript.woff') format('woff');
 	font-weight: normal;
 	font-style: italic;
 	font-display: swap;
