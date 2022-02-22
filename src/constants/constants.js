@@ -39,8 +39,8 @@ export const projects = [
 		subtitle: 'Streaming un-released Terrorvision demo tracks',
 		description:
 			'A single page app built for Terrorvision fans to easily stream rare demo songs from the bands early days.  Containing custom animations and an audio visualizer to provide a great user experience.',
-		image: '/images/tf.png',
-		bgimage: '/images/bg_cans.png',
+		image: '/images/tf.webp',
+		bgimage: '/images/bg_cans.webp',
 		bgid: 'card-temp',
 		cardclass: 'left',
 		tags: ['Vanilla JS', 'ES6 Syntax', 'Animations'],
@@ -56,8 +56,8 @@ export const projects = [
 		subtitle: 'A custom two-player game of naughts & crosses',
 		description:
 			'A game specifically built for my four and six year-old nieces to play on their tablet together. It is a re-imagining of Tic-Tac-Toe.',
-		image: '/images/pp.png',
-		bgimage: '/images/bg_game.png',
+		image: '/images/pp.webp',
+		bgimage: '/images/bg_game.webp',
 		bgid: 'card-temp',
 		cardclass: 'left',
 		tags: ['Vanilla JS', 'LocalStorage', 'ES6 modules'],
@@ -75,7 +75,7 @@ export const projects = [
 		description:
 			'A CRUD based, user authenticated, fully responsive application to record your kids height as they grow.',
 		image: '/images/m2m.webp',
-		bgimage: '/images/bg_m2m.png',
+		bgimage: '/images/bg_m2m.webp',
 		bgid: 'card-temp',
 		cardclass: 'right',
 		tags: ['Express.js', 'Node.js', 'MongoDb'],
@@ -91,7 +91,7 @@ export const projects = [
 		subtitle: 'Fan based lyric collaboration',
 		description:
 			'An app built solely for fans to collaborate missing lyrics to songs.  Based on a voting system to produce the lyrics that are most likely to be correct.',
-		image: '/images/sps.png',
+		image: '/images/sps.webp',
 		bgimage: '/images/bg_mic.webp',
 		bgid: 'card-temp',
 		cardclass: 'right',
