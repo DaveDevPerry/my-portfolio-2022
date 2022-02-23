@@ -121,6 +121,7 @@ export const projects = [
 	// },
 ];
 
+// note
 // export const loaders = [
 // 	{
 // 		title: 'Keyframes',
