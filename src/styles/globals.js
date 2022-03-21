@@ -184,7 +184,7 @@ const GlobalStyles = createGlobalStyle`
   }
 }
 
-.cursor {
+/* .cursor {
 	width: 3rem;
 	height: 3rem;
 	transform: translate(-50%, -50%);
@@ -197,7 +197,7 @@ const GlobalStyles = createGlobalStyle`
 	transform-origin: 100% 100%;
 	z-index: 5;
 	backdrop-filter: grayscale();
-}
+} */
 .link-grow {
 	transform: scale(2);
 	background-color: #780202;

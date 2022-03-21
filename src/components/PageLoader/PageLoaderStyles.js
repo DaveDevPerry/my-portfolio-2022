@@ -25,7 +25,7 @@ export const Container = styled.div`
 		-webkit-text-fill-color: rgba(255, 255, 255, 0.02);
 		font-size: 30rem;
 		line-height: 20rem;
-
+		opacity: 0;
 		span {
 			text-transform: uppercase;
 			margin-left: 30rem;
@@ -42,7 +42,7 @@ export const Container = styled.div`
 		-webkit-text-fill-color: #78020242;
 		font-size: 30rem;
 		line-height: 20rem;
-
+		opacity: 0;
 		span {
 			text-transform: uppercase;
 			margin-left: 30rem;
@@ -60,6 +60,7 @@ export const Container = styled.div`
 		border: 10px solid rgba(196, 196, 196, 0.05);
 		border-radius: 50%;
 		// @include flex(center, center, row);
+		opacity: 0;
 		.circle-inner {
 			height: 40%;
 			width: 40%;
@@ -70,6 +71,7 @@ export const Container = styled.div`
 			// width:  50%;
 			border: 5px solid rgba(196, 196, 196, 0.1);
 			border-radius: inherit;
+			opacity: 0;
 		}
 	}
 

@@ -57,7 +57,7 @@ const Technologies = () => (
 		</TechIcons>
 		<List>
 			<ListItem>
-				<DiReact size='3rem' />
+				<DiReact size='30px' />
 				<ListContainer>
 					<ListTitle>Front-End</ListTitle>
 					<ListParagraph>
@@ -70,7 +70,7 @@ const Technologies = () => (
 				</ListContainer>
 			</ListItem>
 			<ListItem>
-				<DiFirebase size='3rem' />
+				<DiFirebase size='30px' />
 				<ListContainer>
 					<ListTitle>Back-End</ListTitle>
 					<ListParagraph>
@@ -82,7 +82,7 @@ const Technologies = () => (
 				</ListContainer>
 			</ListItem>
 			<ListItem>
-				<DiZend size='3rem' />
+				<DiZend size='30px' />
 				<ListContainer>
 					<ListTitle>UI / UX</ListTitle>
 					<ListParagraph>

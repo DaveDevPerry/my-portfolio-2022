@@ -44,7 +44,7 @@ const Hero = (props) => {
 				</Link> */}
 					{/* <div className='link-btns'> */}
 					{/* <img src='/images/bg_cv.png' alt='cv' /> */}
-					<Link href='#'>
+					<Link href='#' passHref>
 						<Button className='btn-left'>
 							{/* <GrDocumentPdf size='3rem' /> */}
 							View C.V.
@@ -52,7 +52,7 @@ const Hero = (props) => {
 					</Link>
 					{/* </div> */}
 
-					<Link href='#projects'>
+					<Link href='#projects' passHref>
 						<Button>My Projects</Button>
 					</Link>
 					{/* <Button>Available for work</Button> */}

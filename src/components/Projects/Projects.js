@@ -101,13 +101,13 @@ const Projects = () => {
 							<Img src={image} alt={id} />
 							<UtilityList>
 								<LinkWrapper>
-									<SiNetlify size='2.2rem' color='#1186b4' />
+									<SiNetlify size='22px' color='#1186b4' />
 									<ExternalLinks href={source} target='_blank'>
 										Visit Site
 									</ExternalLinks>
 								</LinkWrapper>
 								<LinkWrapper>
-									<VscGithub size='2.2rem' />
+									<VscGithub size='22px' />
 									<ExternalLinks href={visit} target='_blank'>
 										View Code
 									</ExternalLinks>
