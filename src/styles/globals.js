@@ -131,15 +131,10 @@ const GlobalStyles = createGlobalStyle`
   font-family: 'Cherl';
   color: #af0303;
 }
-/* #test{
-  h3{
-    font-family: 'New Tegomin';
-  }
-  
-} */
+
 .font-guitar-archive{
   
-    font-family: 'New Tegomin';
+    /* font-family: 'New Tegomin'; */
   color: #c7581d;
   span{
     color: rgb(105, 54, 25);
