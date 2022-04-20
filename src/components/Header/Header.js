@@ -36,8 +36,6 @@ const Header = () => {
 	}, []);
 
 	const typewriterText = () => {
-		// const str = 'Available for freelance work';
-
 		const text = document.querySelector('#typewriter-text');
 
 		let typewriter = new Typewriter(text, {
