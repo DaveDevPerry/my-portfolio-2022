@@ -2,7 +2,7 @@ import { useRouter } from 'next/router';
 import { useEffect } from 'react';
 import Theme from '../styles/theme';
 import Head from 'next/head';
-import '../../public/fonts/style.css';
+// import '../../public/fonts/style.css';
 import '../../globals.css';
 
 // import dynamic from 'next/dynamic';
