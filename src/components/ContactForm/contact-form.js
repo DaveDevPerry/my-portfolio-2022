@@ -4,13 +4,13 @@ import {
 	Section,
 	SectionText,
 } from '../../styles/GlobalComponents';
-import { InfoText } from '../ContactForm/ContactFormStyles';
+// import { InfoText } from '../ContactForm/ContactFormStyles';
 import {
 	FormContainer,
 	ImgFilter,
 	Img,
 	FormButton,
-	ContactText,
+	// ContactText,
 } from './ContactFormStyles';
 
 export default function ContactForm() {

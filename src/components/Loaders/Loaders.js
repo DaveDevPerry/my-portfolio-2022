@@ -1,5 +1,5 @@
 import React from 'react';
-import { DiFirebase, DiReact, DiZend } from 'react-icons/di';
+// import { DiFirebase, DiReact, DiZend } from 'react-icons/di';
 import {
 	Section,
 	SectionDivider,
@@ -9,10 +9,10 @@ import {
 import {
 	Img,
 	List,
-	ListContainer,
-	ListItem,
-	ListParagraph,
-	ListTitle,
+	// ListContainer,
+	// ListItem,
+	// ListParagraph,
+	// ListTitle,
 } from './LoadersStyles';
 
 import { loaders } from '../../constants/constants';

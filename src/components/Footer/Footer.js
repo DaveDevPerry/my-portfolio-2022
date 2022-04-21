@@ -1,20 +1,20 @@
-import React, { useEffect } from 'react';
-import Link from 'next/link';
-import { AiFillGithub, AiFillInstagram, AiFillLinkedin } from 'react-icons/ai';
+import React from 'react';
+// import Link from 'next/link';
+// import { AiFillGithub, AiFillInstagram, AiFillLinkedin } from 'react-icons/ai';
 import { FaChevronUp } from 'react-icons/fa';
 import { SiGithub } from 'react-icons/si';
 
-import { SocialIcons } from '../Header/HeaderStyles';
+// import { SocialIcons } from '../Header/HeaderStyles';
 import {
-	CompanyContainer,
+	// CompanyContainer,
 	FooterWrapper,
-	LinkColumn,
-	LinkItem,
-	LinkList,
-	LinkTitle,
-	Slogan,
-	SocialContainer,
-	SocialIconsContainer,
+	// LinkColumn,
+	// LinkItem,
+	// LinkList,
+	// LinkTitle,
+	// Slogan,
+	// SocialContainer,
+	// SocialIconsContainer,
 } from './FooterStyles';
 
 // import { anime } from 'react-anime';

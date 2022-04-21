@@ -6,7 +6,7 @@ import { Container } from './PageLoaderStyles';
 const PageLoader = () => {
 	const circleOuter = useRef();
 	const circleInner = useRef();
-	const bgTextName = useRef();
+	// const bgTextName = useRef();
 	// const tl = useRef();
 
 	useEffect(() => {

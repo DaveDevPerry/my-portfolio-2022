@@ -1,17 +1,17 @@
 import Link from 'next/link';
 import React, { useRef, useEffect } from 'react';
 import { gsap } from 'gsap';
-import { AiFillGithub, AiFillInstagram, AiFillLinkedin } from 'react-icons/ai';
-import { DiCssdeck } from 'react-icons/di';
+// import { AiFillGithub, AiFillInstagram, AiFillLinkedin } from 'react-icons/ai';
+// import { DiCssdeck } from 'react-icons/di';
 
 import {
 	Container,
 	Div1,
 	Div2,
-	Div3,
+	// Div3,
 	NavLink,
-	SocialIcons,
-	Span,
+	// SocialIcons,
+	// Span,
 	Brand,
 	BGBrand,
 	BGNav,

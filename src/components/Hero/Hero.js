@@ -1,6 +1,6 @@
 import React, { useEffect, useRef } from 'react';
 import { gsap } from 'gsap';
-import { GrDocumentPdf } from 'react-icons/gr';
+// import { GrDocumentPdf } from 'react-icons/gr';
 import Link from 'next/link';
 
 import {
@@ -9,7 +9,7 @@ import {
 	BtnWrapper,
 } from '../../styles/GlobalComponents';
 import Button from '../../styles/GlobalComponents/Button';
-import { LeftSection, SectionText, SectionTextBar } from './HeroStyles';
+import { LeftSection, SectionText } from './HeroStyles';
 
 const Hero = (props) => {
 	const tl = useRef();

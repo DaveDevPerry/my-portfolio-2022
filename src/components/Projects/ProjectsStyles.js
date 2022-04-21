@@ -6,7 +6,6 @@ export const Img = styled.img`
 	object-fit: cover;
 	overflow: hidden;
 `;
-
 export const ImgFilter = styled.div`
 	/* border: 2px solid green; */
 	width: 100%;
@@ -169,7 +168,7 @@ export const ExternalLinks = styled.a`
 
 export const TagList = styled.ul`
 	display: flex;
-	justify-content: space-around;
+	justify-content: space-between;
 	padding: 2rem;
 `;
 export const Tag = styled.li`
@@ -177,6 +176,7 @@ export const Tag = styled.li`
 	color: white;
 	font-size: 1.5rem;
 	font-weight: bold;
+	flex: 1;
 `;
 
 export const IconWrapper = styled.div`

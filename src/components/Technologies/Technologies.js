@@ -23,7 +23,7 @@ import {
 	SiJavascript,
 	SiGit,
 	SiNetlify,
-	SiFigma,
+	// SiFigma,
 	SiAdobephotoshop,
 } from 'react-icons/si';
 

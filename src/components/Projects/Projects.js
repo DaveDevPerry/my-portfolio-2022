@@ -60,7 +60,7 @@ const Projects = () => {
 						bgid,
 						cardclass,
 						title,
-						titleCode,
+						// titleCode,
 						subtitle,
 						description,
 						tags,
@@ -76,26 +76,6 @@ const Projects = () => {
 								<HeaderThree title={title} className={font}>
 									{title}
 								</HeaderThree>
-								{/* <p
-								id='test'
-								className={font}
-								dangerouslySetInnerHTML={{
-									__html: titleCode,
-								}}
-							></p>
-							<HeaderThree
-								dangerouslySetInnerHTML={{
-									__html: titleCode,
-								}}
-								className={font}
-							></HeaderThree> */}
-								{/* <HeaderThree
-								dangerouslySetInnerHTML={{
-									__html: '<p>hel<span>l</span>o</p>',
-								}}
-								className={font}
-							></HeaderThree> */}
-								{/* <Hr /> */}
 							</TitleContent>
 							<SubtitleContent>{subtitle}</SubtitleContent>
 							<Img src={image} alt={id} />
@@ -114,32 +94,8 @@ const Projects = () => {
 								</LinkWrapper>
 							</UtilityList>
 							<Hr />
-							{/* <div>
-					
-								<TagList>
-									{icons.map((icon, i) => (
-								
-										<DynamicSiIcon name={icon} key={i} className={icon} />
-									))}
-								</TagList>
-							</div> */}
 							<CardInfo>{description}</CardInfo>
-							{/* <div>
-							<TitleContent>Stack</TitleContent>
-							<TagList>
-								{tags.map((tag, i) => (
-									<Tag key={i}>{tag}</Tag>
-								))}
-							</TagList>
-						</div> */}
-							{/* <UtilityList>
-							<SiNetlify size='2.5rem' />
-							<ExternalLinks href={source}>View Site</ExternalLinks>
-							<VscGithub size='2.5rem' />
-							<ExternalLinks href={visit}>View Code</ExternalLinks>
-						</UtilityList> */}
 							<div>
-								{/* <TitleContent>Stack</TitleContent> */}
 								<TagList>
 									{tags.map((tag, i) => (
 										<Tag key={i}>{tag}</Tag>
@@ -147,10 +103,8 @@ const Projects = () => {
 								</TagList>
 							</div>
 							<div>
-								{/* <TitleContent>Stack</TitleContent> */}
 								<IconWrapper>
 									{icons.map((icon, i) => (
-										// <DynamicFaIcon name={icon} key={i} />
 										<DynamicSiIcon name={icon} key={i} className={icon} />
 									))}
 								</IconWrapper>

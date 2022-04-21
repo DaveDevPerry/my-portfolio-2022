@@ -1,25 +1,7 @@
 import React from 'react';
-import { VscFilePdf, VscGithub } from 'react-icons/vsc';
-import { HiOutlineShare } from 'react-icons/hi';
-// import { VscGithub } from 'react-icons/vsc';
-import { DiFirebase, DiReact, DiZend } from 'react-icons/di';
-import {
-	Section,
-	SectionDivider,
-	SectionText,
-	SectionTitle,
-} from '../../styles/GlobalComponents';
-import {
-	List,
-	ListContainer,
-	ListItem,
-	ListParagraph,
-	ListTitle,
-	ContactContainer,
-	FormContainer,
-	Img,
-	ImgFilter,
-} from './ContactStyles';
+
+import { Section, SectionTitle } from '../../styles/GlobalComponents';
+import { FormContainer, Img, ImgFilter } from './ContactStyles';
 
 import Button from '../../styles/GlobalComponents/Button';
 
