@@ -1,17 +1,20 @@
 import React from 'react';
-// import { gsap } from 'gsap';
+import styled from 'styled-components';
 
-import Footer from '../components/Footer/Footer';
-import Header from '../components/Header/Header';
-import { Container } from './LayoutStyles';
-// import { TagList } from '../components/Projects/ProjectsStyles';
+import Footer from '../components/Footer';
+import Header from '../components/Header';
 
 export const Layout = ({ children }) => {
 	return (
-		<Container>
+		<LayoutContainer>
 			<Header />
 			<main>{children}</main>
 			<Footer />
-		</Container>
+		</LayoutContainer>
 	);
 };
+const LayoutContainer = styled.div`
+	max-width: 1280px;
+	width: 100%;
+	margin: auto;
+`;
