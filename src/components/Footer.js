@@ -1,4 +1,5 @@
 import React from 'react';
+// import Link from 'next/link';
 import styled from 'styled-components';
 import { FaChevronUp } from 'react-icons/fa';
 import { SiGithub } from 'react-icons/si';
@@ -13,7 +14,7 @@ const Footer = () => {
 			</a>
 
 			<div className='links-container footer-container'>
-				<a href='https:github.com/DaveDevPerry' target='_blank'>
+				<a href='https:github.com/DaveDevPerry' target='_blank' rel='noopener'>
 					<SiGithub size={30} color='#ffffff' pointerEvents='none' />
 				</a>
 			</div>

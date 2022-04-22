@@ -62,26 +62,28 @@ const Header = () => {
 			</WorkStatus>
 			<Div2>
 				<BGNav>NAVIGATION</BGNav>
-				<li id='about-link' className='nav-links'>
-					<Link href='#about'>
-						<NavLink>About</NavLink>
-					</Link>
-				</li>
-				<li id='projects-link' className='nav-links'>
-					<Link href='#projects'>
-						<NavLink>Projects</NavLink>
-					</Link>
-				</li>
-				<li id='tech-link' className='nav-links'>
-					<Link href='#tech'>
-						<NavLink>Tech</NavLink>
-					</Link>
-				</li>
-				<li id='contact-link' className='nav-links'>
-					<Link href='#contact'>
-						<NavLink>Contact</NavLink>
-					</Link>
-				</li>
+				<ul>
+					<li id='about-link' className='nav-links'>
+						<Link href='#about'>
+							<NavLink>About</NavLink>
+						</Link>
+					</li>
+					<li id='projects-link' className='nav-links'>
+						<Link href='#projects'>
+							<NavLink>Projects</NavLink>
+						</Link>
+					</li>
+					<li id='tech-link' className='nav-links'>
+						<Link href='#tech'>
+							<NavLink>Tech</NavLink>
+						</Link>
+					</li>
+					<li id='contact-link' className='nav-links'>
+						<Link href='#contact'>
+							<NavLink>Contact</NavLink>
+						</Link>
+					</li>
+				</ul>
 			</Div2>
 		</Container>
 	);
@@ -163,6 +165,10 @@ const Div2 = styled.div`
 	column-gap: 2rem;
 	align-items: center;
 	font-weight: bold;
+	ul {
+		display: flex;
+		column-gap: 2rem;
+	}
 	@media ${(props) => props.theme.breakpoints.sm} {
 		justify-content: space-around;
 		column-gap: 0;
