@@ -11,10 +11,15 @@ const Footer = () => {
 		<FooterWrapper>
 			<a href='/' id='chevron-up'>
 				<FaChevronUp size={50} color='#780202' />
+				{/* <p>Back to Top</p> */}
 			</a>
 
 			<div className='links-container footer-container'>
-				<a href='https:github.com/DaveDevPerry' target='_blank' rel='noopener'>
+				<a
+					href='https:github.com/DaveDevPerry'
+					target='_blank'
+					rel='noopener noreferrer'
+				>
 					<SiGithub size={30} color='#ffffff' pointerEvents='none' />
 				</a>
 			</div>
