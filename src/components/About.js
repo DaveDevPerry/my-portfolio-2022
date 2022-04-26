@@ -15,7 +15,7 @@ const About = () => {
 	useEffect(() => {
 		tl.current = gsap
 			.timeline()
-			.from('#about', { opacity: 0, duration: 1, delay: 9 });
+			.from('#about', { opacity: 0, duration: 1, delay: 8 });
 	}, []);
 
 	function goRed(e) {

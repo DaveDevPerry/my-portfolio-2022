@@ -20,9 +20,10 @@ const Footer = () => {
 					href='https:github.com/DaveDevPerry'
 					target='_blank'
 					rel='noopener noreferrer'
+					id='footer-gitHub-link'
 				>
 					<SiGithub size={30} color='#ffffff' pointerEvents='none' />
-					<p>git</p>
+					{/* <p>git</p> */}
 				</a>
 			</div>
 
@@ -93,6 +94,7 @@ const FooterWrapper = styled.section`
 				color: var(--grey);
 			}
 		}
+		/* #footer-gitHub-link */
 	}
 	.toggle-container {
 		right: 2rem;

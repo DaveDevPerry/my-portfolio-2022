@@ -9,14 +9,24 @@ const Header = () => {
 	useEffect(() => {
 		tl.current = gsap
 			.timeline()
-			.fromTo('#header', { y: '-500' }, { y: 0, duration: 2 })
-			.from('#brand', { x: '-200', duration: 2 })
+			.fromTo('#header', { y: '-100%' }, { y: 0, duration: 1 })
+			.from('#brand', { x: '-200', duration: 1 })
 			.from('#work-status', { opacity: 0, duration: 1 })
-			.from('#about-link', { y: '-100px', duration: 1.5 }, '-=1')
-			.from('#projects-link', { y: '-100px', duration: 1.5 }, '-=1')
+			.from('#about-link', { y: '-100px', duration: 1.5 }, '-=2')
+			.from('#projects-link', { y: '-100px', duration: 1.5 }, '-=1.5')
 			.from('#tech-link', { y: '-100px', duration: 1.5 }, '-=1')
 			.from('#contact-link', { y: '-100px', duration: 1.5 }, '-=1')
-			.from('#typewriter-text', { opacity: 0 });
+			.from('#typewriter-text', { opacity: 0 }, '+=3.2');
+		// tl.current = gsap
+		// 	.timeline()
+		// 	.fromTo('#header', { y: '-100%' }, { y: 0, duration: 2 })
+		// 	.from('#brand', { x: '-200', duration: 2 })
+		// 	.from('#work-status', { opacity: 0, duration: 1 })
+		// 	.from('#about-link', { y: '-100px', duration: 1.5 }, '-=1')
+		// 	.from('#projects-link', { y: '-100px', duration: 1.5 }, '-=1')
+		// 	.from('#tech-link', { y: '-100px', duration: 1.5 }, '-=1')
+		// 	.from('#contact-link', { y: '-100px', duration: 1.5 }, '-=1')
+		// 	.from('#typewriter-text', { opacity: 0 });
 		typewriterText();
 	}, []);
 

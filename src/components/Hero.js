@@ -13,9 +13,9 @@ const Hero = () => {
 	useEffect(() => {
 		tl.current = gsap
 			.timeline()
-			.from('#hero-title', { opacity: 0, duration: 1, delay: 6 })
-			.from('#hero-text', { opacity: 0, duration: 1 })
-			.from('#hero-buttons', { opacity: 0, duration: 1 });
+			.from('#hero-title', { opacity: 0, duration: 1, delay: 4 })
+			.from('#hero-text', { opacity: 0, duration: 1 }, '-=0.5')
+			.from('#hero-buttons', { opacity: 0, duration: 1 }, '-=0.5');
 	}, []);
 
 	return (
