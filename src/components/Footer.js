@@ -10,8 +10,9 @@ const Footer = () => {
 	return (
 		<FooterWrapper>
 			<a href='/' id='chevron-up'>
+				{/* back to top */}
 				<FaChevronUp size={50} color='#780202' />
-				{/* <p>Back to Top</p> */}
+				<p>Back to Top</p>
 			</a>
 
 			<div className='links-container footer-container'>
@@ -21,6 +22,7 @@ const Footer = () => {
 					rel='noopener noreferrer'
 				>
 					<SiGithub size={30} color='#ffffff' pointerEvents='none' />
+					<p>git</p>
 				</a>
 			</div>
 
