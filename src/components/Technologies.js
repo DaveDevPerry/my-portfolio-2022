@@ -53,7 +53,7 @@ const Technologies = () => (
 					<ListTitle>Front-End</ListTitle>
 					<ListParagraph>
 						Experience with <br />
-						HTML5 / CSS <br />
+						HTML5 / CSS3 <br />
 						SASS <br />
 						Javascript <br />
 						React.js

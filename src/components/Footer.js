@@ -9,7 +9,7 @@ import { SiGithub } from 'react-icons/si';
 const Footer = () => {
 	return (
 		<FooterWrapper>
-			<a href='/' id='chevron-up'>
+			<a href='#top' id='chevron-up'>
 				{/* back to top */}
 				<FaChevronUp size={50} color='#780202' />
 				<p>Back to Top</p>

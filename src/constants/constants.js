@@ -37,7 +37,7 @@
 // 		// colors: ['#000000', '#fff444', '#dd66uu'],
 // 		icons: [
 // 			{ name: 'FaNodeJs', color: '#6cc24a' },
-// 			{ name: 'SiDevexpress', color: '#234565' },
+// 			{ name: 'SiDevExpress', color: '#234565' },
 // 			{ name: 'SiMongodb', color: '#459546' },
 // 		],
 // 		source: 'https://tv-lyrics-test-v2.herokuapp.com/',
@@ -143,13 +143,37 @@
 // ];
 export const projects = [
 	{
+		title: 'TV Fan Poll',
+		titleCode: '<h3>FUN<span>jumble</span></h3>',
+		subtitle: 'Create a poll and place your votes',
+		description:
+			'A fully responsive MERN Stack App I built for fan to fan interaction by creating polls and placing votes on everything Terrorvision related.  ',
+		image: '/images/tvp-screens.webp',
+		bgimage: '/images/bg_vote.webp',
+		bgid: 'card-temp',
+		cardclass: 'right',
+		tags: ['MERN Stack', 'User Auth', 'bcrypt'],
+		// icons: ['SiReact', 'SiPwa', 'SiCss3'],
+		// colors: ['#000000', '#fff444', '#dd66uu'],
+		icons: [
+			{ name: 'SiReact', color: '#00CDF2' },
+			{ name: 'FaNodeJs', color: '#6cc24a' },
+			// { name: 'Express', color: '#234565' },
+			{ name: 'SiMongodb', color: '#459546' },
+		],
+		source: 'https://illustrious-travesseiro-d45285.netlify.app/',
+		visit: 'https://github.com/DaveDevPerry/tv-voting-app',
+		font: 'font-tv-fan-poll',
+		id: 0,
+	},
+	{
 		title: 'FUNjumble',
 		titleCode: '<h3>FUN<span>jumble</span></h3>',
 		subtitle: 'A fun word game with several play modes',
 		description:
 			'A Progressive Web App of a selection of word games, updated daily, for the user to enjoy, share and track progress.  I designed this from scratch after the success of Wordle.',
 		image: '/images/funjumble.webp',
-		bgimage: '/images/bg_tiles.png',
+		bgimage: '/images/bg_tiles.webp',
 		bgid: 'card-temp',
 		cardclass: 'right',
 		tags: ['PWA', 'Chart.js', '3rd Party API'],
@@ -163,7 +187,7 @@ export const projects = [
 		source: 'https://bit.ly/FUNjumble',
 		visit: 'https://github.com/DaveDevPerry/un-jumble-pwa',
 		font: 'font-funjumble',
-		id: 0,
+		id: 1,
 	},
 	{
 		title: 'Some People Say',
@@ -187,7 +211,7 @@ export const projects = [
 		visit: 'https://github.com/DaveDevPerry/tv-lyric-library-v2',
 		font: 'font-some-people-say',
 
-		id: 1,
+		id: 2,
 	},
 
 	{
@@ -211,7 +235,7 @@ export const projects = [
 		source: 'https://made-to-measure.herokuapp.com/',
 		visit: 'https://github.com/DaveDevPerry/made-to-measure',
 		font: 'font-m2m',
-		id: 2,
+		id: 3,
 	},
 
 	{
@@ -235,31 +259,31 @@ export const projects = [
 		source: 'https://terror-fi.netlify.app/',
 		visit: 'https://github.com/DaveDevPerry/Terror-Fi_v1',
 		font: 'font-terror-fi',
-		id: 3,
-	},
-	{
-		title: "Pinks N' Purples",
-		titleCode: `<p>TEST</p>`,
-		subtitle: 'A custom two-player game of naughts & crosses',
-		description:
-			'A game specifically built for my four and six year-old nieces to play on their tablet together. It is a re-imagining of Tic-Tac-Toe.',
-		image: '/images/pp.webp',
-		bgimage: '/images/bg_game.webp',
-		bgid: 'card-temp',
-		cardclass: 'left',
-		tags: ['Vanilla JS', 'LocalStorage', 'ES6 modules'],
-		// icons: ['SiHtml5', 'SiSass', 'SiJavascript'],
-		icons: [
-			{ name: 'SiHtml5', color: '#E44F26' },
-			{ name: 'SiSass', color: '#CD6799' },
-			{ name: 'SiJavascript', color: '#F7DF1E' },
-		],
-		// colors: ['#000000', '#fff444', '#dd66uu'],
-		source: 'https://bit.ly/pinks-and-purples',
-		visit: 'https://github.com/DaveDevPerry/pinks-and-purples',
-		font: 'font-pinks-n-purples',
 		id: 4,
 	},
+	// {
+	// 	title: "Pinks N' Purples",
+	// 	titleCode: `<p>TEST</p>`,
+	// 	subtitle: 'A custom two-player game of naughts & crosses',
+	// 	description:
+	// 		'A game specifically built for my four and six year-old nieces to play on their tablet together. It is a re-imagining of Tic-Tac-Toe.',
+	// 	image: '/images/pp.webp',
+	// 	bgimage: '/images/bg_game.webp',
+	// 	bgid: 'card-temp',
+	// 	cardclass: 'left',
+	// 	tags: ['Vanilla JS', 'LocalStorage', 'ES6 modules'],
+	// 	// icons: ['SiHtml5', 'SiSass', 'SiJavascript'],
+	// 	icons: [
+	// 		{ name: 'SiHtml5', color: '#E44F26' },
+	// 		{ name: 'SiSass', color: '#CD6799' },
+	// 		{ name: 'SiJavascript', color: '#F7DF1E' },
+	// 	],
+	// 	// colors: ['#000000', '#fff444', '#dd66uu'],
+	// 	source: 'https://bit.ly/pinks-and-purples',
+	// 	visit: 'https://github.com/DaveDevPerry/pinks-and-purples',
+	// 	font: 'font-pinks-n-purples',
+	// 	id: 5,
+	// },
 	{
 		title: 'Loopy Lotto',
 		titleCode: '<p>hel<span>l</span>o</p>',

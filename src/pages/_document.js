@@ -58,6 +58,10 @@ export default class MyDocument extends Document {
 						href='https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@1,800&display=swap'
 						rel='stylesheet'
 					/>
+					<link
+						href='https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap'
+						rel='stylesheet'
+					/>
 					<script src='https://unpkg.com/typewriter-effect@latest/dist/core.js'></script>
 					<link
 						rel='apple-touch-icon'

@@ -117,7 +117,15 @@ const GlobalStyles = createGlobalStyle`
 }
 .font-funjumble{
   font-family: 'Montserrat', sans-serif;
-  color: #ffffff;
+  color: rgb(228, 207, 23);
+  font-weight: bold;
+  span{
+    font-weight: 100;
+  }
+}
+.font-tv-fan-poll{
+  font-family: 'Permanent Marker', cursive;
+  color: #ff7c02;
   font-weight: bold;
   span{
     font-weight: 100;

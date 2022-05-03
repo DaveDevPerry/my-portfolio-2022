@@ -16,7 +16,7 @@ const Home = () => {
 	return (
 		<Layout>
 			{/* <PageLoader /> */}
-			<Section grid>
+			<Section grid id='top'>
 				<Hero />
 				<LogoAnimation />
 			</Section>
