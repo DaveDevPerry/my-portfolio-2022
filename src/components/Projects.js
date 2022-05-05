@@ -346,7 +346,7 @@ const ExternalLinks = styled.a`
 const TagList = styled.ul`
 	display: flex;
 	justify-content: space-between;
-	padding: 2rem;
+	padding: 2rem 0;
 `;
 const Tag = styled.li`
 	/* color: #780202; */

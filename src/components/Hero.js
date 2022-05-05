@@ -1,4 +1,5 @@
 import React, { useEffect, useRef } from 'react';
+import { useRouter } from 'next/router';
 import styled from 'styled-components';
 import { gsap } from 'gsap';
 import Link from 'next/link';
@@ -8,6 +9,7 @@ import Button from '../styles/GlobalComponents/Button';
 // import { LeftSection, SectionText } from './HeroStyles';
 
 const Hero = () => {
+	const router = useRouter();
 	const tl = useRef();
 
 	useEffect(() => {
@@ -17,6 +19,11 @@ const Hero = () => {
 			.from('#hero-text', { opacity: 0, duration: 1 }, '-=0.5')
 			.from('#hero-buttons', { opacity: 0, duration: 1 }, '-=0.5');
 	}, []);
+
+	const handleClick = (e) => {
+		e.preventDefault();
+		router.push('/resume');
+	};
 
 	return (
 		<Section row nopadding>
@@ -31,9 +38,14 @@ const Hero = () => {
 					fully functional, enjoyable experiences.
 				</SectionText>
 				<BtnWrapper id='hero-buttons'>
-					<Link href='#' passHref>
+					{/* <Link href='#' passHref> */}
+					<Button className='btn-left' onClick={handleClick}>
+						View C.V.
+					</Button>
+					{/* </Link> */}
+					{/* <Link href='#' passHref>
 						<Button className='btn-left'>View C.V.</Button>
-					</Link>
+					</Link> */}
 					<Link href='#projects' passHref>
 						<Button>My Projects</Button>
 					</Link>

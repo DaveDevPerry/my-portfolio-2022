@@ -63,6 +63,7 @@ export default class MyDocument extends Document {
 						rel='stylesheet'
 					/>
 					<script src='https://unpkg.com/typewriter-effect@latest/dist/core.js'></script>
+
 					<link
 						rel='apple-touch-icon'
 						sizes='180x180'
