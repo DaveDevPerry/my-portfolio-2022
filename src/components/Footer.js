@@ -23,7 +23,7 @@ const Footer = () => {
 					id='footer-gitHub-link'
 				>
 					<SiGithub size={30} color='#ffffff' pointerEvents='none' />
-					{/* <p>git</p> */}
+					<p id='github-link-text'>github</p>
 				</a>
 			</div>
 
@@ -92,6 +92,10 @@ const FooterWrapper = styled.section`
 			#footer-gh {
 				font-size: 30px;
 				color: var(--grey);
+			}
+			#github-link-text {
+				color: transparent;
+				font-size: 0.1px;
 			}
 		}
 		/* #footer-gitHub-link */
