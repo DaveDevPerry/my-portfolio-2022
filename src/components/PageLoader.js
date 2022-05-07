@@ -1,12 +1,13 @@
-import React, { useRef, useEffect } from 'react';
+import React, { useEffect } from 'react';
+// import React, { useRef, useEffect } from 'react';
 import styled from 'styled-components';
 import { gsap } from 'gsap';
 
 // import { Container } from './PageLoaderStyles';
 
 const PageLoader = () => {
-	const circleOuter = useRef();
-	const circleInner = useRef();
+	// const circleOuter = useRef();
+	// const circleInner = useRef();
 	// const bgTextName = useRef();
 	// const tl = useRef();
 
@@ -69,8 +70,10 @@ const PageLoader = () => {
 				<br />
 				<span>perry</span>
 			</h4>
-			<div className='circle-outer' ref={circleOuter}>
-				<div className='circle-inner' ref={circleInner}></div>
+			<div className='circle-outer'>
+				<div className='circle-inner'></div>
+				{/* <div className='circle-outer' ref={circleOuter}>
+				<div className='circle-inner' ref={circleInner}></div> */}
 			</div>
 		</LoaderContainer>
 	);
