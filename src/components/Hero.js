@@ -1,5 +1,5 @@
 import React, { useEffect, useRef } from 'react';
-import { useRouter } from 'next/router';
+// import { useRouter } from 'next/router';
 import styled from 'styled-components';
 import { gsap } from 'gsap';
 import Link from 'next/link';
@@ -9,7 +9,7 @@ import Button from '../styles/GlobalComponents/Button';
 // import { LeftSection, SectionText } from './HeroStyles';
 
 const Hero = () => {
-	const router = useRouter();
+	// const router = useRouter();
 	const tl = useRef();
 
 	useEffect(() => {
@@ -20,10 +20,10 @@ const Hero = () => {
 			.from('#hero-buttons', { opacity: 0, duration: 1 }, '-=0.5');
 	}, []);
 
-	const handleClick = (e) => {
-		e.preventDefault();
-		router.push('/resume');
-	};
+	// const handleClick = (e) => {
+	// 	e.preventDefault();
+	// 	router.push('/resume');
+	// };
 
 	return (
 		<Section row nopadding>
@@ -39,9 +39,16 @@ const Hero = () => {
 				</SectionText>
 				<BtnWrapper id='hero-buttons'>
 					{/* <Link href='#' passHref> */}
-					<Button className='btn-left' onClick={handleClick}>
-						View C.V.
-					</Button>
+					{/* <Button className='btn-left' onClick={handleClick}>
+						View CV
+					</Button> */}
+					<a
+						href='/pdf/daveperry_resume.pdf'
+						target='_blank'
+						rel='noopener noreferrer'
+					>
+						<Button>View CV</Button>
+					</a>
 					{/* </Link> */}
 					{/* <Link href='#' passHref>
 						<Button className='btn-left'>View C.V.</Button>
