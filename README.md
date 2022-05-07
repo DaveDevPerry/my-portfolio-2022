@@ -142,6 +142,6 @@ If you want to contact me you can reach me at [daveperry.tech](https://daveperry
 
 <!-- A short snippet describing the license (MIT, Apache etc) -->
 
-Distributed under the MIT License. See [LICENCE](LICENSE.txt) for more information.
+Distributed under the MIT License. See [LICENSE](LICENSE.txt) for more information.
 
 <!-- MIT © [Dave Perry]() -->

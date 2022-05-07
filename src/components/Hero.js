@@ -42,13 +42,16 @@ const Hero = () => {
 					{/* <Button className='btn-left' onClick={handleClick}>
 						View CV
 					</Button> */}
-					<a
-						href='/pdf/daveperry_resume.pdf'
-						target='_blank'
-						rel='noopener noreferrer'
-					>
-						<Button>View CV</Button>
-					</a>
+					<Button>
+						<a
+							href='/pdf/daveperry_resume.pdf'
+							target='_blank'
+							rel='noopener noreferrer'
+							id='cv-btn'
+						>
+							View CV
+						</a>
+					</Button>
 					{/* </Link> */}
 					{/* <Link href='#' passHref>
 						<Button className='btn-left'>View C.V.</Button>

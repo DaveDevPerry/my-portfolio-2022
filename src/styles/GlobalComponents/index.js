@@ -226,7 +226,14 @@ export const ButtonBack = styled.div`
 	position: relative;
 	overflow: hidden;
 	opacity: ${({ disabled }) => (disabled ? '.5' : '1')};
-
+	/* a {
+		display: none;
+	} */
+	#cv-btn {
+		color: white;
+		width: 100%;
+		text-align: center;
+	}
 	@media ${(props) => props.theme.breakpoints.md} {
 		width: ${({ alt }) => (alt ? '150px' : '184px')};
 		height: ${({ alt }) => (alt ? '52px' : '48px')};
@@ -237,7 +244,7 @@ export const ButtonBack = styled.div`
 	@media ${(props) => props.theme.breakpoints.sm} {
 		width: 100%;
 		height: 32px;
-		font-size: 14px;
+		font-size: 16px;
 		margin-bottom: ${({ alt }) => (alt ? '0' : '32px')};
 	}
 `;
@@ -290,7 +297,10 @@ export const ButtonFront = styled.button`
 		box-shadow: inset 0px 2px 1px rgba(46, 49, 55, 0.15),
 			inset 0px 0px 4px rgba(20, 20, 55, 0.3);
 	}
-
+	#cv-btn {
+		color: white;
+		width: 100%;
+	}
 	@media ${(props) => props.theme.breakpoints.md} {
 		font-size: ${({ alt }) => (alt ? '20px' : '16px')};
 	}
