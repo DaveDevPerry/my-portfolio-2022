@@ -229,7 +229,8 @@ export const ButtonBack = styled.div`
 	/* a {
 		display: none;
 	} */
-	#cv-btn {
+	#cv-btn,
+	#proj-btn {
 		color: white;
 		width: 100%;
 		text-align: center;

@@ -49,16 +49,20 @@ const Hero = () => {
 							rel='noopener noreferrer'
 							id='cv-btn'
 						>
-							View CV
+							My CV
 						</a>
 					</Button>
 					{/* </Link> */}
 					{/* <Link href='#' passHref>
 						<Button className='btn-left'>View C.V.</Button>
 					</Link> */}
-					<Link href='#projects' passHref>
-						<Button>My Projects</Button>
-					</Link>
+					{/* <Link href='#projects' passHref> */}
+					<Button>
+						<a href='#projects' id='proj-btn'>
+							My Projects
+						</a>
+					</Button>
+					{/* </Link> */}
 				</BtnWrapper>
 			</LeftSection>
 		</Section>

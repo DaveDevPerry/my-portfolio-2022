@@ -41,7 +41,7 @@ export const projects = [
 			{ name: 'Chart', color: '#234565' },
 			{ name: 'SiCss3', color: '#1D6CAD' },
 		],
-		source: 'https://bit.ly/FUNjumble',
+		source: 'https://amazing-crepe-368e6b.netlify.app/',
 		visit: 'https://github.com/DaveDevPerry/un-jumble-pwa',
 		font: 'font-funjumble',
 		id: 1,
