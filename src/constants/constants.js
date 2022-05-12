@@ -9,7 +9,7 @@ export const projects = [
 		bgimage: '/images/bg_vote.webp',
 		bgid: 'card-temp',
 		cardclass: 'right',
-		tags: ['MERN Stack', 'User Auth', 'bcrypt', 'JWT', 'axios'],
+		tags: ['MERN Stack', 'JWT', 'bcrypt', 'axios', 'Theme Toggle'],
 		// icons: ['SiReact', 'SiPwa', 'SiCss3'],
 		// colors: ['#000000', '#fff444', '#dd66uu'],
 		icons: [
@@ -42,6 +42,7 @@ export const projects = [
 			{ name: 'SiCss3', color: '#1D6CAD' },
 		],
 		source: 'https://amazing-crepe-368e6b.netlify.app/',
+		// source: 'https://bit.ly/FUNjumble',
 		visit: 'https://github.com/DaveDevPerry/un-jumble-pwa',
 		font: 'font-funjumble',
 		id: 1,

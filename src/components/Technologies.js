@@ -1,6 +1,5 @@
 import React from 'react';
 import styled from 'styled-components';
-import { DiFirebase, DiReact, DiZend } from 'react-icons/di';
 import {
 	Section,
 	SectionDivider,
@@ -15,7 +14,8 @@ import {
 // 	ListTitle,
 // 	TechIcons,
 // } from './TechnologiesStyles';
-
+import { DiFirebase, DiReact, DiZend } from 'react-icons/di';
+import { FaNodeJs } from 'react-icons/fa';
 import {
 	SiVisualstudiocode,
 	SiHtml5,
@@ -23,9 +23,11 @@ import {
 	SiSass,
 	SiJavascript,
 	SiGit,
-	SiNetlify,
+	// SiNetlify,
+	SiReact,
 	// SiFigma,
 	SiAdobephotoshop,
+	SiMongodb,
 } from 'react-icons/si';
 
 const Technologies = () => (
@@ -37,14 +39,16 @@ const Technologies = () => (
 			From front to back end.
 		</SectionText>
 		<TechIcons>
-			<SiVisualstudiocode color='#007ACC' className='tech-icon' />
+			<SiReact color='#00CDF2' className='tech-icon' />
+			<SiJavascript color='#F7DF1E' className='tech-icon' />
+			<SiMongodb color='#459546' className='tech-icon' />
+			<FaNodeJs color='#6cc24a' className='tech-icon' />
 			<SiHtml5 color='#E44F26' className='tech-icon' />
 			<SiCss3 color='#33A9DC' className='tech-icon' />
 			<SiSass color='#CD6799' className='tech-icon' />
-			<SiJavascript color='#F7DF1E' className='tech-icon' />
 			<SiGit color='#DE4C36' className='tech-icon' />
-			<SiNetlify color='#21C6B7' className='tech-icon' />
-			<SiAdobephotoshop color='#007ACC' className='tech-icon' />
+			<SiVisualstudiocode color='#007ACC' className='tech-icon' />
+			{/* <SiAdobephotoshop color='#007ACC' className='tech-icon' /> */}
 		</TechIcons>
 		<List>
 			<ListItem>
@@ -107,7 +111,7 @@ const TechIcons = styled.div`
 	}
 	.tech-icon {
 		font-size: 40px;
-		animation: grow 3s ease-in-out infinite;
+		animation: grow 3.4s ease-in-out infinite;
 		flex-basis: 8%;
 	}
 	.tech-icon:nth-child(2) {
@@ -130,6 +134,9 @@ const TechIcons = styled.div`
 	}
 	.tech-icon:nth-child(8) {
 		animation-delay: 1.4s;
+	}
+	.tech-icon:nth-child(9) {
+		animation-delay: 1.6s;
 	}
 	@keyframes grow {
 		0% {
