@@ -61,12 +61,12 @@ const GlobalStyles = createGlobalStyle`
   }
 
 
-#dp-logo-svg path:nth-child(1) {
+/* #dp-logo-svg path:nth-child(1) {
 	stroke-dasharray: 1569;
 	stroke-dashoffset: 1569;
 	animation: line-anim 2s ease-in-out forwards;
   animation-delay: 5.2s;
-}
+} */
 
 #about-anim{
   height: 500px;
@@ -170,11 +170,11 @@ const GlobalStyles = createGlobalStyle`
 	color: white;
 }
 
-@keyframes line-anim {
+/* @keyframes line-anim {
 	to {
 		stroke-dashoffset: 0;
 	}
-}
+} */
 
 `;
 
