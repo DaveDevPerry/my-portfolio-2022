@@ -227,6 +227,11 @@ const BlogCard = styled.div`
 	/* &:hover {
 		box-shadow: 3px 3px 20px rgba(219, 8, 8, 0.5);
 	} */
+	user-select: none; /* supported by Chrome and Opera */
+	-webkit-user-select: none; /* Safari */
+	-khtml-user-select: none; /* Konqueror HTML */
+	-moz-user-select: none; /* Firefox */
+	-ms-user-select: none; /* Internet Explorer/Edge */
 	@media ${(props) => props.theme.breakpoints.sm} {
 		width: 100%;
 	}

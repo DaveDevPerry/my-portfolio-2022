@@ -179,6 +179,11 @@ const List = styled.ul`
 const ListContainer = styled.div`
 	display: flex;
 	flex-direction: column;
+	user-select: none; /* supported by Chrome and Opera */
+	-webkit-user-select: none; /* Safari */
+	-khtml-user-select: none; /* Konqueror HTML */
+	-moz-user-select: none; /* Firefox */
+	-ms-user-select: none; /* Internet Explorer/Edge */
 	@media ${(props) => props.theme.breakpoints.sm} {
 		display: flex;
 		margin-left: 18px;
