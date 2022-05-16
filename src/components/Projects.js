@@ -211,7 +211,7 @@ const GridContainer = styled.section`
 		display: flex;
 		flex-direction: column;
 		padding: 1rem;
-		padding-bottom: 0;
+		padding-bottom: 2rem;
 	}
 `;
 const BlogCard = styled.div`

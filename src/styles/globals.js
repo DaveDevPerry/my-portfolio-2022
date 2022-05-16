@@ -60,7 +60,9 @@ const GlobalStyles = createGlobalStyle`
     list-style: none;
   }
 
-
+main{
+  overflow-x: hidden;
+}
 /* #dp-logo-svg path:nth-child(1) {
 	stroke-dasharray: 1569;
 	stroke-dashoffset: 1569;
