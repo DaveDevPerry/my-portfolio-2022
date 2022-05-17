@@ -22,6 +22,12 @@ export const Section = styled.section`
 		width: calc(100vw - 42px);
 		flex-direction: column;
 	}
+	@media ${(props) => props.theme.breakpoints.xsm} {
+		padding: ${(props) => (props.nopadding ? '150px 0 0 0' : '16px 5px 0')};
+
+		width: calc(100vw - 15px);
+		flex-direction: column;
+	}
 `;
 
 export const SectionTitle = styled.h2`

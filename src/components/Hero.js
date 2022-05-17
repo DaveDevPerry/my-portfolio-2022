@@ -13,11 +13,24 @@ const Hero = () => {
 	const tl = useRef();
 
 	useEffect(() => {
-		tl.current = gsap
-			.timeline()
-			.from('#hero-title', { opacity: 0, duration: 1, delay: 4 })
-			.from('#hero-text', { opacity: 0, duration: 1 }, '-=0.5')
-			.from('#hero-buttons', { opacity: 0, duration: 1 }, '-=0.5');
+		console.log(window.innerWidth, 'width');
+
+		if (window.innerWidth > 640) {
+			// works over 640px
+			tl.current = gsap
+				.timeline()
+				.from('#hero-title', { opacity: 0, duration: 1, delay: 4 })
+				.from('#hero-text', { opacity: 0, duration: 1 }, '-=0.5')
+				.from('#hero-buttons', { opacity: 0, duration: 1 }, '-=0.5');
+		}
+		if (window.innerWidth < 639) {
+			// works over 640px
+			tl.current = gsap
+				.timeline()
+				.from('#hero-title', { opacity: 0, duration: 1, delay: 2 })
+				.from('#hero-text', { opacity: 0, duration: 1 }, '-=0.5')
+				.from('#hero-buttons', { opacity: 0, duration: 1 }, '-=0.5');
+		}
 	}, []);
 
 	// const handleClick = (e) => {
@@ -88,6 +101,9 @@ const LeftSection = styled.div`
 		flex-direction: column;
 
 		margin: 0 auto;
+	}
+	@media ${(props) => props.theme.breakpoints.xsm} {
+		margin-bottom: 12rem;
 	}
 `;
 

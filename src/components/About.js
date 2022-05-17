@@ -13,9 +13,16 @@ import {
 const About = () => {
 	const tl = useRef();
 	useEffect(() => {
-		tl.current = gsap
-			.timeline()
-			.from('#about', { opacity: 0, duration: 1, delay: 8 });
+		if (window.innerWidth > 640) {
+			tl.current = gsap
+				.timeline()
+				.from('#about', { opacity: 0, duration: 1, delay: 8 });
+		}
+		if (window.innerWidth < 639) {
+			tl.current = gsap
+				.timeline()
+				.from('#about', { opacity: 0, duration: 1, delay: 4 });
+		}
 	}, []);
 
 	function goRed(e) {

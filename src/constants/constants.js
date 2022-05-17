@@ -20,6 +20,7 @@ export const projects = [
 		],
 		source: 'https://illustrious-travesseiro-d45285.netlify.app/',
 		visit: 'https://github.com/DaveDevPerry/tv-voting-app',
+		login: 'email: demo@demo.com | password: demo123',
 		font: 'font-tv-fan-poll',
 		id: 0,
 	},
@@ -44,6 +45,8 @@ export const projects = [
 		source: 'https://amazing-crepe-368e6b.netlify.app/',
 		// source: 'https://bit.ly/FUNjumble',
 		visit: 'https://github.com/DaveDevPerry/un-jumble-pwa',
+		login: '',
+
 		font: 'font-funjumble',
 		id: 1,
 	},
@@ -68,6 +71,8 @@ export const projects = [
 		],
 		source: 'https://tv-lyrics-test-v2.herokuapp.com/',
 		visit: 'https://github.com/DaveDevPerry/tv-lyric-library-v2',
+		login: 'email: demo@demo.com | password: demo123',
+
 		font: 'font-some-people-say',
 
 		id: 2,
@@ -94,6 +99,8 @@ export const projects = [
 		],
 		source: 'https://made-to-measure.herokuapp.com/',
 		visit: 'https://github.com/DaveDevPerry/made-to-measure',
+		login: 'email: demo@demo.com | password: demo123',
+
 		font: 'font-m2m',
 		id: 3,
 	},
@@ -123,6 +130,8 @@ export const projects = [
 		// colors: ['#000000', '#fff444', '#dd66uu'],
 		source: 'https://terror-fi.netlify.app/',
 		visit: 'https://github.com/DaveDevPerry/Terror-Fi_v1',
+		login: '',
+
 		font: 'font-terror-fi',
 		id: 4,
 	},
@@ -146,6 +155,8 @@ export const projects = [
 		// colors: ['#000000', '#fff444', '#dd66uu'],
 		source: 'https://relaxed-dijkstra-f29d44.netlify.app/',
 		visit: 'https://github.com/DaveDevPerry/LoopyLottoMVP',
+		login: '',
+
 		font: 'font-loopy-lotto',
 		id: 5,
 	},

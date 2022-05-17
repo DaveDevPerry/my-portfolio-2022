@@ -112,6 +112,7 @@ const Projects = () => {
 							source,
 							visit,
 							font,
+							login,
 							// colors,
 						}) => (
 							<BlogCard key={id} className={cardclass}>
@@ -146,6 +147,7 @@ const Projects = () => {
 										</ExternalLinks>
 									</LinkWrapper>
 								</UtilityList>
+								{login}
 								<Hr />
 								<CardInfo>{description}</CardInfo>
 								<div>
