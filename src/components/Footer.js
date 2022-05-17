@@ -106,8 +106,10 @@ const FooterWrapper = styled.section`
 		display: grid;
 		place-content: center;
 		padding: 0.8rem;
+		display: none;
 		svg {
 			cursor: pointer;
+			display: hidden;
 		}
 	}
 	.company-container {

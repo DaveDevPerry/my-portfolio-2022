@@ -20,7 +20,7 @@ export const projects = [
 		],
 		source: 'https://illustrious-travesseiro-d45285.netlify.app/',
 		visit: 'https://github.com/DaveDevPerry/tv-voting-app',
-		login: 'email: demo@demo.com | password: demo123',
+		login: ['username: demo', 'password: demo123'],
 		font: 'font-tv-fan-poll',
 		id: 0,
 	},
@@ -45,7 +45,7 @@ export const projects = [
 		source: 'https://amazing-crepe-368e6b.netlify.app/',
 		// source: 'https://bit.ly/FUNjumble',
 		visit: 'https://github.com/DaveDevPerry/un-jumble-pwa',
-		login: '',
+		login: [],
 
 		font: 'font-funjumble',
 		id: 1,
@@ -71,39 +71,39 @@ export const projects = [
 		],
 		source: 'https://tv-lyrics-test-v2.herokuapp.com/',
 		visit: 'https://github.com/DaveDevPerry/tv-lyric-library-v2',
-		login: 'email: demo@demo.com | password: demo123',
+		login: ['email: demo@demo.com', 'password: demo123'],
 
 		font: 'font-some-people-say',
 
 		id: 2,
 	},
 
-	{
-		title: 'Made 2 Measure',
-		titleCode: `<p>TEST</p>`,
-		subtitle: "An app to log your child's height as they grow",
-		description:
-			'A CRUD based, user authenticated, fully responsive application to record your kids height as they grow.',
-		image: '/images/m2m.webp',
-		bgimage: '/images/bg_m2m.webp',
-		bgid: 'card-temp',
-		cardclass: 'right',
-		tags: ['JSON WebToken', 'Password Hashing', 'FilePond'],
-		// icons: ['SiNodedotjs', 'SiSass', 'SiMongodb'],
-		// colors: ['#000000', '#fff444', '#dd66uu'],
-		icons: [
-			{ name: 'SiMongodb', color: '#459546' },
-			{ name: 'Express', color: '#234565' },
-			{ name: 'FaNodeJs', color: '#6cc24a' },
-			{ name: 'SiCss3', color: '#1D6CAD' },
-		],
-		source: 'https://made-to-measure.herokuapp.com/',
-		visit: 'https://github.com/DaveDevPerry/made-to-measure',
-		login: 'email: demo@demo.com | password: demo123',
+	// {
+	// 	title: 'Made 2 Measure',
+	// 	titleCode: `<p>TEST</p>`,
+	// 	subtitle: "An app to log your child's height as they grow",
+	// 	description:
+	// 		'A CRUD based, user authenticated, fully responsive application to record your kids height as they grow.',
+	// 	image: '/images/m2m.webp',
+	// 	bgimage: '/images/bg_m2m.webp',
+	// 	bgid: 'card-temp',
+	// 	cardclass: 'right',
+	// 	tags: ['JSON WebToken', 'Password Hashing', 'FilePond'],
+	// 	// icons: ['SiNodedotjs', 'SiSass', 'SiMongodb'],
+	// 	// colors: ['#000000', '#fff444', '#dd66uu'],
+	// 	icons: [
+	// 		{ name: 'SiMongodb', color: '#459546' },
+	// 		{ name: 'Express', color: '#234565' },
+	// 		{ name: 'FaNodeJs', color: '#6cc24a' },
+	// 		{ name: 'SiCss3', color: '#1D6CAD' },
+	// 	],
+	// 	source: 'https://made-to-measure.herokuapp.com/',
+	// 	visit: 'https://github.com/DaveDevPerry/made-to-measure',
+	// 	login: ['email: test@email.com', 'password: 123456'],
 
-		font: 'font-m2m',
-		id: 3,
-	},
+	// 	font: 'font-m2m',
+	// 	id: 3,
+	// },
 
 	{
 		title: 'TERROR-Fi',
@@ -130,7 +130,7 @@ export const projects = [
 		// colors: ['#000000', '#fff444', '#dd66uu'],
 		source: 'https://terror-fi.netlify.app/',
 		visit: 'https://github.com/DaveDevPerry/Terror-Fi_v1',
-		login: '',
+		login: [],
 
 		font: 'font-terror-fi',
 		id: 4,
@@ -155,7 +155,7 @@ export const projects = [
 		// colors: ['#000000', '#fff444', '#dd66uu'],
 		source: 'https://relaxed-dijkstra-f29d44.netlify.app/',
 		visit: 'https://github.com/DaveDevPerry/LoopyLottoMVP',
-		login: '',
+		login: [],
 
 		font: 'font-loopy-lotto',
 		id: 5,

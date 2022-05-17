@@ -82,8 +82,8 @@ const Technologies = () => (
 					<ListTitle>UI / UX</ListTitle>
 					<ListParagraph>
 						Experience with <br />
-						Figma <br />
-						Photoshop
+						Photoshop <br />
+						Figma
 					</ListParagraph>
 				</ListContainer>
 			</ListItem>

@@ -147,7 +147,11 @@ const Projects = () => {
 										</ExternalLinks>
 									</LinkWrapper>
 								</UtilityList>
-								{login}
+								<LoginWrapper>
+									{login.map((item, index) => {
+										return <p key={index}>{item}</p>;
+									})}
+								</LoginWrapper>
 								<Hr />
 								<CardInfo>{description}</CardInfo>
 								<div>
@@ -321,6 +325,12 @@ const UtilityList = styled.div`
 // 	margin: 1rem 0;
 // 	column-gap: 2rem;
 // `;
+const LoginWrapper = styled.div`
+	display: flex;
+	column-gap: 1rem;
+	flex-wrap: wrap;
+	justify-content: center;
+`;
 
 const ExternalLinks = styled.a`
 	color: #ffffff;
