@@ -101,6 +101,8 @@ const Projects = () => {
 							id,
 							image,
 							bgimage,
+							bgimageOn,
+							bgidOn,
 							bgid,
 							cardclass,
 							title,
@@ -117,7 +119,18 @@ const Projects = () => {
 						}) => (
 							<BlogCard key={id} className={cardclass}>
 								<ImgFilter id='card-filter' />
-								<Img src={bgimage} id={bgid} alt={bgid} />
+								<ImgOn
+									src={bgimage}
+									id={bgid}
+									alt={bgid}
+									className='project_bg_image'
+								/>
+								<ImgOn
+									src={bgimageOn}
+									id={bgidOn}
+									alt={bgid}
+									className='project_bg_image show'
+								/>
 								<TitleContent>
 									<HeaderThree title={title} className={font}>
 										{title}
@@ -198,12 +211,24 @@ const Img = styled.img`
 	height: 100%;
 	object-fit: cover;
 	overflow: hidden;
+	/* z-index: -5;
+	position: absolute; */
+`;
+const ImgOn = styled.img`
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	overflow: hidden;
+	/* z-index: -5;
+	position: absolute; */
+	/* border-radius: 10px; */
 `;
 const ImgFilter = styled.div`
 	/* border: 2px solid green; */
 	width: 100%;
 	height: 100%;
 	background-color: rgba(36, 33, 33, 0.9);
+	/* display: none; */
 `;
 
 const GridContainer = styled.section`
@@ -230,6 +255,8 @@ const BlogCard = styled.div`
 	transition: 0.5s;
 	align-self: start;
 	position: relative;
+	background-color: rgba(27, 27, 27);
+	z-index: 1;
 	/* &:hover {
 		box-shadow: 3px 3px 20px rgba(219, 8, 8, 0.5);
 	} */
@@ -238,6 +265,29 @@ const BlogCard = styled.div`
 	-khtml-user-select: none; /* Konqueror HTML */
 	-moz-user-select: none; /* Firefox */
 	-ms-user-select: none; /* Internet Explorer/Edge */
+	.project_bg_image {
+		// display: none;
+		-webkit-transition: opacity 0.3s ease-in-out;
+		-moz-transition: opacity 0.3s ease-in-out;
+		-o-transition: opacity 0.3s ease-in-out;
+		transition: opacity 0.3s ease-in-out;
+	}
+
+	.project_bg_image.show {
+		display: block;
+		opacity: 0;
+		/* z-index: 1; */
+	}
+	&:hover {
+		/* color: red; */
+		.project_bg_image {
+			/* display: none; */
+		}
+		.project_bg_image.show {
+			/* display: block; */
+			opacity: 1;
+		}
+	}
 	@media ${(props) => props.theme.breakpoints.sm} {
 		width: 100%;
 	}
@@ -252,7 +302,8 @@ const TitleContent = styled.div`
 	width: 100%;
 	padding: 10px;
 	/* padding-bottom: 0px; */
-	background-color: rgb(31, 30, 30);
+	/* background-color: rgb(31, 30, 30); */
+	background-color: rgb(27, 27, 27);
 	border-radius: 10px;
 `;
 
@@ -260,7 +311,7 @@ const HeaderThree = styled.h3`
 	font-weight: 500;
 	letter-spacing: 2px;
 	/* color: #9cc9e3; */
-	/* color: #780202; */
+	/* color: ${(props) => props.theme.colors.red}; */
 	padding: 0.5rem 0;
 	font-size: ${(props) => (props.title ? '3rem' : '2rem')};
 
@@ -282,7 +333,8 @@ const SubtitleContent = styled.div`
 	font-style: italic;
 	font-size: 14px;
 	/* border: 1px solid white; */
-	color: rgba(255, 255, 255, 0.5);
+	color: rgb(181, 178, 178);
+	/* color: rgba(255, 255, 255, 0.5); */
 	/* margin-bottom: 1rem; */
 	/* background-color: rgb(31,30,30); */
 	/* border-radius: 0 0 10px 10px; */
@@ -293,7 +345,7 @@ const Hr = styled.hr`
 	height: 3px;
 	margin: 20px auto;
 	border: 0;
-	background: #780202;
+	background: ${(props) => props.theme.colors.red};
 `;
 
 const CardInfo = styled.p`
@@ -330,6 +382,11 @@ const LoginWrapper = styled.div`
 	column-gap: 1rem;
 	flex-wrap: wrap;
 	justify-content: center;
+	user-select: none; /* supported by Chrome and Opera */
+	-webkit-user-select: none; /* Safari */
+	-khtml-user-select: none; /* Konqueror HTML */
+	-moz-user-select: none; /* Firefox */
+	-ms-user-select: none; /* Internet Explorer/Edge */
 `;
 
 const ExternalLinks = styled.a`
@@ -337,13 +394,13 @@ const ExternalLinks = styled.a`
 	font-size: 1.8rem;
 	padding: 0 0.5rem;
 	/* background: #6b3030; */
-	/* border: 1px solid #780202; */
+	/* border: 1px solid ${(props) => props.theme.colors.red}; */
 	/* border-radius: 15px; */
 	transition: 0.5s;
 	text-transform: uppercase;
 	/* flex: 1; */
 	&:hover {
-		color: #780202;
+		color: ${(props) => props.theme.colors.red};
 	}
 `;
 // const ExternalLinks = styled.a`
@@ -351,7 +408,7 @@ const ExternalLinks = styled.a`
 // 	font-size: 1.6rem;
 // 	padding: 1rem 1.5rem;
 // 	/* background: #6b3030; */
-// 	border: 1px solid #780202;
+// 	border: 1px solid ${(props) => props.theme.colors.red};
 // 	border-radius: 15px;
 // 	transition: 0.5s;
 // 	/* flex: 1; */
@@ -366,7 +423,7 @@ const TagList = styled.ul`
 	padding: 2rem 0;
 `;
 const Tag = styled.li`
-	/* color: #780202; */
+	/* color: ${(props) => props.theme.colors.red}; */
 	color: white;
 	font-size: 1.5rem;
 	font-weight: bold;

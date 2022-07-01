@@ -30,7 +30,18 @@ export default function ContactForm() {
 			</SectionText>
 			<FormContainer>
 				<ImgFilter id='card-filter' />
-				<Img src='/images/bg_contact.webp' id='contact-bg-img' alt='contact' />
+				<Img
+					src='/images/bg_contact.webp'
+					id='contact-bg-img'
+					className='messages'
+					alt='contact'
+				/>
+				<Img
+					src='/images/bg_contact_yellow.webp'
+					id='contact-bg-img'
+					className='messages show'
+					alt='contact'
+				/>
 				<div className='form-wrapper'>
 					<form
 						id='contact-form'
@@ -109,6 +120,7 @@ const Img = styled.img`
 	height: 100%;
 	object-fit: cover;
 	overflow: hidden;
+	/* z-index: 0; */
 	z-index: -5;
 	position: absolute;
 `;
@@ -117,6 +129,8 @@ const ImgFilter = styled.div`
 	width: 100%;
 	height: 100%;
 	background-color: rgba(36, 33, 33, 0.9);
+	/* z-index: 1; */
+	/* display: none; */
 `;
 
 const FormContainer = styled.div`
@@ -131,6 +145,35 @@ const FormContainer = styled.div`
 	width: clamp(400px, 100%, 800px);
 	position: relative;
 	transition: 0.5s;
+	background-color: rgba(27, 27, 27);
+	z-index: 1;
+	/* background-color: rgb(27, 27, 27); */
+	/* .messages.show {
+		display: none;
+	} */
+	border-radius: 10px;
+	.messages {
+		// display: none;
+		-webkit-transition: opacity 0.3s ease-in-out;
+		-moz-transition: opacity 0.3s ease-in-out;
+		-o-transition: opacity 0.3s ease-in-out;
+		transition: opacity 0.3s ease-in-out;
+	}
+
+	.messages.show {
+		display: block;
+		opacity: 0;
+		/* z-index: 1; */
+	}
+	&:hover {
+		.messages {
+			/* display: none; */
+		}
+		.messages.show {
+			/* display: block; */
+			opacity: 1;
+		}
+	}
 	@media ${(props) => props.theme.breakpoints.sm} {
 		width: 100%;
 		padding: 2rem 2rem;
@@ -259,14 +302,15 @@ const FormButton = styled.button`
 	font-size: 22px;
 	color: white;
 	font-weight: 600;
-	border: 3px solid #780202;
+	border: 3px solid ${(props) => props.theme.colors.red};
 	border-radius: 10px;
 	padding: 0 2rem;
 	height: 7.5rem;
 	width: 200px;
 	margin-bottom: 1rem;
 	cursor: pointer;
-	background-color: transparent !important;
+	/* background-color: transparent !important; */
+	background-color: rgb(27, 27, 27);
 	@media ${(props) => props.theme.breakpoints.sm} {
 		width: 100%;
 		/* height: 32px; */

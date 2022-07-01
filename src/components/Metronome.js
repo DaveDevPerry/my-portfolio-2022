@@ -167,6 +167,7 @@ const MetronomeContainer = styled.div`
 	height: 170px;
 	width: 170px;
 	position: relative;
+	/* background-color: rgb(27, 27, 27); */
 	.loader-container {
 		position: absolute;
 		top: 0;
@@ -177,6 +178,7 @@ const MetronomeContainer = styled.div`
 		justify-content: center;
 		align-items: center;
 		background-color: rgb(31, 30, 30);
+		/* background-color: rgb(27, 27, 27); */
 		z-index: 1;
 		transform: scale(0.5);
 	}

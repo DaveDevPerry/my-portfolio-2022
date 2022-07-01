@@ -87,30 +87,30 @@ const StyledBackgroundTextSVG = styled.div`
 				stroke-dasharray: 282;
 				stroke-dashoffset: 282;
 				animation: draw-line-name 3s ease forwards;
-				stroke: #780202;
+				stroke: ${(props) => props.theme.colors.red};
 			}
 			&:nth-child(2) {
 				stroke-dasharray: 255;
 				stroke-dashoffset: 255;
-				stroke: #780202;
+				stroke: ${(props) => props.theme.colors.red};
 				animation: draw-line-name 2s ease forwards 0.8s;
 			}
 			&:nth-child(3) {
 				stroke-dasharray: 242;
 				stroke-dashoffset: 242;
-				stroke: #780202;
+				stroke: ${(props) => props.theme.colors.red};
 				animation: draw-line-name 1s ease forwards 1.4s;
 			}
 			&:nth-child(4) {
 				stroke-dasharray: 225;
 				stroke-dashoffset: 225;
-				stroke: #780202;
+				stroke: ${(props) => props.theme.colors.red};
 				animation: draw-line-name 1s ease forwards 1.8s;
 			}
 			&:nth-child(5) {
 				stroke-dasharray: 231;
 				stroke-dashoffset: 231;
-				stroke: #780202;
+				stroke: ${(props) => props.theme.colors.red};
 				animation: fill 0.5s ease forwards 2.6s;
 			}
 			&:nth-child(6) {
@@ -146,7 +146,7 @@ const StyledBackgroundTextSVG = styled.div`
 			fill: transparent;
 		}
 		to {
-			fill: #780202;
+			fill: ${(props) => props.theme.colors.red};
 		}
 	}
 `;

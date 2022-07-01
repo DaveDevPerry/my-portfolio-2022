@@ -70,7 +70,9 @@ const About = () => {
 const InfoText = styled.p`
 	width: 100%;
 	padding: 0;
-	color: rgba(255, 255, 255, 0.5);
+	/* color: rgba(255, 255, 255, 0.5); */
+
+	color: rgb(181, 178, 178);
 	font-style: 2rem;
 	line-height: 24px;
 	text-align: justify;

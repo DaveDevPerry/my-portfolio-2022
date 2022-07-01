@@ -13,7 +13,7 @@ const Hero = () => {
 	const tl = useRef();
 
 	useEffect(() => {
-		console.log(window.innerWidth, 'width');
+		// console.log(window.innerWidth, 'width');
 
 		if (window.innerWidth > 640) {
 			// works over 640px
@@ -123,7 +123,7 @@ const SectionText = styled.p`
 		left: 0;
 		height: 100%;
 		width: 10px;
-		background-color: #780202;
+		background-color: ${(props) => props.theme.colors.red};
 	}
 	@media ${(props) => props.theme.breakpoints.md} {
 		max-width: 670px;

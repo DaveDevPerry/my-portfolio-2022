@@ -11,7 +11,7 @@ const Footer = () => {
 		<FooterWrapper>
 			<a href='#top' id='chevron-up'>
 				{/* back to top */}
-				<FaChevronUp size={50} color='#780202' />
+				<FaChevronUp size={50} color='${(props) => props.theme.colors.red}' />
 				<p>Back to Top</p>
 			</a>
 
@@ -59,9 +59,10 @@ const FooterWrapper = styled.section`
 	padding: 2rem 2rem;
 	margin: 6rem auto 0 auto;
 	box-sizing: border-box;
+	/* background-color: blue; */
 	background-color: rgb(27, 27, 27);
-	border-top: 3px solid #780202;
-	border: 3px solid #780202;
+	border-top: 3px solid ${(props) => props.theme.colors.red};
+	border: 3px solid ${(props) => props.theme.colors.red};
 	border-bottom: 0px solid transparent;
 	border-radius: 10px 10px 0 0;
 	position: relative;
@@ -71,13 +72,14 @@ const FooterWrapper = styled.section`
 		top: -5rem;
 		left: 50%;
 		transform: translate(-50%, -50%);
-		color: #780202;
+		color: ${(props) => props.theme.colors.red};
 		font-size: 8rem;
 	}
 	.footer-container {
-		border: 3px solid #780202;
+		border: 3px solid ${(props) => props.theme.colors.red};
 		padding: 0.5rem;
-		background-color: #1b1b1b;
+		/* background-color: #1b1b1b; */
+		background-color: rgb(27, 27, 27);
 		position: absolute;
 		top: 0;
 		border-radius: 10rem;
@@ -122,11 +124,11 @@ const FooterWrapper = styled.section`
 	}
 	@media ${(props) => props.theme.breakpoints.sm} {
 		padding: 0 16px 48px;
-		border: 2px solid #780202;
+		border: 2px solid ${(props) => props.theme.colors.red};
 		padding-bottom: 0px;
 		border-bottom: 0px solid transparent;
 		.footer-container {
-			border: 2px solid #780202;
+			border: 2px solid ${(props) => props.theme.colors.red};
 		}
 		.company-container p {
 			font-size: 10px;

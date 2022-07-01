@@ -109,7 +109,7 @@ const LoaderContainer = styled.div`
 		transform: translate(-50%, -50%);
 		font-family: 'Gemunu Libre', sans-serif;
 		-webkit-text-stroke: 1px rgba(66, 65, 65, 0.329);
-		-webkit-text-fill-color: #78020242;
+		-webkit-text-fill-color: ${(props) => props.theme.colors.red}42;
 		font-size: 30rem;
 		line-height: 20rem;
 		opacity: 0;

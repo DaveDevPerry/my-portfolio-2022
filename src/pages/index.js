@@ -16,6 +16,7 @@ const Home = () => {
 	return (
 		<Layout>
 			{/* <PageLoader /> */}
+			{/* <input type='text' name='test' id='lighthouse test' /> */}
 			<Section grid id='top'>
 				<Hero />
 				<LogoAnimation />

@@ -14,7 +14,7 @@ const GlobalStyles = createGlobalStyle`
     scroll-behavior: smooth;
     scroll-behavior: smooth;
 	scrollbar-width: normal;
-	scrollbar-color: #780202;
+	scrollbar-color: ${(props) => props.theme.colors.red};
 	--background2: 'hsl(232.7,27.3%,23.7%)';
 	::-webkit-scrollbar {
 		height: 12px;
@@ -28,7 +28,7 @@ const GlobalStyles = createGlobalStyle`
 	}
 
 	::-webkit-scrollbar-thumb {
-		background-color: #780202;
+		background-color: ${(props) => props.theme.colors.red};
 		-webkit-box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.75);
 		box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.75);
 	}
@@ -43,7 +43,7 @@ const GlobalStyles = createGlobalStyle`
     --background2: #cecece;
     --text: #2020207f;
     --primary1: '#3b3a35';
-    --red: '#780202';
+    --red: '${(props) => props.theme.colors.red}';
     --accent1: 'hsl(34.9,98.6%,72.9%)';
     --button: 'hsl(205.1,100%,36.1%)'; */
     /* --background2: 'hsl(232.7,27.3%,23.7%)'; */
@@ -51,9 +51,25 @@ const GlobalStyles = createGlobalStyle`
   body {
     font-family: ${(props) => props.theme.fonts.main};
     font-size: 1.6rem;
-    background: ${(props) => props.theme.colors.background1};
+    /* background: ${(props) => props.theme.colors.background1}; */
+    /* background: blue; */
+    background: #242323;
     color: ${(props) => props.theme.colors.primary1};
     cursor: default;
+    .gridify.tiny {
+	background-image: linear-gradient(
+			transparent 47px,
+			rgba(220, 220, 200, 0.06) 48px,
+			transparent 48px
+		),
+		linear-gradient(
+			90deg,
+			transparent 47px,
+			rgba(220, 220, 200, 0.06) 48px,
+			transparent 48px
+		);
+	background-size: 100% 48px, 48px 100%;
+}
   }
   h1,h2,h3,h4,h5,h6,button {
     font-family: ${(props) => props.theme.fonts.title};
@@ -89,6 +105,15 @@ main{
 
 .left #card-temp,
 .right #card-temp{
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  height: 50%;
+  transform: translate(-50%,0);
+  z-index: -5;
+}
+.left #card-temp-on,
+.right #card-temp-on{
   position: absolute;
   bottom: 0;
   left: 50%;
@@ -171,7 +196,7 @@ main{
 
 .link-grow {
 	transform: scale(2);
-	background-color: #780202;
+	background-color: ${(props) => props.theme.colors.red};
 }
 .hovered-link {
 	color: white;

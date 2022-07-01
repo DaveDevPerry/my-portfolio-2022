@@ -60,6 +60,7 @@ const AnimationCard = styled.div`
 	transition: 0.5s;
 	align-self: start;
 	position: relative;
+	background-color: rgb(27, 27, 27);
 	@media ${(props) => props.theme.breakpoints.sm} {
 		width: 180px;
 		align-self: center;

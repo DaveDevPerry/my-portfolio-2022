@@ -41,6 +41,7 @@ export default class MyDocument extends Document {
 						rel='stylesheet'
 					/> */}
 
+					<link rel='preconnect' href='https://fonts.gstatic.com' crossorigin />
 					<link
 						href='https://fonts.googleapis.com/css2?family=Oswald:wght@200;400;500;700&display=swap'
 						rel='stylesheet'
@@ -55,14 +56,20 @@ export default class MyDocument extends Document {
 						rel='stylesheet'
 					/> */}
 					<link
-						href='https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@1,800&display=swap'
+						href='https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@1,800&display=optional'
 						rel='stylesheet'
 					/>
 					<link
-						href='https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap'
+						href='https://fonts.googleapis.com/css2?family=Permanent+Marker&display=optional'
 						rel='stylesheet'
 					/>
-					<script src='https://unpkg.com/typewriter-effect@latest/dist/core.js'></script>
+					<script
+						defer
+						src='https://unpkg.com/typewriter-effect@latest/dist/core.js'
+					></script>
+					{/* <style data-href="https://fonts.googleapis.com/css2?family=Inter&display=optional">
+  @font-face{font-family:'Inter';font-style:'normal'
+</style> */}
 
 					<link
 						rel='apple-touch-icon'

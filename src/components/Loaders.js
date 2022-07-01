@@ -41,7 +41,7 @@ const List = styled.div`
 	grid-template-columns: repeat(3, 1fr);
 	gap: 40px;
 	margin: 3rem 0;
-
+	background-color: rgb(27, 27, 27);
 	@media ${(props) => props.theme.breakpoints.lg} {
 		margin: 64px 0;
 	}

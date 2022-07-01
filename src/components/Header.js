@@ -25,23 +25,9 @@ const Header = () => {
 				.fromTo('#header', { y: '-100%' }, { y: 0, duration: 1 })
 				.from('#brand', { x: '-200', duration: 1 })
 				.from('#work-status', { opacity: 0, duration: 1 })
-				// .from('#about-link', { y: '-100px', duration: 1.5 }, '-=2')
-				// .from('#projects-link', { y: '-100px', duration: 1.5 }, '-=1.5')
-				// .from('#tech-link', { y: '-100px', duration: 1.5 }, '-=1')
-				// .from('#contact-link', { y: '-100px', duration: 1.5 }, '-=1')
 				.from('#typewriter-text', { opacity: 0 }, '+=0.5');
 		}
 
-		// tl.current = gsap
-		// 	.timeline()
-		// 	.fromTo('#header', { y: '-100%' }, { y: 0, duration: 2 })
-		// 	.from('#brand', { x: '-200', duration: 2 })
-		// 	.from('#work-status', { opacity: 0, duration: 1 })
-		// 	.from('#about-link', { y: '-100px', duration: 1.5 }, '-=1')
-		// 	.from('#projects-link', { y: '-100px', duration: 1.5 }, '-=1')
-		// 	.from('#tech-link', { y: '-100px', duration: 1.5 }, '-=1')
-		// 	.from('#contact-link', { y: '-100px', duration: 1.5 }, '-=1')
-		// 	.from('#typewriter-text', { opacity: 0 });
 		typewriterText();
 	}, []);
 
@@ -76,6 +62,9 @@ const Header = () => {
 						}}
 					>
 						<Brand id='brand'>
+							<div className='email-block'></div>
+							<div className='email-bar'></div>
+							<div className='email-address'>dave@daveperry.tech</div>
 							dave<span>perry</span>
 							<span>.</span>tech
 						</Brand>
@@ -118,13 +107,17 @@ const Container = styled.div`
 	top: 0;
 	left: 0;
 	width: 100%;
-	background: #242121;
+	/* background: #242121; */
+	/* background-color: blue; */
+	background-color: rgb(27, 27, 27);
 	z-index: 2;
 	display: grid;
 	grid-template-columns: repeat(5, 1fr);
 	grid-template-rows: 50px;
 	grid-column-gap: 2rem;
 	padding: 1rem;
+	/* border-bottom: 2px solid #c40303; */
+	border-bottom: 2px solid ${(props) => props.theme.colors.red};
 	@media ${(props) => props.theme.breakpoints.sm} {
 		display: grid;
 		grid-template-columns: repeat(5, 1fr);
@@ -146,14 +139,61 @@ const Brand = styled.div`
 	font-family: 'Oswald', serif;
 	font-size: 2.8rem;
 	font-weight: lighter;
+	position: relative;
+	.email-block {
+		position: absolute;
+		top: 100%;
+		left: 19px;
+		background-color: ${(props) => props.theme.colors.red};
+		height: 5px;
+		width: 20px;
+	}
+	.email-bar {
+		position: absolute;
+		top: 100%;
+		left: 19px;
+		background-color: ${(props) => props.theme.colors.red};
+		height: 30px;
+		width: 2px;
+	}
+	.email-address {
+		position: absolute;
+		top: calc(100% + 34px);
+		left: 7px;
+		/* transform: translateX(-50%); */
+		font-size: 1.8rem;
+		letter-spacing: 2px;
+		/* background-color: ${(props) => props.theme.colors.red}; */
+		/* height: 50px;
+		width: 2px; */
+		/* writing-mode: vertical-lr; */
+		/* writing-mode: vertical-tb; */
+		/* writing-mode: vertical-rl; */
+		/* text-orientation: sideways; */
+		-ms-writing-mode: tb-lr;
+		-webkit-writing-mode: vertical-tb;
+		writing-mode: vertical-lr;
+		transform: rotate(180deg);
+	}
 	span {
 		font-weight: bolder;
 	}
 	span:last-child {
-		color: #780202;
+		color: ${(props) => props.theme.colors.red};
 		font-size: 5rem;
 		line-height: 1.15;
 		font-weight: bolder;
+	}
+	@media ${(props) => props.theme.breakpoints.md} {
+		.email-block {
+			display: none;
+		}
+		.email-bar {
+			display: none;
+		}
+		.email-address {
+			display: none;
+		}
 	}
 `;
 
@@ -234,7 +274,7 @@ const NavLink = styled.p`
 	transition: 0.4s ease;
 	z-index: 5;
 	&:hover {
-		color: #780202;
+		color: ${(props) => props.theme.colors.red};
 		opacity: 1;
 		cursor: pointer;
 	}
@@ -252,7 +292,7 @@ const WorkStatus = styled.div`
 	align-items: center;
 	p {
 		width: clamp(220px, 220px, 80%);
-		background-color: #780202;
+		background-color: ${(props) => props.theme.colors.red};
 		padding: 0.7rem 1rem;
 		font-size: 1.8rem;
 		border-radius: 5px;

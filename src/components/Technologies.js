@@ -93,7 +93,8 @@ const Technologies = () => (
 );
 
 const TechIcons = styled.div`
-	background-color: rgb(31, 30, 30);
+	/* background-color: rgb(31, 30, 30); */
+	background-color: rgb(27, 27, 27);
 	padding: 20px;
 	border-radius: 10px;
 	box-shadow: 3px 3px 20px rgba(80, 78, 78, 0.5);

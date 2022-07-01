@@ -8,7 +8,7 @@ export const Layout = ({ children }) => {
 	return (
 		<LayoutContainer>
 			<Header />
-			<main>{children}</main>
+			<main className='gridify tiny'>{children}</main>
 			<Footer />
 		</LayoutContainer>
 	);
