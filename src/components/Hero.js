@@ -113,7 +113,8 @@ const SectionText = styled.p`
 	line-height: 40px;
 	font-weight: 300;
 	margin-bottom: 3.6rem;
-	color: rgba(255, 255, 255, 0.5);
+	/* color: rgba(255, 255, 255, 0.5); */
+	color: rgb(181, 178, 178);
 	padding-left: 20px;
 	position: relative;
 	&:before {

@@ -16,6 +16,18 @@ const GlobalStyles = createGlobalStyle`
 	scrollbar-width: normal;
 	scrollbar-color: ${(props) => props.theme.colors.red};
 	--background2: 'hsl(232.7,27.3%,23.7%)';
+  /* background-image: linear-gradient(
+			transparent 47px,
+			rgba(220, 220, 200, 0.06) 48px,
+			transparent 48px
+		),
+		linear-gradient(
+			90deg,
+			transparent 47px,
+			rgba(220, 220, 200, 0.06) 48px,
+			transparent 48px
+		);
+	background-size: 100% 48px, 48px 100%; */
 	::-webkit-scrollbar {
 		height: 12px;
 		width: 12px;

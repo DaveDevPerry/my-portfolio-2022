@@ -147,6 +147,7 @@ const Brand = styled.div`
 		background-color: ${(props) => props.theme.colors.red};
 		height: 5px;
 		width: 20px;
+		display: none;
 	}
 	.email-bar {
 		position: absolute;
@@ -155,6 +156,7 @@ const Brand = styled.div`
 		background-color: ${(props) => props.theme.colors.red};
 		height: 30px;
 		width: 2px;
+		display: none;
 	}
 	.email-address {
 		position: absolute;
@@ -174,6 +176,7 @@ const Brand = styled.div`
 		-webkit-writing-mode: vertical-tb;
 		writing-mode: vertical-lr;
 		transform: rotate(180deg);
+		display: none;
 	}
 	span {
 		font-weight: bolder;
