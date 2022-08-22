@@ -1,5 +1,34 @@
 export const projects = [
 	{
+		title: 'Gig List',
+		titleCode: '<p>hel<span>l</span>o</p>',
+		subtitle: 'Track and store user specific gig list!',
+		description:
+			'An app to keep track of gigs you have seen and any that are coming up. I designed this for mobile and it is developed using the MERN stack.',
+		image: '/images/screen_gigs.webp',
+		bgimage: '/images/bg_band.webp',
+		bgimageOn: '/images/bg_band.webp',
+		bgid: 'card-temp',
+		bgidOn: 'card-temp-on',
+		cardclass: 'left',
+		tags: ['user accounts', 'bcrypt', 'chart-js'],
+		// icons: ['SiReact', 'SiPwa', 'SiCss3'],
+		// colors: ['#000000', '#fff444', '#dd66uu'],
+		icons: [
+			{ name: 'SiMongodb', color: '#459546' },
+			{ name: 'Express', color: '#234565' },
+			{ name: 'SiReact', color: '#00CDF2' },
+			{ name: 'FaNodeJs', color: '#6cc24a' },
+		],
+		// colors: ['#000000', '#fff444', '#dd66uu'],
+		source: 'https://noms-gig-list.vercel.app/',
+		visit: 'https://github.com/DaveDevPerry/noms-gig-list',
+		login: ['email: demo@demo.com', 'password: demo123'],
+
+		font: 'font-gig-list',
+		id: 6,
+	},
+	{
 		title: 'TV Fan Poll',
 		titleCode: '<h3>FUN<span>jumble</span></h3>',
 		subtitle: 'Create a poll and place your votes',
@@ -170,6 +199,34 @@ export const projects = [
 		font: 'font-loopy-lotto',
 		id: 5,
 	},
+
+	// {
+	// 	title: 'AmWorld',
+	// 	titleCode: '<p>hel<span>l</span>o</p>',
+	// 	subtitle: 'Courier & Logistics',
+	// 	description:
+	// 		'A pay-to-play app in which my family members all participate and can check game progress based on the real life lottery draws. I designed this from scratch and it is developed using vanilla javascript.',
+	// 	image: '/images/ll.webp',
+	// 	bgimage: '/images/bg_balls.webp',
+	// 	bgimageOn: '/images/bg_balls_red.webp',
+	// 	bgid: 'card-temp',
+	// 	bgidOn: 'card-temp-on',
+	// 	cardclass: 'left',
+	// 	tags: ['Dynamic HTML Markup', 'Mobile Responsive', 'Font Awesome Icons'],
+	// 	// icons: ['SiHtml5', 'SiSass', 'SiJavascript'],
+	// 	icons: [
+	// 		{ name: 'SiJavascript', color: '#F7DF1E' },
+	// 		{ name: 'SiHtml5', color: '#E44F26' },
+	// 		{ name: 'SiSass', color: '#CD6799' },
+	// 	],
+	// 	// colors: ['#000000', '#fff444', '#dd66uu'],
+	// 	source: 'https://relaxed-dijkstra-f29d44.netlify.app/',
+	// 	visit: 'https://github.com/DaveDevPerry/LoopyLottoMVP',
+	// 	login: [],
+
+	// 	font: 'font-loopy-lotto',
+	// 	id: 6,
+	// },
 ];
 
 // 	// {

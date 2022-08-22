@@ -142,6 +142,10 @@ main{
   z-index: -4;
 }
 
+.font-gig-list{
+  font-family: 'Poppins';
+  color: rgb(216, 0, 184);
+}
 .font-loopy-lotto{
   font-family: 'Cherl';
   color: #af0303;
