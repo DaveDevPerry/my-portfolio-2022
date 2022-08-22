@@ -7,7 +7,7 @@ export const projects = [
 			'An app to keep track of gigs you have seen and any that are coming up. I designed this for mobile and it is developed using the MERN stack.',
 		image: '/images/screen_gigs.webp',
 		bgimage: '/images/bg_band.webp',
-		bgimageOn: '/images/bg_band.webp',
+		bgimageOn: '/images/bg_band_on.webp',
 		bgid: 'card-temp',
 		bgidOn: 'card-temp-on',
 		cardclass: 'left',
