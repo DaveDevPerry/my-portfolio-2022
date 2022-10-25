@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import styled from 'styled-components';
 
 import * as SiIcons from 'react-icons/si';
@@ -32,10 +32,11 @@ import {
 	SectionTitle,
 } from '../styles/GlobalComponents';
 import { projects } from '../constants/constants';
+import ImageModal from './ImageModal';
 
 // import '../../../globals.css';
 
-const Projects = () => {
+const Projects = ({ modalImgUrl, setModalImgUrl }) => {
 	const DynamicSiIcon = ({ name, iconColor }) => {
 		// console.log(name, 'icon name');
 		let IconComponent;
@@ -86,8 +87,16 @@ const Projects = () => {
 	// 	return <IconComponent size='35' color={iconColor} />;
 	// };
 
+	// const [modalImgUrl, setModalImgUrl] = useState(null);
+
+	const showImgModal = (e) => {
+		console.log(e.target.src, 'source');
+		setModalImgUrl(e.target.src);
+	};
+
 	return (
 		<Section id='projects'>
+			{/* <ImageModal modalImgUrl={modalImgUrl} /> */}
 			<SectionTitle>My Projects</SectionTitle>
 			<SectionText>
 				Below is a showcase of my work that I have both designed and developed,
@@ -137,7 +146,7 @@ const Projects = () => {
 									</HeaderThree>
 								</TitleContent>
 								<SubtitleContent>{subtitle}</SubtitleContent>
-								<Img src={image} alt={id} />
+								<Img src={image} alt={id} onClick={showImgModal} />
 								<UtilityList>
 									<LinkWrapper>
 										<SiNetlify size='22px' color='#1186b4' />
@@ -211,6 +220,35 @@ const Img = styled.img`
 	height: 100%;
 	object-fit: cover;
 	overflow: hidden;
+	cursor: pointer;
+	transition: all 400ms ease-in-out;
+	/* @media ${(props) => props.theme.breakpoints.xl} {
+		&:hover {
+			transform: scale(1.6);
+			z-index: 1000000;
+			overflow: unset;
+		}
+	} */
+	@media ${(props) => props.theme.breakpoints.lg} {
+		&:hover {
+			transform: scale(2);
+		}
+	}
+	@media ${(props) => props.theme.breakpoints.md} {
+		&:hover {
+			transform: scale(1.6);
+		}
+	}
+	@media ${(props) => props.theme.breakpoints.sm} {
+		&:hover {
+			transform: scale(1);
+		}
+	}
+	@media ${(props) => props.theme.breakpoints.xsm} {
+		&:hover {
+			transform: scale(1);
+		}
+	}
 	/* z-index: -5;
 	position: absolute; */
 `;
@@ -292,7 +330,7 @@ const BlogCard = styled.div`
 		width: 100%;
 	}
 	@media ${(props) => props.theme.breakpoints.xsm} {
-		padding: 10px;
+		padding: 10px 20px;
 	}
 `;
 

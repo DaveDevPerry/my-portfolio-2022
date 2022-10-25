@@ -10,11 +10,14 @@ import { Layout } from '../layout/Layout';
 import { Section } from '../styles/GlobalComponents';
 import Animations from '../components/Animations';
 import ContactForm from '../components/contact-form';
+// import { useState } from 'react';
 // import PageLoader from '../components/PageLoader';
 
 const Home = () => {
+	// const [modalImgUrl, setModalImgUrl] = useState(null);
 	return (
 		<Layout>
+			{/* <Layout modalImgUrl={modalImgUrl} setModalImgUrl={setModalImgUrl}> */}
 			{/* <PageLoader /> */}
 			{/* <input type='text' name='test' id='lighthouse test' /> */}
 			<Section grid id='top'>
@@ -23,6 +26,7 @@ const Home = () => {
 			</Section>
 			<About />
 			<Projects />
+			{/* <Projects modalImgUrl={modalImgUrl} setModalImgUrl={setModalImgUrl} /> */}
 			<Animations />
 			<Technologies />
 			<ContactForm />

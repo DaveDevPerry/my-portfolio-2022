@@ -40,7 +40,7 @@ export const projects = [
 		bgid: 'card-temp',
 		bgidOn: 'card-temp-on',
 		cardclass: 'left',
-		tags: ['user accounts', 'bcrypt', 'chart-js'],
+		tags: ['user accounts', 'jwt', 'chart-js'],
 		// icons: ['SiReact', 'SiPwa', 'SiCss3'],
 		// colors: ['#000000', '#fff444', '#dd66uu'],
 		icons: [
@@ -58,18 +58,18 @@ export const projects = [
 		id: 6,
 	},
 	{
-		title: 'TERRORQUIZION',
+		title: 'terrorQUIZion',
 		titleCode: '<p>hel<span>l</span>o</p>',
 		subtitle: 'Name the song quiz app',
 		description:
 			'An app in which fans of the band Terrorvision can test their knowledge of Terrorvision songs based on short audio samples.',
 		image: '/images/screen_terrorquizion.webp',
-		bgimage: '/images/bg_scales.webp',
-		bgimageOn: '/images/bg_scales_on.webp',
+		bgimage: '/images/bg_quiz.webp',
+		bgimageOn: '/images/bg_quiz_on.webp',
 		bgid: 'card-temp',
 		bgidOn: 'card-temp-on',
 		cardclass: 'left',
-		tags: ['user accounts', 'bcrypt', 'chart-js'],
+		tags: ['user accounts', 'bcrypt', 'framer-motion'],
 		// icons: ['SiReact', 'SiPwa', 'SiCss3'],
 		// colors: ['#000000', '#fff444', '#dd66uu'],
 		icons: [
