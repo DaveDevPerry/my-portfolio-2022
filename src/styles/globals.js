@@ -142,6 +142,14 @@ main{
   z-index: -4;
 }
 
+.font-terrorquizion{
+  font-family: 'Signika', sans-serif;
+  color: #eebb06;
+}
+.font-why-weight{
+  font-family: 'Fuzzy Bubbles', cursive;
+  color: rgb(38, 151, 244);
+}
 .font-gig-list{
   font-family: 'Poppins';
   color: rgb(216, 0, 184);
