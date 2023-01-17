@@ -93,8 +93,8 @@ const Projects = ({ modalImgUrl, setModalImgUrl }) => {
 	// const [modalImgUrl, setModalImgUrl] = useState(null);
 
 	const showImgModal = (e) => {
-		console.log(e.target.src, 'source');
-		setModalImgUrl(e.target.src);
+		// console.log(e.target.src, 'source');
+		// setModalImgUrl(e.target.src);
 	};
 
 	return (

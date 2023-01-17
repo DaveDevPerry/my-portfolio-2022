@@ -33,9 +33,18 @@ const About = () => {
 		<Section id='about'>
 			<SectionTitle>About Me</SectionTitle>
 			<SectionText>
-				I am a self-taught developer who enjoys working in front-end development
-				and design.
+				I am a self-taught developer. Starting with front-end design as an
+				outlet for the creative side in me. It gave me a thirst to delve deeper
+				into development. It wasn't long before I included the back-end, as I
+				realized I needed to learn full-stack to build out my project ideas in
+				their entirety.
 			</SectionText>
+			{/* <SectionText>
+				I am a self-taught developer. I began with front-end which incorporated
+				creativity and design aspects. I then moved on to the back-end, as I
+				realized I needed to learn full-stack to build out my project ideas in
+				their entirety.
+			</SectionText> */}
 			<AboutTextWrapper>
 				<p id='about-bg-text-name' onMouseOver={goRed}>
 					dave <span>perry</span>
@@ -46,9 +55,10 @@ const About = () => {
 					functional web applications.
 				</InfoText>
 				<InfoText>
-					I’ve built and designed all my web applications thus far using HTML,
-					SCSS and vanilla Javascript. You can view all the technologies I have
-					used in each project on my portfolio page.
+					I’ve built and designed all my web applications thus far beginning
+					with HTML, SCSS and vanilla Javascript, and then on to React and the
+					MERN stack. You can view all the technologies I have used in each
+					project on my portfolio page.
 				</InfoText>
 				<InfoText>
 					Before moving into development, I worked in the Courier and Logistics
@@ -58,14 +68,49 @@ const About = () => {
 				</InfoText>
 				<InfoText>
 					When I am not coding, I enjoy playing and arranging pieces on guitar
-					for my youtube channel. I also enjoy gaming and watching development
-					channels and tutorials on youtube.
+					for my youtube channel. I also enjoy gaming and watching dev. and
+					tech. channels on youtube.
 				</InfoText>
 			</AboutTextWrapper>
 			<SectionDivider />
 		</Section>
 	);
 };
+
+// <Section id='about'>
+// 			<SectionTitle>About Me</SectionTitle>
+// 			<SectionText>
+// 				I am a self-taught developer who enjoys working in front-end development
+// 				and design.
+// 			</SectionText>
+// 			<AboutTextWrapper>
+// 				<p id='about-bg-text-name' onMouseOver={goRed}>
+// 					dave <span>perry</span>
+// 				</p>
+// 				<InfoText>
+// 					I’m naturally creative and enjoy problem solving. I have a meticulous
+// 					attention to detail and enjoy building stylish, engaging, and
+// 					functional web applications.
+// 				</InfoText>
+// 				<InfoText>
+// 					I’ve built and designed all my web applications thus far using HTML,
+// 					SCSS and vanilla Javascript. You can view all the technologies I have
+// 					used in each project on my portfolio page.
+// 				</InfoText>
+// 				<InfoText>
+// 					Before moving into development, I worked in the Courier and Logistics
+// 					sector, where I designed and developed a basic intranet site and a few
+// 					html email promo offers. I also produced a few small projects with
+// 					Excel such as dynamic tariffs and shipping quotes.
+// 				</InfoText>
+// 				<InfoText>
+// 					When I am not coding, I enjoy playing and arranging pieces on guitar
+// 					for my youtube channel. I also enjoy gaming and watching development
+// 					channels and tutorials on youtube.
+// 				</InfoText>
+// 			</AboutTextWrapper>
+// 			<SectionDivider />
+// 		</Section>
 
 const InfoText = styled.p`
 	width: 100%;

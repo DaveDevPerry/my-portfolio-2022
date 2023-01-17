@@ -150,6 +150,7 @@ main{
 .font-why-weight{
   font-family: 'Fuzzy Bubbles', cursive;
   color: rgb(38, 151, 244);
+  
 }
 .font-gig-list{
   ${'' /* font-family: 'Poppins'; */}
@@ -162,8 +163,12 @@ main{
 }
 
 .font-guitar-archive{
-    font-family: 'New Tegomin';
-  color: #c7581d;
+    font-family: 'New Tegomin', serif;
+  ${'' /* color: #c7581d; */}
+  ${'' /* color: #1d0b01; */}
+	color: #7f0101;
+  text-shadow: 0px 1px 0px rgb(255 255 255 / 30%),
+			0px -1px 0px rgb(0 0 0 / 70%);
   span{
     color: rgb(105, 54, 25);
   }
