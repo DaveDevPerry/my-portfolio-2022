@@ -143,7 +143,8 @@ main{
 }
 
 .font-terrorquizion{
-  font-family: 'Signika', sans-serif;
+  ${'' /* font-family: 'Signika', sans-serif; */}
+  font-family: 'Russo One', sans-serif;
   color: #eebb06;
 }
 .font-why-weight{
@@ -151,7 +152,8 @@ main{
   color: rgb(38, 151, 244);
 }
 .font-gig-list{
-  font-family: 'Poppins';
+  ${'' /* font-family: 'Poppins'; */}
+  font-family: 'Righteous', cursive;
   color: rgb(216, 0, 184);
 }
 .font-loopy-lotto{
@@ -172,7 +174,8 @@ main{
   color: #ffffff;
 }
 .font-funjumble{
-  font-family: 'Montserrat', sans-serif;
+  ${'' /* font-family: 'Montserrat', sans-serif; */}
+  font-family: 'Marhey', cursive;
   color: rgb(228, 207, 23);
   font-weight: bold;
   span{

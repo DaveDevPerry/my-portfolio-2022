@@ -3,6 +3,7 @@ import styled from 'styled-components';
 
 import * as SiIcons from 'react-icons/si';
 import * as FaIcons from 'react-icons/fa';
+import * as IoIcons from 'react-icons/io5';
 import { SiNetlify } from 'react-icons/si';
 import { VscGithub } from 'react-icons/vsc';
 import expressIcon from '../../public/svg/express.svg';
@@ -42,6 +43,8 @@ const Projects = ({ modalImgUrl, setModalImgUrl }) => {
 		let IconComponent;
 		if (name[0] === 'S') {
 			IconComponent = SiIcons[name];
+		} else if (name[0] === 'I') {
+			IconComponent = IoIcons[name];
 		} else if (name[0] === 'F') {
 			IconComponent = FaIcons[name];
 		} else if (name[0] === 'E') {
@@ -124,6 +127,11 @@ const Projects = ({ modalImgUrl, setModalImgUrl }) => {
 							visit,
 							font,
 							login,
+							codeBack,
+							codeFront,
+							hostIcon,
+							siteLogin,
+							sitePassword,
 							// colors,
 						}) => (
 							<BlogCard key={id} className={cardclass}>
@@ -174,6 +182,133 @@ const Projects = ({ modalImgUrl, setModalImgUrl }) => {
 										return <p key={index}>{item}</p>;
 									})}
 								</LoginWrapper>
+
+								<ProjectLinksContainer>
+									<div className='project-links-wrapper'>
+										<div className='link-header'>
+											<VscGithub size='22px' />
+											<p>VIEW CODE</p>
+										</div>
+										<div className='link-body'>
+											<a
+												href={codeBack}
+												target='_blank'
+												rel='noopener noreferrer'
+											>
+												Backend
+											</a>
+											<a
+												href={codeFront}
+												target='_blank'
+												rel='noopener noreferrer'
+											>
+												Frontend
+											</a>
+										</div>
+									</div>
+									<div className='project-links-wrapper'>
+										<div className='site-link-header'>
+											<DynamicSiIcon
+												name={hostIcon.name}
+												className={hostIcon.name}
+												iconColor={hostIcon.color}
+												id='site-host-icon'
+											/>
+											<a
+												href={source}
+												target='_blank'
+												rel='noopener noreferrer'
+											>
+												Visit site
+											</a>
+										</div>
+										<div className='site-link-body'>
+											<div className='login-detail-wrapper'>
+												{siteLogin !== null &&
+													siteLogin.map((item, index) => {
+														return <p key={index}>{item}</p>;
+													})}
+												{/* <p className="login-type">email</p>
+										<p className="login-info"></p> */}
+											</div>
+											<div className='login-detail-wrapper'>
+												{sitePassword !== null &&
+													sitePassword.map((item, index) => {
+														return <p key={index}>{item}</p>;
+													})}
+												{/* <p className="login-type">email</p>
+										<p className="login-info"></p> */}
+											</div>
+										</div>
+									</div>
+								</ProjectLinksContainer>
+								<SiteWrapper>
+									<a href={source} target='_blank' rel='noopener noreferrer'>
+										<p>visit site</p>
+										{/* Visit site */}
+									</a>
+									<div className='login-details-wrapper'>
+										<div className='login-detail-wrapper'>
+											{siteLogin !== null &&
+												siteLogin.map((item, index) => {
+													return <p key={index}>{item}</p>;
+												})}
+											{/* <p className="login-type">email</p>
+										<p className="login-info"></p> */}
+										</div>
+										{/* <p>{login[0]}</p> */}
+										<div className='icon-link-wrapper'>
+											<DynamicSiIcon
+												name={hostIcon.name}
+												className={hostIcon.name}
+												iconColor={hostIcon.color}
+											/>
+										</div>
+										<div className='login-detail-wrapper'>
+											{sitePassword !== null &&
+												sitePassword.map((item, index) => {
+													return <p key={index}>{item}</p>;
+												})}
+											{/* <p className="login-type">email</p>
+										<p className="login-info"></p> */}
+										</div>
+										{/* <p>{login[1]}</p> */}
+									</div>
+									{/* <DynamicSiIcon
+												name={icon.name}
+												key={i}
+												className={icon.name}
+												iconColor={icon.color}
+											/> */}
+								</SiteWrapper>
+								<CodeWrapper>
+									<p>VIEW CODE</p>
+									<div className='code-links-wrapper'>
+										<a
+											href={codeBack}
+											target='_blank'
+											rel='noopener noreferrer'
+										>
+											Backend
+										</a>
+										<div className='icon-link-wrapper'>
+											<VscGithub size='28px' />
+										</div>
+										<a
+											href={codeFront}
+											target='_blank'
+											rel='noopener noreferrer'
+										>
+											Frontend
+										</a>
+									</div>
+									{/* <DynamicSiIcon
+												name={icon.name}
+												key={i}
+												className={icon.name}
+												iconColor={icon.color}
+											/> */}
+								</CodeWrapper>
 								<Hr />
 								<CardInfo>{description}</CardInfo>
 								<div>
@@ -191,21 +326,9 @@ const Projects = ({ modalImgUrl, setModalImgUrl }) => {
 												key={i}
 												className={icon.name}
 												iconColor={icon.color}
-
-												// color='#555555'
 											/>
 										))}
 									</IconWrapper>
-									{/* <IconWrapper>
-										{icons.map((icon, i) => (
-											<DynamicSiIcon
-												name={icon}
-												key={i}
-												className={icon}
-												// color='#555555'
-											/>
-										))}
-									</IconWrapper> */}
 								</div>
 							</BlogCard>
 						)
@@ -229,7 +352,7 @@ const Img = styled.img`
 			overflow: unset;
 		}
 	} */
-	@media ${(props) => props.theme.breakpoints.lg} {
+	/* @media ${(props) => props.theme.breakpoints.lg} {
 		&:hover {
 			transform: scale(2);
 		}
@@ -248,7 +371,7 @@ const Img = styled.img`
 		&:hover {
 			transform: scale(1);
 		}
-	}
+	} */
 	/* z-index: -5;
 	position: absolute; */
 `;
@@ -406,6 +529,7 @@ const UtilityList = styled.div`
 	justify-content: center;
 	margin: 1rem 0;
 	column-gap: 2rem;
+	display: none;
 `;
 // const UtilityList = styled.ul`
 // 	list-style-type: none;
@@ -425,6 +549,226 @@ const LoginWrapper = styled.div`
 	-khtml-user-select: none; /* Konqueror HTML */
 	-moz-user-select: none; /* Firefox */
 	-ms-user-select: none; /* Internet Explorer/Edge */
+	display: none;
+`;
+const ProjectLinksContainer = styled.div`
+	display: flex;
+	border: 1px solid yellow;
+	display: none;
+	.project-links-wrapper {
+		flex: 1;
+		display: flex;
+		flex-direction: column;
+		row-gap: 1rem;
+		border: 1px solid green;
+		.link-header {
+			padding: 0;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			/* margin: 1rem 0; */
+			column-gap: 1rem;
+			p {
+				font-size: 2rem;
+			}
+		}
+		.link-body {
+			display: flex;
+			flex-direction: column;
+			/* border: 2px solid white; */
+			row-gap: 0.5rem;
+			/* column-gap: 1rem; */
+			/* flex-wrap: wrap; */
+			justify-content: center;
+			a {
+				flex: 1;
+				color: #ffffff;
+				font-size: 2rem;
+				padding: 0 0.5rem;
+				/* background: #6b3030; */
+				/* border: 1px solid ${(props) => props.theme.colors.red}; */
+				/* border-radius: 15px; */
+				transition: 0.5s;
+				text-transform: uppercase;
+				/* flex: 1; */
+				&:hover {
+					color: ${(props) => props.theme.colors.red};
+				}
+			}
+		}
+		.site-link-header {
+			padding: 0;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			/* margin: 1rem 0; */
+			column-gap: 1rem;
+			#site-host-icon {
+				font-size: 1rem;
+			}
+			a {
+				color: #ffffff;
+				font-size: 2rem;
+				padding: 0 0.5rem;
+				/* background: #6b3030; */
+				/* border: 1px solid ${(props) => props.theme.colors.red}; */
+				/* border-radius: 15px; */
+				transition: 0.5s;
+				text-transform: uppercase;
+				/* flex: 1; */
+				&:hover {
+					color: ${(props) => props.theme.colors.red};
+				}
+				/* p {
+			font-size: 2rem;
+		} */
+				/* p {
+				font-size: 2rem;
+			} */
+			}
+		}
+		.site-link-body {
+			display: flex;
+			flex-direction: column;
+			/* border: 2px solid white; */
+			row-gap: 0.5rem;
+			/* column-gap: 1rem; */
+			/* flex-wrap: wrap; */
+			justify-content: center;
+			.login-detail-wrapper {
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				column-gap: 0.3rem;
+				/* border: 2px solid white; */
+				/* row-gap: 0.5rem; */
+				flex: 1;
+				p {
+					font-size: 1.6rem;
+					&:first-child {
+						/* border-bottom: 1px solid red; */
+						text-transform: uppercase;
+						font-size: 1.6rem;
+					}
+				}
+			}
+		}
+	}
+`;
+const SiteWrapper = styled.div`
+	display: flex;
+	flex-direction: column;
+	/* border: 2px solid white; */
+	row-gap: 0.5rem;
+	/* column-gap: 1rem; */
+	/* flex-wrap: wrap; */
+	justify-content: center;
+	/* align-items: center; */
+	user-select: none; /* supported by Chrome and Opera */
+	-webkit-user-select: none; /* Safari */
+	-khtml-user-select: none; /* Konqueror HTML */
+	-moz-user-select: none; /* Firefox */
+	-ms-user-select: none; /* Internet Explorer/Edge */
+	margin: 1rem 0 2rem 0;
+	a {
+		color: #ffffff;
+		font-size: 2rem;
+		padding: 0 0.5rem;
+		/* background: #6b3030; */
+		/* border: 1px solid ${(props) => props.theme.colors.red}; */
+		/* border-radius: 15px; */
+		transition: 0.5s;
+		text-transform: uppercase;
+		/* flex: 1; */
+		&:hover {
+			color: ${(props) => props.theme.colors.red};
+		}
+		p {
+			font-size: 2rem;
+		}
+	}
+	/* p {
+		font-size: 2rem;
+	} */
+	.login-details-wrapper {
+		display: flex;
+		column-gap: 1rem;
+		/* flex-wrap: wrap; */
+		justify-content: center;
+		user-select: none; /* supported by Chrome and Opera */
+		-webkit-user-select: none; /* Safari */
+		-khtml-user-select: none; /* Konqueror HTML */
+		-moz-user-select: none; /* Firefox */
+		-ms-user-select: none; /* Internet Explorer/Edge */
+		.login-detail-wrapper {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			column-gap: 0.3rem;
+			/* border: 2px solid white; */
+			/* row-gap: 0.5rem; */
+			flex: 1;
+			p {
+				font-size: 1.6rem;
+				&:first-child {
+					/* border-bottom: 1px solid red; */
+					text-transform: uppercase;
+					font-size: 1.6rem;
+				}
+			}
+		}
+		.icon-link-wrapper {
+			width: 5rem;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		}
+	}
+`;
+const CodeWrapper = styled.div`
+	display: flex;
+	flex-direction: column;
+	/* border: 2px solid white; */
+	row-gap: 0.5rem;
+	margin: 1rem 0;
+	/* column-gap: 1rem; */
+	/* flex-wrap: wrap; */
+	justify-content: center;
+	user-select: none; /* supported by Chrome and Opera */
+	-webkit-user-select: none; /* Safari */
+	-khtml-user-select: none; /* Konqueror HTML */
+	-moz-user-select: none; /* Firefox */
+	-ms-user-select: none; /* Internet Explorer/Edge */
+	p {
+		font-size: 2rem;
+	}
+	.code-links-wrapper {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		column-gap: 2rem;
+		a {
+			flex: 1;
+			color: #ffffff;
+			font-size: 2rem;
+			padding: 0 0.5rem;
+			/* background: #6b3030; */
+			/* border: 1px solid ${(props) => props.theme.colors.red}; */
+			/* border-radius: 15px; */
+			transition: 0.5s;
+			text-transform: uppercase;
+			/* flex: 1; */
+			&:hover {
+				color: ${(props) => props.theme.colors.red};
+			}
+		}
+		.icon-link-wrapper {
+			width: 5rem;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		}
+	}
 `;
 
 const ExternalLinks = styled.a`
