@@ -166,7 +166,8 @@ main{
     font-family: 'New Tegomin', serif;
   ${'' /* color: #c7581d; */}
   ${'' /* color: #1d0b01; */}
-	color: #7f0101;
+	${'' /* color: #7f0101; */}
+	color: #eb0000;
   text-shadow: 0px 1px 0px rgb(255 255 255 / 30%),
 			0px -1px 0px rgb(0 0 0 / 70%);
   span{

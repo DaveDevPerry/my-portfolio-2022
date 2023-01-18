@@ -40,12 +40,12 @@ const Technologies = () => (
 		</SectionText>
 		<TechIcons>
 			<SiReact color='#00CDF2' className='tech-icon' />
-			<SiJavascript color='#F7DF1E' className='tech-icon' />
-			<SiMongodb color='#459546' className='tech-icon' />
 			<FaNodeJs color='#6cc24a' className='tech-icon' />
-			<SiHtml5 color='#E44F26' className='tech-icon' />
-			<SiCss3 color='#33A9DC' className='tech-icon' />
+			<SiMongodb color='#459546' className='tech-icon' />
+			<SiJavascript color='#F7DF1E' className='tech-icon' />
 			<SiSass color='#CD6799' className='tech-icon' />
+			<SiCss3 color='#33A9DC' className='tech-icon' />
+			<SiHtml5 color='#E44F26' className='tech-icon' />
 			<SiGit color='#DE4C36' className='tech-icon' />
 			<SiVisualstudiocode color='#007ACC' className='tech-icon' />
 			{/* <SiAdobephotoshop color='#007ACC' className='tech-icon' /> */}

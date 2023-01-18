@@ -132,6 +132,7 @@ const Projects = ({ modalImgUrl, setModalImgUrl }) => {
 							hostIcon,
 							siteLogin,
 							sitePassword,
+							qrSite,
 							// colors,
 						}) => (
 							<BlogCard key={id} className={cardclass}>
@@ -182,6 +183,71 @@ const Projects = ({ modalImgUrl, setModalImgUrl }) => {
 										return <p key={index}>{item}</p>;
 									})}
 								</LoginWrapper>
+
+								<ProjectQRCodeContainer>
+									<div className='project-links-wrapper'>
+										<div className='code-link-wrapper'>
+											<div className='qr-code-wrapper'>
+												<Img src={qrSite} alt='qr code' className='qr-code' />
+											</div>
+											<p>visit site</p>
+										</div>
+										<div className='code-link-wrapper'>
+											<div className='qr-code-wrapper'>
+												<p>details</p>
+											</div>
+										</div>
+										{/* <div className='link-body'>
+											<a
+												href={codeBack}
+												target='_blank'
+												rel='noopener noreferrer'
+											>
+												Backend
+											</a>
+											<a
+												href={codeFront}
+												target='_blank'
+												rel='noopener noreferrer'
+											>
+												Frontend
+											</a>
+										</div>
+									</div>
+									<div className='project-links-wrapper'>
+										<div className='site-link-header'>
+											<DynamicSiIcon
+												name={hostIcon.name}
+												className={hostIcon.name}
+												iconColor={hostIcon.color}
+												id='site-host-icon'
+											/>
+											<a
+												href={source}
+												target='_blank'
+												rel='noopener noreferrer'
+											>
+												Visit site
+											</a>
+										</div>
+										<div className='site-link-body'>
+											<div className='login-detail-wrapper'>
+												{siteLogin !== null &&
+													siteLogin.map((item, index) => {
+														return <p key={index}>{item}</p>;
+													})}
+									
+											</div>
+											<div className='login-detail-wrapper'>
+												{sitePassword !== null &&
+													sitePassword.map((item, index) => {
+														return <p key={index}>{item}</p>;
+													})}
+									
+											</div>
+										</div> */}
+									</div>
+								</ProjectQRCodeContainer>
 
 								<ProjectLinksContainer>
 									<div className='project-links-wrapper'>
@@ -343,7 +409,7 @@ const Img = styled.img`
 	height: 100%;
 	object-fit: cover;
 	overflow: hidden;
-	cursor: pointer;
+	/* cursor: pointer; */
 	transition: all 400ms ease-in-out;
 	/* @media ${(props) => props.theme.breakpoints.xl} {
 		&:hover {
@@ -550,6 +616,38 @@ const LoginWrapper = styled.div`
 	-moz-user-select: none; /* Firefox */
 	-ms-user-select: none; /* Internet Explorer/Edge */
 	display: none;
+`;
+
+{
+	/* <div className='code-link-wrapper'>
+										<div className='qr-code-wrapper'></div> */
+}
+const ProjectQRCodeContainer = styled.div`
+	display: flex;
+	border: 2px solid yellow;
+	display: none;
+	.project-links-wrapper {
+		flex: 1;
+		display: flex;
+		flex-direction: row;
+		column-gap: 1rem;
+		border: 1px solid green;
+		.code-link-wrapper {
+			border: 1px solid yellow;
+			flex: 1;
+			.qr-code-wrapper {
+				display: flex;
+				flex-direction: column;
+				.qr-code {
+					width: 10rem;
+					height: 10rem;
+				}
+				p {
+					font-size: 2rem;
+				}
+			}
+		}
+	}
 `;
 const ProjectLinksContainer = styled.div`
 	display: flex;

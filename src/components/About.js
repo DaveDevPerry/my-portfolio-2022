@@ -16,7 +16,7 @@ const About = () => {
 		if (window.innerWidth > 640) {
 			tl.current = gsap
 				.timeline()
-				.from('#about', { opacity: 0, duration: 1, delay: 8 });
+				.from('#about', { opacity: 0, duration: 1, delay: 7 });
 		}
 		if (window.innerWidth < 639) {
 			tl.current = gsap
