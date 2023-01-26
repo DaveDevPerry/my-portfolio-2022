@@ -12,6 +12,7 @@ import Animations from '../components/Animations';
 import ContactForm from '../components/contact-form';
 // import { useState } from 'react';
 // import PageLoader from '../components/PageLoader';
+// import PageLoader from '../components/PageLoader';
 
 const Home = () => {
 	// const [modalImgUrl, setModalImgUrl] = useState(null);
