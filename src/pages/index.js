@@ -10,6 +10,7 @@ import { Layout } from '../layout/Layout';
 import { Section } from '../styles/GlobalComponents';
 import Animations from '../components/Animations';
 import ContactForm from '../components/contact-form';
+// import PasswordWidget from '../components/PasswordWidget';
 // import { useState } from 'react';
 // import PageLoader from '../components/PageLoader';
 
@@ -25,6 +26,7 @@ const Home = () => {
 				<LogoAnimation />
 			</Section>
 			<About />
+			{/* <PasswordWidget /> */}
 			<Projects />
 			{/* <Projects modalImgUrl={modalImgUrl} setModalImgUrl={setModalImgUrl} /> */}
 			<Animations />

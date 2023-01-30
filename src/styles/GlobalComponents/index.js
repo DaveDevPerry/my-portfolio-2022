@@ -30,6 +30,68 @@ export const Section = styled.section`
 	}
 `;
 
+export const SectionProjectsHeader = styled.div`
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	gap: 2rem;
+	flex-wrap: wrap;
+	/* font-weight: 800;
+	font-size: ${(props) => (props.main ? '65px' : '56px')};
+	line-height: ${(props) => (props.main ? '80px' : '80px')}; */
+	width: max-content;
+	max-width: 100%;
+	/* background: linear-gradient(
+		121.57deg,
+		#ffffff 18.77%,
+		rgba(255, 255, 255, 0.66) 60.15%
+	);
+	background-clip: text;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent; */
+	/* margin-bottom: 16px; */
+	/* padding: ${(props) => (props.main ? '58px 0 16px' : '0')}; */
+
+	/* @media ${(props) => props.theme.breakpoints.md} {
+		font-size: ${(props) => (props.main ? '56px' : '48px')};
+		line-height: ${(props) => (props.main ? '56px' : '48px')};
+		margin-bottom: 12px;
+		padding: ${(props) => (props.main ? '40px 0 12px' : '0')};
+	}
+
+	@media ${(props) => props.theme.breakpoints.sm} {
+		font-size: 32px;
+		line-height: 40px;
+		font-size: ${(props) => (props.main ? '36px' : '32px')};
+		line-height: ${(props) => (props.main ? '42px' : '40px')};
+		margin-bottom: 8px;
+		padding: ${(props) => (props.main ? '16px 0 8px' : '20px 0 0 0')};
+		max-width: 100%;
+	}
+	@media ${(props) => props.theme.breakpoints.xsm} {
+		font-size: 32px;
+		line-height: 40px;
+		font-size: ${(props) => (props.main ? '28px' : '32px')};
+		line-height: ${(props) => (props.main ? '32px' : '40px')};
+		margin-bottom: 8px;
+		padding: ${(props) => (props.main ? '16px 0 8px' : '20px 0 0 0')};
+		max-width: 100%;
+	} */
+	@media ${(props) => props.theme.breakpoints.xsm} {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		gap: 0.5rem;
+		flex-wrap: nowrap;
+		/* width: max-content; */
+		width: 100%;
+		padding: 0;
+		/* 
+		width: max-content;
+		max-width: 100%; */
+	}
+`;
+
 export const SectionTitle = styled.h2`
 	font-weight: 800;
 	font-size: ${(props) => (props.main ? '65px' : '56px')};
@@ -84,7 +146,8 @@ export const SectionTitle = styled.h2`
 		font-size: ${(props) => (props.main ? '28px' : '32px')};
 		line-height: ${(props) => (props.main ? '32px' : '40px')};
 		margin-bottom: 8px;
-		padding: ${(props) => (props.main ? '16px 0 8px' : '20px 0 0 0')};
+		/* padding: ${(props) => (props.main ? '16px 0 8px' : '20px 0 0 0')}; */
+		padding: 0;
 		max-width: 100%;
 	}
 `;

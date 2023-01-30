@@ -31,9 +31,11 @@ import {
 	SectionDivider,
 	SectionText,
 	SectionTitle,
+	SectionProjectsHeader,
 } from '../styles/GlobalComponents';
 import { projects } from '../constants/constants';
 import ImageModal from './ImageModal';
+import PasswordWidget from './PasswordWidget';
 
 // import '../../../globals.css';
 
@@ -100,7 +102,12 @@ const Projects = ({ modalImgUrl, setModalImgUrl }) => {
 	return (
 		<Section id='projects'>
 			{/* <ImageModal modalImgUrl={modalImgUrl} /> */}
-			<SectionTitle>My Projects</SectionTitle>
+			<SectionProjectsHeader>
+				<SectionTitle>My Projects</SectionTitle>
+				<PasswordWidget />
+				{/* <PasswordWidget>password</PasswordWidget> */}
+			</SectionProjectsHeader>
+			{/* <SectionTitle>My Projects</SectionTitle> */}
 			<SectionText>
 				Below is a showcase of my work that I have both designed and developed,
 				most of which are my original ideas. They range from vanilla javascript
@@ -133,6 +140,8 @@ const Projects = ({ modalImgUrl, setModalImgUrl }) => {
 							siteLogin,
 							sitePassword,
 							qrSite,
+							qrBack,
+							qrFront,
 							// colors,
 						}) => (
 							<BlogCard key={id} className={cardclass}>
@@ -190,13 +199,55 @@ const Projects = ({ modalImgUrl, setModalImgUrl }) => {
 											<div className='qr-code-wrapper'>
 												<Img src={qrSite} alt='qr code' className='qr-code' />
 											</div>
-											<p>visit site</p>
+											{/* <p>visit site</p> */}
+											<a
+												href={source}
+												target='_blank'
+												rel='noopener noreferrer'
+											>
+												visit site
+											</a>
 										</div>
-										<div className='code-link-wrapper'>
+										{qrBack !== null && (
+											<div className='code-link-wrapper'>
+												<div className='qr-code-wrapper'>
+													<Img src={qrBack} alt='qr code' className='qr-code' />
+												</div>
+												{/* <p>backend</p> */}
+												<a
+													href={codeBack}
+													target='_blank'
+													rel='noopener noreferrer'
+												>
+													Backend
+												</a>
+											</div>
+										)}
+										{qrFront !== null && (
+											<div className='code-link-wrapper'>
+												<div className='qr-code-wrapper'>
+													<Img
+														src={qrFront}
+														alt='qr code'
+														className='qr-code'
+													/>
+												</div>
+												{/* <p>frontend</p> */}
+												<a
+													href={codeFront}
+													target='_blank'
+													rel='noopener noreferrer'
+												>
+													Frontend
+												</a>
+											</div>
+										)}
+
+										{/* <div className='code-link-wrapper'>
 											<div className='qr-code-wrapper'>
 												<p>details</p>
 											</div>
-										</div>
+										</div> */}
 										{/* <div className='link-body'>
 											<a
 												href={codeBack}
@@ -455,6 +506,7 @@ const ImgFilter = styled.div`
 	width: 100%;
 	height: 100%;
 	background-color: rgba(36, 33, 33, 0.9);
+	border-radius: 10px;
 	/* display: none; */
 `;
 
@@ -492,6 +544,8 @@ const BlogCard = styled.div`
 	-khtml-user-select: none; /* Konqueror HTML */
 	-moz-user-select: none; /* Firefox */
 	-ms-user-select: none; /* Internet Explorer/Edge */
+
+	min-height: -webkit-fill-available;
 	.project_bg_image {
 		// display: none;
 		-webkit-transition: opacity 0.3s ease-in-out;
@@ -624,26 +678,99 @@ const LoginWrapper = styled.div`
 }
 const ProjectQRCodeContainer = styled.div`
 	display: flex;
-	border: 2px solid yellow;
-	display: none;
+	/* border: 2px solid yellow; */
+	/* display: none; */
+	margin-top: 1.5rem;
 	.project-links-wrapper {
 		flex: 1;
 		display: flex;
 		flex-direction: row;
-		column-gap: 1rem;
-		border: 1px solid green;
+		column-gap: 2rem;
+		justify-content: center;
+		/* border: 1px solid green; */
 		.code-link-wrapper {
-			border: 1px solid yellow;
-			flex: 1;
+			/* border: 1px solid yellow; */
+			/* flex: 1; */
+			display: flex;
+			flex-direction: column;
+			row-gap: 0.5rem;
+			align-items: center;
 			.qr-code-wrapper {
 				display: flex;
 				flex-direction: column;
 				.qr-code {
-					width: 10rem;
-					height: 10rem;
+					width: 9rem;
+					height: 9rem;
+					/* width: 10rem;
+					height: 10rem; */
 				}
 				p {
 					font-size: 2rem;
+				}
+			}
+			p {
+				font-size: 2rem;
+			}
+			a {
+				flex: 1;
+				color: ${(props) => props.theme.colors.white};
+				font-size: 1.6rem;
+				padding: 0 0.5rem;
+				/* background: #6b3030; */
+				/* border: 1px solid ${(props) => props.theme.colors.red}; */
+				/* border-radius: 15px; */
+				transition: 0.5s;
+				text-transform: uppercase;
+				/* flex: 1; */
+				&:hover {
+					color: ${(props) => props.theme.colors.red};
+				}
+			}
+		}
+	}
+	@media ${(props) => props.theme.breakpoints.xsm} {
+		.project-links-wrapper {
+			/* flex: 1; */
+			/* display: flex; */
+			/* flex-direction: row; */
+			column-gap: 1.5rem;
+			/* justify-content: space-between; */
+			/* border: 1px solid green; */
+			.code-link-wrapper {
+				/* display: flex;
+			flex-direction: column;
+			row-gap: 0.5rem;
+			align-items: center; */
+				.qr-code-wrapper {
+					display: flex;
+					flex-direction: column;
+					.qr-code {
+						width: 8rem;
+						height: 8rem;
+						/* width: 10rem;
+					height: 10rem; */
+					}
+					p {
+						font-size: 1.8rem;
+					}
+				}
+				p {
+					font-size: 1.8rem;
+				}
+				a {
+					flex: 1;
+					color: ${(props) => props.theme.colors.white};
+					font-size: 1.5rem;
+					padding: 0;
+					/* background: #6b3030; */
+					/* border: 1px solid ${(props) => props.theme.colors.red}; */
+					/* border-radius: 15px; */
+					transition: 0.5s;
+					text-transform: uppercase;
+					/* flex: 1; */
+					&:hover {
+						color: ${(props) => props.theme.colors.red};
+					}
 				}
 			}
 		}
@@ -768,6 +895,7 @@ const SiteWrapper = styled.div`
 	-moz-user-select: none; /* Firefox */
 	-ms-user-select: none; /* Internet Explorer/Edge */
 	margin: 1rem 0 2rem 0;
+	display: none;
 	a {
 		color: #ffffff;
 		font-size: 2rem;
@@ -837,6 +965,7 @@ const CodeWrapper = styled.div`
 	-khtml-user-select: none; /* Konqueror HTML */
 	-moz-user-select: none; /* Firefox */
 	-ms-user-select: none; /* Internet Explorer/Edge */
+	display: none;
 	p {
 		font-size: 2rem;
 	}

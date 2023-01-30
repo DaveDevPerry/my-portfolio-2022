@@ -38,4 +38,5 @@ yarn-error.log*
 .vscode
 
 # package-lock.json
+/public/pdf/daveperry_resume_old.pdf
 
