@@ -300,7 +300,7 @@ const Projects = ({ modalImgUrl, setModalImgUrl }) => {
 									</div>
 								</ProjectQRCodeContainer>
 
-								<ProjectLinksContainer>
+								{/* <ProjectLinksContainer>
 									<div className='project-links-wrapper'>
 										<div className='link-header'>
 											<VscGithub size='22px' />
@@ -345,16 +345,14 @@ const Projects = ({ modalImgUrl, setModalImgUrl }) => {
 													siteLogin.map((item, index) => {
 														return <p key={index}>{item}</p>;
 													})}
-												{/* <p className="login-type">email</p>
-										<p className="login-info"></p> */}
+												
 											</div>
 											<div className='login-detail-wrapper'>
 												{sitePassword !== null &&
 													sitePassword.map((item, index) => {
 														return <p key={index}>{item}</p>;
 													})}
-												{/* <p className="login-type">email</p>
-										<p className="login-info"></p> */}
+							
 											</div>
 										</div>
 									</div>
@@ -362,7 +360,6 @@ const Projects = ({ modalImgUrl, setModalImgUrl }) => {
 								<SiteWrapper>
 									<a href={source} target='_blank' rel='noopener noreferrer'>
 										<p>visit site</p>
-										{/* Visit site */}
 									</a>
 									<div className='login-details-wrapper'>
 										<div className='login-detail-wrapper'>
@@ -370,10 +367,8 @@ const Projects = ({ modalImgUrl, setModalImgUrl }) => {
 												siteLogin.map((item, index) => {
 													return <p key={index}>{item}</p>;
 												})}
-											{/* <p className="login-type">email</p>
-										<p className="login-info"></p> */}
+									
 										</div>
-										{/* <p>{login[0]}</p> */}
 										<div className='icon-link-wrapper'>
 											<DynamicSiIcon
 												name={hostIcon.name}
@@ -386,17 +381,10 @@ const Projects = ({ modalImgUrl, setModalImgUrl }) => {
 												sitePassword.map((item, index) => {
 													return <p key={index}>{item}</p>;
 												})}
-											{/* <p className="login-type">email</p>
-										<p className="login-info"></p> */}
+								
 										</div>
-										{/* <p>{login[1]}</p> */}
 									</div>
-									{/* <DynamicSiIcon
-												name={icon.name}
-												key={i}
-												className={icon.name}
-												iconColor={icon.color}
-											/> */}
+								
 								</SiteWrapper>
 								<CodeWrapper>
 									<p>VIEW CODE</p>
@@ -419,13 +407,8 @@ const Projects = ({ modalImgUrl, setModalImgUrl }) => {
 											Frontend
 										</a>
 									</div>
-									{/* <DynamicSiIcon
-												name={icon.name}
-												key={i}
-												className={icon.name}
-												iconColor={icon.color}
-											/> */}
-								</CodeWrapper>
+							
+								</CodeWrapper> */}
 								<Hr />
 								<CardInfo>{description}</CardInfo>
 								<div>
