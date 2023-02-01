@@ -14,7 +14,12 @@ export const projects = [
 		bgid: 'card-temp',
 		bgidOn: 'card-temp-on',
 		cardclass: 'left',
-		tags: ['3rd Party API', 'React', 'Node'],
+		tags: [
+			// 'User Authentication',
+			'CRUD Functionality',
+			'Pagination and Filtering',
+			'3rd Party API Consumption',
+		],
 		icons: [
 			{ name: 'SiMongodb', color: '#459546' },
 			{ name: 'Express', color: '#234565' },
@@ -50,7 +55,7 @@ export const projects = [
 		bgid: 'card-temp',
 		bgidOn: 'card-temp-on',
 		cardclass: 'right',
-		tags: ['user accounts', 'jwt', 'chart-js'],
+		tags: ['User Authentication', 'Dynamic Searching', 'Animated Chart Data'],
 		// icons: ['SiReact', 'SiPwa', 'SiCss3'],
 		// colors: ['#000000', '#fff444', '#dd66uu'],
 		icons: [
@@ -86,7 +91,7 @@ export const projects = [
 		bgid: 'card-temp',
 		bgidOn: 'card-temp-on',
 		cardclass: 'left',
-		tags: ['HTML Canvas API', 'Custom Animations', 'Mobile Responsive'],
+		tags: ['CRUD Functionality', 'HTML Canvas API', 'Custom Animations'],
 		// icons: ['SiHtml5', 'SiSass', 'SiJavascript'],
 		icons: [
 			{ name: 'SiMongodb', color: '#459546' },
@@ -121,7 +126,11 @@ export const projects = [
 		bgid: 'card-temp',
 		bgidOn: 'card-temp-on',
 		cardclass: 'right',
-		tags: ['user accounts', 'bcrypt', 'chart-js'],
+		tags: [
+			'User Authentication',
+			'Light & Dark Modes',
+			'Send Invites via Whatsapp',
+		],
 		// icons: ['SiReact', 'SiPwa', 'SiCss3'],
 		// colors: ['#000000', '#fff444', '#dd66uu'],
 		icons: [
@@ -289,7 +298,11 @@ export const projects = [
 		bgid: 'card-temp',
 		bgidOn: 'card-temp-on',
 		cardclass: 'right',
-		tags: ['Progressive Web App', 'Chart.js', '3rd Party API', 'local storage'],
+		tags: [
+			'Progressive Web App',
+			'Local Storage Utilisation',
+			'3rd Party API Consumption',
+		],
 		// icons: ['SiReact', 'SiPwa', 'SiCss3'],
 		// colors: ['#000000', '#fff444', '#dd66uu'],
 		icons: [
@@ -324,7 +337,7 @@ export const projects = [
 		bgid: 'card-temp',
 		bgidOn: 'card-temp-on',
 		cardclass: 'right',
-		tags: ['SPA', 'MERN Stack', 'User Auth'],
+		tags: ['Single Page Application', 'Over 20 Active Users', 'CSS Variables'],
 		// icons: ['SiNodedotjs', 'SiExpress', 'SiMongodb'],
 		// colors: ['#000000', '#fff444', '#dd66uu'],
 		icons: [

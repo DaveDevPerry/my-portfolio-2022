@@ -528,7 +528,7 @@ const BlogCard = styled.div`
 	-moz-user-select: none; /* Firefox */
 	-ms-user-select: none; /* Internet Explorer/Edge */
 
-	min-height: -webkit-fill-available;
+	/* min-height: -webkit-fill-available; */
 	.project_bg_image {
 		// display: none;
 		-webkit-transition: opacity 0.3s ease-in-out;
@@ -554,10 +554,11 @@ const BlogCard = styled.div`
 	}
 	@media ${(props) => props.theme.breakpoints.sm} {
 		width: 100%;
+		padding: 10px 10px;
 	}
-	@media ${(props) => props.theme.breakpoints.xsm} {
+	/* @media ${(props) => props.theme.breakpoints.xsm} {
 		padding: 10px 20px;
-	}
+	} */
 `;
 
 const TitleContent = styled.div`
@@ -704,6 +705,7 @@ const ProjectQRCodeContainer = styled.div`
 				/* border-radius: 15px; */
 				transition: 0.5s;
 				text-transform: uppercase;
+				text-decoration: underline;
 				/* flex: 1; */
 				&:hover {
 					color: ${(props) => props.theme.colors.red};
@@ -1012,7 +1014,7 @@ const ExternalLinks = styled.a`
 const TagList = styled.ul`
 	display: flex;
 	justify-content: space-between;
-	padding: 2rem 0;
+	padding: 2rem 0 0 0;
 `;
 const Tag = styled.li`
 	/* color: ${(props) => props.theme.colors.red}; */
@@ -1020,12 +1022,20 @@ const Tag = styled.li`
 	font-size: 1.5rem;
 	font-weight: bold;
 	flex: 1;
+	@media ${(props) => props.theme.breakpoints.sm} {
+		font-size: 1.4rem;
+		/* padding: 10px 20px; */
+	}
+	@media ${(props) => props.theme.breakpoints.xsm} {
+		font-size: 1.2rem;
+		/* padding: 10px 20px; */
+	}
 `;
 
 const IconWrapper = styled.div`
 	display: flex;
 	justify-content: space-around;
-	padding: 2rem;
+	padding: 2rem 2rem 1rem 2rem;
 	.SiReact {
 		color: green;
 	}
