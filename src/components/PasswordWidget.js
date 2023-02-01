@@ -112,15 +112,25 @@ const PasswordWidget = ({ modalImgUrl, setModalImgUrl }) => {
 };
 
 const StyledPasswordWidget = styled.div`
-	background-color: ${(props) => props.theme.colors.red};
+	/* background-color: ${(props) => props.theme.colors.red};
 	padding: 0.5rem 1.5rem;
 	display: flex;
 	align-items: center;
-	/* flex-direction: column; */
+	border-radius: 0.5rem;
+	gap: 1.5rem;
+	cursor: pointer; */
+	background-color: rgb(27, 27, 27);
+	border: 2px solid ${(props) => props.theme.colors.red};
+	padding: 0.5rem 1.5rem;
+	display: flex;
+	align-items: center;
 	border-radius: 0.5rem;
 	gap: 1.5rem;
 	cursor: pointer;
-
+	/* .pulse { */
+	box-shadow: 0px 0px 1px 1px #0000001a;
+	animation: pulse-animation 2s infinite;
+	/* } */
 	.password-content-wrapper {
 		display: flex;
 		align-items: center;
@@ -164,7 +174,8 @@ const StyledPasswordWidget = styled.div`
 			font-size: 3rem;
 		}
 	}
-	@media ${(props) => props.theme.breakpoints.xsm} {
+	@media ${(props) => props.theme.breakpoints.sm} {
+		margin-right: 0.5rem;
 		padding: 0.5rem 1rem;
 		/* background-color: ${(props) => props.theme.colors.red}; */
 		/* padding: 0.5rem 1.5rem; */
@@ -174,6 +185,10 @@ const StyledPasswordWidget = styled.div`
 		/* border-radius: 0.5rem; */
 		gap: 0.5rem;
 		cursor: pointer;
+		/* box-shadow: 0px 0px 1px 1px #0000001a; */
+		box-shadow: 0px 0px 1px 1px #0000001a;
+		animation: unset;
+		animation: pulse-animation-mobile 2s infinite;
 		.password-content-wrapper {
 			/* display: flex;
 		align-items: center;
@@ -218,6 +233,31 @@ const StyledPasswordWidget = styled.div`
 			}
 		}
 	}
+
+	@keyframes pulse-animation {
+		0% {
+			box-shadow: 0 0 0 0px rgba(208, 5, 5, 0.5);
+		}
+		100% {
+			box-shadow: 0 0 0 20px rgba(0, 0, 0, 0);
+		}
+	}
+	@keyframes pulse-animation-mobile {
+		0% {
+			box-shadow: 0 0 0 0px rgba(208, 5, 5, 1);
+		}
+		100% {
+			box-shadow: 0 0 0 10px rgba(0, 0, 0, 0);
+		}
+	}
+	/* @keyframes pulse-animation {
+		0% {
+			box-shadow: 0 0 0 0px rgba(0, 0, 0, 0.2);
+		}
+		100% {
+			box-shadow: 0 0 0 20px rgba(0, 0, 0, 0);
+		}
+	} */
 `;
 
 export default PasswordWidget;

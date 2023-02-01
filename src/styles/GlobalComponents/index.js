@@ -77,7 +77,7 @@ export const SectionProjectsHeader = styled.div`
 		padding: ${(props) => (props.main ? '16px 0 8px' : '20px 0 0 0')};
 		max-width: 100%;
 	} */
-	@media ${(props) => props.theme.breakpoints.xsm} {
+	@media ${(props) => props.theme.breakpoints.sm} {
 		display: flex;
 		justify-content: space-between;
 		align-items: center;

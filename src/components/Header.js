@@ -20,12 +20,19 @@ const Header = () => {
 				.from('#typewriter-text', { opacity: 0 }, '+=3.2');
 		}
 		if (window.innerWidth < 639) {
+			console.log('mobile device');
+			// tl.current = gsap
+			// 	.timeline()
+			// 	.fromTo('#header', { y: '-100%' }, { y: 0, duration: 1 })
+			// 	.from('#brand', { x: '-200', duration: 1 })
+			// 	.from('#work-status', { opacity: 0, duration: 1 })
+			// 	.from('#typewriter-text', { opacity: 0 }, '+=0.5');
 			tl.current = gsap
 				.timeline()
-				.fromTo('#header', { y: '-100%' }, { y: 0, duration: 1 })
-				.from('#brand', { x: '-200', duration: 1 })
-				.from('#work-status', { opacity: 0, duration: 1 })
-				.from('#typewriter-text', { opacity: 0 }, '+=0.5');
+				.fromTo('#header', { y: '-100%' }, { y: 0, duration: 1 });
+			// .from('#brand', { x: '-200', duration: 1 })
+			// .from('#work-status', { opacity: 0, duration: 1 })
+			// .from('#typewriter-text', { opacity: 0 }, '+=0.5');
 		}
 
 		typewriterText();
@@ -118,6 +125,7 @@ const Container = styled.div`
 	padding: 1rem;
 	/* border-bottom: 2px solid #c40303; */
 	border-bottom: 2px solid ${(props) => props.theme.colors.red};
+	/* opacity: 0; */
 	@media ${(props) => props.theme.breakpoints.sm} {
 		display: grid;
 		grid-template-columns: repeat(5, 1fr);
@@ -293,6 +301,7 @@ const WorkStatus = styled.div`
 	justify-content: center;
 	column-gap: 2rem;
 	align-items: center;
+	/* opacity: 0; */
 	p {
 		width: clamp(220px, 220px, 80%);
 		background-color: ${(props) => props.theme.colors.red};

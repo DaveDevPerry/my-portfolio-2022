@@ -19,9 +19,13 @@ const About = () => {
 				.from('#about', { opacity: 0, duration: 1, delay: 7 });
 		}
 		if (window.innerWidth < 639) {
+			console.log('mobile device');
+			// tl.current = gsap
+			// 	.timeline()
+			// 	.from('#about', { opacity: 0, duration: 1, delay: 4 });
 			tl.current = gsap
 				.timeline()
-				.from('#about', { opacity: 0, duration: 1, delay: 4 });
+				.from('#about', { opacity: 0, duration: 1, delay: 0.5 });
 		}
 	}, []);
 

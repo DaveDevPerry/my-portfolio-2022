@@ -123,12 +123,16 @@ const Img = styled.img`
 	/* z-index: 0; */
 	z-index: -5;
 	position: absolute;
+	@media ${(props) => props.theme.breakpoints.sm} {
+		object-fit: contain;
+	}
 `;
 
 const ImgFilter = styled.div`
 	width: 100%;
 	height: 100%;
 	background-color: rgba(36, 33, 33, 0.9);
+	border-radius: 10px;
 	/* z-index: 1; */
 	/* display: none; */
 `;

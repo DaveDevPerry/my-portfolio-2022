@@ -24,12 +24,18 @@ const Hero = () => {
 				.from('#hero-buttons', { opacity: 0, duration: 1 }, '-=0.5');
 		}
 		if (window.innerWidth < 639) {
+			console.log('mobile device');
 			// works over 640px
+			// tl.current = gsap
+			// 	.timeline()
+			// 	.from('#hero-title', { opacity: 0, duration: 1, delay: 2 })
+			// 	.from('#hero-text', { opacity: 0, duration: 1 }, '-=0.5')
+			// 	.from('#hero-buttons', { opacity: 0, duration: 1 }, '-=0.5');
 			tl.current = gsap
 				.timeline()
-				.from('#hero-title', { opacity: 0, duration: 1, delay: 2 })
-				.from('#hero-text', { opacity: 0, duration: 1 }, '-=0.5')
-				.from('#hero-buttons', { opacity: 0, duration: 1 }, '-=0.5');
+				.from('#hero-title', { opacity: 0, duration: 1, delay: 0.5 })
+				.from('#hero-text', { opacity: 0, duration: 1 }, '-=1')
+				.from('#hero-buttons', { opacity: 0, duration: 1 }, '-=1');
 		}
 	}, []);
 
@@ -117,6 +123,7 @@ const SectionText = styled.p`
 	color: rgb(181, 178, 178);
 	padding-left: 20px;
 	position: relative;
+	/* opacity: 0; */
 	&:before {
 		position: absolute;
 		content: '';

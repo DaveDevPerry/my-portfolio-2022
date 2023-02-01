@@ -711,7 +711,7 @@ const ProjectQRCodeContainer = styled.div`
 			}
 		}
 	}
-	@media ${(props) => props.theme.breakpoints.xsm} {
+	@media ${(props) => props.theme.breakpoints.sm} {
 		.project-links-wrapper {
 			/* flex: 1; */
 			/* display: flex; */
