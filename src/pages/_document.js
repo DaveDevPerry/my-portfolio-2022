@@ -95,6 +95,7 @@ export default class MyDocument extends Document {
 					<link rel='manifest' href='/favicon/site.webmanifest' />
 				</Head>
 				<body>
+					<h1>daveperry.tech</h1>
 					<Main />
 					<NextScript />
 				</body>

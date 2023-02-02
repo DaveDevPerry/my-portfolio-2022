@@ -58,7 +58,9 @@ const TellyContainer = styled.div`
 			background-repeat: repeat;
 			background-position: 0 0;
 			background-size: auto 100%;
-			animation: tvSignal 500s linear infinite;
+			/* animation: tvSignal 3s linear infinite; */
+			animation: tvSignal 3s linear infinite alternate-reverse;
+			/* animation: tvSignal 500s linear infinite; */
 		}
 		img#terror-tv {
 			position: absolute;
@@ -75,9 +77,17 @@ const TellyContainer = styled.div`
 			background-position: 0 0;
 		}
 		to {
-			background-position: -10000px 0;
+			background-position: -100px 0;
 		}
 	}
+	/* @keyframes tvSignal {
+		from {
+			background-position: 0 0;
+		}
+		to {
+			background-position: -10000px 0;
+		}
+	} */
 `;
 
 export default TerrorTelly;
