@@ -11,13 +11,23 @@ const Header = () => {
 			tl.current = gsap
 				.timeline()
 				.fromTo('#header', { y: '-100%' }, { y: 0, duration: 1 })
-				.from('#brand', { x: '-200', duration: 1 })
+				.from('#brand', { x: '-200', duration: 1 }, '-=0.5')
 				.from('#work-status', { opacity: 0, duration: 1 })
-				.from('#about-link', { y: '-100px', duration: 1.5 }, '-=2')
-				.from('#projects-link', { y: '-100px', duration: 1.5 }, '-=1.5')
-				.from('#tech-link', { y: '-100px', duration: 1.5 }, '-=1')
-				.from('#contact-link', { y: '-100px', duration: 1.5 }, '-=1')
-				.from('#typewriter-text', { opacity: 0 }, '+=3.2');
+				.from('#about-link', { y: '-100px', duration: 1 }, '-=2')
+				.from('#projects-link', { y: '-100px', duration: 1 }, '-=1.8')
+				.from('#tech-link', { y: '-100px', duration: 1 }, '-=1.6')
+				.from('#contact-link', { y: '-100px', duration: 1 }, '-=1.4')
+				.from('#typewriter-text', { opacity: 0 }, '+=1.8');
+			// tl.current = gsap
+			// 	.timeline()
+			// 	.fromTo('#header', { y: '-100%' }, { y: 0, duration: 1 })
+			// 	.from('#brand', { x: '-200', duration: 1 })
+			// 	.from('#work-status', { opacity: 0, duration: 1 })
+			// 	.from('#about-link', { y: '-100px', duration: 1.5 }, '-=2')
+			// 	.from('#projects-link', { y: '-100px', duration: 1.5 }, '-=1.5')
+			// 	.from('#tech-link', { y: '-100px', duration: 1.5 }, '-=1')
+			// 	.from('#contact-link', { y: '-100px', duration: 1.5 }, '-=1')
+			// 	.from('#typewriter-text', { opacity: 0 }, '+=3.2');
 		}
 		if (window.innerWidth < 639) {
 			console.log('mobile device');

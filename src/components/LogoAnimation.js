@@ -8,7 +8,10 @@ const LogoAnimation = () => {
 	useEffect(() => {
 		tl.current = gsap
 			.timeline()
-			.to('#dp-logo-svg-path', 2, { strokeDashoffset: 0, delay: 5.2 });
+			.to('#dp-logo-svg-path', 1.5, { strokeDashoffset: 0, delay: 2.6 });
+		// tl.current = gsap
+		// 	.timeline()
+		// 	.to('#dp-logo-svg-path', 2, { strokeDashoffset: 0, delay: 5.2 });
 	}, []);
 	return (
 		<StyledLogoAnimation>

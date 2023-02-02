@@ -16,7 +16,10 @@ const About = () => {
 		if (window.innerWidth > 640) {
 			tl.current = gsap
 				.timeline()
-				.from('#about', { opacity: 0, duration: 1, delay: 7 });
+				.from('#about', { opacity: 0, duration: 1, delay: 4 });
+			// tl.current = gsap
+			// 	.timeline()
+			// 	.from('#about', { opacity: 0, duration: 1, delay: 7 });
 		}
 		if (window.innerWidth < 639) {
 			console.log('mobile device');
