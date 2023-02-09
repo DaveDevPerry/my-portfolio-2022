@@ -142,6 +142,8 @@ const Projects = ({ modalImgUrl, setModalImgUrl }) => {
 							qrSite,
 							qrBack,
 							qrFront,
+							qrCode,
+							codeFS,
 							// colors,
 						}) => (
 							<BlogCard key={id} className={cardclass}>
@@ -199,13 +201,12 @@ const Projects = ({ modalImgUrl, setModalImgUrl }) => {
 											<div className='qr-code-wrapper'>
 												<Img src={qrSite} alt='qr code' className='qr-code' />
 											</div>
-											{/* <p>visit site</p> */}
 											<a
 												href={source}
 												target='_blank'
 												rel='noopener noreferrer'
 											>
-												visit site
+												view site
 											</a>
 										</div>
 										{qrBack !== null && (
@@ -213,7 +214,6 @@ const Projects = ({ modalImgUrl, setModalImgUrl }) => {
 												<div className='qr-code-wrapper'>
 													<Img src={qrBack} alt='qr code' className='qr-code' />
 												</div>
-												{/* <p>backend</p> */}
 												<a
 													href={codeBack}
 													target='_blank'
@@ -232,7 +232,6 @@ const Projects = ({ modalImgUrl, setModalImgUrl }) => {
 														className='qr-code'
 													/>
 												</div>
-												{/* <p>frontend</p> */}
 												<a
 													href={codeFront}
 													target='_blank'
@@ -242,6 +241,93 @@ const Projects = ({ modalImgUrl, setModalImgUrl }) => {
 												</a>
 											</div>
 										)}
+
+										{/* {qrCode !== null ? (
+											<div className='code-link-wrapper'>
+												<div className='qr-code-wrapper'>
+													<Img src={qrCode} alt='qr code' className='qr-code' />
+												</div>
+												<a
+													href={codeFS}
+													target='_blank'
+													rel='noopener noreferrer'
+												>
+													view code
+												</a>
+											</div>
+										) : (
+											<>
+												{qrBack !== null && (
+													<div className='code-link-wrapper'>
+														<div className='qr-code-wrapper'>
+															<Img
+																src={qrBack}
+																alt='qr code'
+																className='qr-code'
+															/>
+														</div>
+														<a
+															href={codeBack}
+															target='_blank'
+															rel='noopener noreferrer'
+														>
+															Backend
+														</a>
+													</div>
+												)}
+												{qrFront !== null && (
+													<div className='code-link-wrapper'>
+														<div className='qr-code-wrapper'>
+															<Img
+																src={qrFront}
+																alt='qr code'
+																className='qr-code'
+															/>
+														</div>
+														<a
+															href={codeFront}
+															target='_blank'
+															rel='noopener noreferrer'
+														>
+															Frontend
+														</a>
+													</div>
+												)}
+											</>
+										)} */}
+
+										{/* {qrBack !== null && (
+											<div className='code-link-wrapper'>
+												<div className='qr-code-wrapper'>
+													<Img src={qrBack} alt='qr code' className='qr-code' />
+												</div>
+												<a
+													href={codeBack}
+													target='_blank'
+													rel='noopener noreferrer'
+												>
+													Backend
+												</a>
+											</div>
+										)}
+										{qrFront !== null && (
+											<div className='code-link-wrapper'>
+												<div className='qr-code-wrapper'>
+													<Img
+														src={qrFront}
+														alt='qr code'
+														className='qr-code'
+													/>
+												</div>
+												<a
+													href={codeFront}
+													target='_blank'
+													rel='noopener noreferrer'
+												>
+													Frontend
+												</a>
+											</div>
+										)} */}
 
 										{/* <div className='code-link-wrapper'>
 											<div className='qr-code-wrapper'>
