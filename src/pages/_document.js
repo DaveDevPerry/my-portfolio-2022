@@ -33,8 +33,9 @@ export default class MyDocument extends Document {
 				<Head>
 					<meta
 						name='description'
-						content='daveperry.tech | Dave Perry is a web designer and developer from London.'
+						content='We create professional interactive web sites and applications.  From simple landing pages, websites from scratch or re-designing to keep ahead of the trends.  To fully functioning, multi-user platforms fully designed, developed and integrating seamlessly together, incorporating your existing api endpoints, without downtime precisely for your business needs.  '
 					/>
+					<meta name='robots' content='index,follow' />
 
 					{/* <link
 						href='https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap'
